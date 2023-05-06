@@ -41,10 +41,10 @@
         width: 40%;
       }
     }
-
-    /////modal project///////
-    #myModal-project {
-      // display: none;
+    
+    ///modal recycle bin/////
+    #myModal-recycle {
+      display: none;
       position: absolute;
       z-index: 9;
       text-align: center;
@@ -125,9 +125,221 @@
         }
       }
     }
-    ///modal recycle bin/////
-    #myModal-recycle {
-      @extend #myModal-project;
+
+    /////modal project///////
+    // #myModal-project {
+    //   @extend #myModal-recycle;
+    //   display: block;
+    //   #modal-main {
+    //     #client-pro{
+    //       p {
+    //         color: black;
+    //       }
+    //       #client-flex{
+    //         display: flex;
+    //         .client-div{
+    //           // border: 2px solid red;
+    //           video {
+    //             width: 90%;
+    //             &:hover{
+    //               cursor: pointer;
+    //               animation: inout 1.5s infinite;
+    //               @keyframes inout {
+    //                 0% {
+    //                   transform: scale(1);
+    //                 }
+    //                 50% {
+    //                   transform: scale(0.9);
+    //                 }
+    //                 100% {
+    //                   transform: scale(1);
+    //                 }
+    //               }
+    //             }
+    //           }
+    //           p{
+    //             color: black;
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+
+    #myModal-project {
+      @extend #myModal-recycle;
+      display: block;
+      height: 80%;
+      #mydivheader {
+        height: 3%;
+      }
+      #modal-main{
+        height: 91%;
+        width: 99%;
+        #pro-tab {
+          display: flex;
+          .tab{
+            background-color: rgb(184, 181, 181);
+            border: 2px solid rgb(79, 79, 79);
+            color: black;
+            width: 50%;
+            padding: 5px;
+            // background-color: rgb(192,192,192);
+            &:hover{
+              cursor: pointer;
+            }
+          }
+        }
+        #client-pro{
+          p {
+            color: black;
+          }
+          #client-flex{
+            display: flex;
+            flex-direction: column;
+            .client-div{
+              display: flex;
+              justify-content: space-around;
+              margin: 10px auto;
+              padding: 10px;
+              // border: 2px solid red;
+              &:hover{
+                background-color: rgb(209, 209, 209);;
+              }
+              video {
+                border-radius: 10px;
+                width: 40%;
+                &:hover{
+                  cursor: pointer;
+                  animation: inout 1.5s infinite;
+                  @keyframes inout {
+                    0% {
+                      transform: scale(1);
+                    }
+                    50% {
+                      transform: scale(0.9);
+                    }
+                    100% {
+                      transform: scale(1);
+                    }
+                  }
+                }
+              }
+              #infosec {
+                text-align: center;
+                // border: 2px solid red;
+                span {
+                  color: black;
+                  font-size: large;
+                  text-decoration: underline;
+                }
+                .techUsed {
+                  margin: 10px;
+                  color: black;
+                }
+                p{
+                  text-align: justify;
+                  width: 70%;
+                  margin: 6px auto;
+                  color: black;
+                }
+                .lunchcode {
+
+                  a{
+                    margin: 0 10px;
+                    text-decoration: none;
+                    color: black;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        #personal-pro{
+          display: none;
+          p {
+            color: black;
+          }
+          #personal-flex{
+            display: flex;
+            flex-direction: column;
+            .personal-div{
+              display: flex;
+              justify-content: space-around;
+              margin: 10px auto;
+              padding: 10px;
+              // border: 2px solid red;
+              &:hover{
+                background-color: rgb(209, 209, 209);;
+              }
+              video {
+                border-radius: 10px;
+                width: 40%;
+                &:hover{
+                  cursor: pointer;
+                  animation: inout 1.5s infinite;
+                  @keyframes inout {
+                    0% {
+                      transform: scale(1);
+                    }
+                    50% {
+                      transform: scale(0.9);
+                    }
+                    100% {
+                      transform: scale(1);
+                    }
+                  }
+                }
+              }
+              #infosec {
+                text-align: center;
+                // border: 2px solid red;
+                span {
+                  color: black;
+                  font-size: large;
+                  text-decoration: underline;
+                }
+                .techUsed {
+                  margin: 10px;
+                  color: black;
+                }
+                p{
+                  text-align: justify;
+                  width: 70%;
+                  margin: 6px auto;
+                  color: black;
+                }
+                .lunchcode {
+
+                  a{
+                    margin: 0 10px;
+                    text-decoration: none;
+                    color: black;
+                  }
+                }
+              }
+            }
+          }
+        }
+        
+      }
+      #modal-bottom{
+        color: black;
+        background-color: rgb(192,192,192);
+        width: 99%;
+        margin: 0 auto;
+        margin-top: 4px;
+        border-top: 2px solid rgb(43, 42, 42);
+        border-right: 2px solid rgb(226, 223, 223);
+        border-bottom: 2px solid rgb(226, 223, 223);
+        border-left: 2px solid rgb(43, 42, 42);
+        p {
+          margin: 0 6px;
+          width: 50%;
+          text-align: left;
+        }
+      }
     }
     
     // modal-cv
@@ -228,6 +440,7 @@
     align-items: center;
     #start-btn {
       button {
+        border: 2px solid red;
         display: flex;
         align-items: center;
         border-top: 2px solid white;

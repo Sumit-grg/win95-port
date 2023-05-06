@@ -40,7 +40,8 @@
   width: 40%;
 }
 
-.main-container .main-screen #myModal-project, .main-container .main-screen #myModal-recycle {
+.main-container .main-screen #myModal-recycle, .main-container .main-screen #myModal-project {
+  display: none;
   position: absolute;
   z-index: 9;
   text-align: center;
@@ -50,7 +51,7 @@
   background-color: silver;
 }
 
-.main-container .main-screen #myModal-project #mydivheader, .main-container .main-screen #myModal-recycle #mydivheader {
+.main-container .main-screen #myModal-recycle #mydivheader, .main-container .main-screen #myModal-project #mydivheader {
   width: 100%;
   height: 5%;
   border: 1px solid silver;
@@ -68,7 +69,7 @@
           align-items: center;
 }
 
-.main-container .main-screen #myModal-project #mydivheader #left-icon, .main-container .main-screen #myModal-recycle #mydivheader #left-icon {
+.main-container .main-screen #myModal-recycle #mydivheader #left-icon, .main-container .main-screen #myModal-project #mydivheader #left-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,52 +78,52 @@
           align-items: center;
 }
 
-.main-container .main-screen #myModal-project #mydivheader #left-icon img, .main-container .main-screen #myModal-recycle #mydivheader #left-icon img {
+.main-container .main-screen #myModal-recycle #mydivheader #left-icon img, .main-container .main-screen #myModal-project #mydivheader #left-icon img {
   padding: 5px;
   width: 25%;
 }
 
-.main-container .main-screen #myModal-project #mydivheader #left-icon p, .main-container .main-screen #myModal-recycle #mydivheader #left-icon p {
+.main-container .main-screen #myModal-recycle #mydivheader #left-icon p, .main-container .main-screen #myModal-project #mydivheader #left-icon p {
   color: white;
 }
 
-.main-container .main-screen #myModal-project #mydivheader #right-icon, .main-container .main-screen #myModal-recycle #mydivheader #right-icon {
+.main-container .main-screen #myModal-recycle #mydivheader #right-icon, .main-container .main-screen #myModal-project #mydivheader #right-icon {
   z-index: 11;
   padding: 4px;
 }
 
-.main-container .main-screen #myModal-project #mydivheader #right-icon button, .main-container .main-screen #myModal-recycle #mydivheader #right-icon button {
+.main-container .main-screen #myModal-recycle #mydivheader #right-icon button, .main-container .main-screen #myModal-project #mydivheader #right-icon button {
   width: 20px;
 }
 
-.main-container .main-screen #myModal-project #mydivheader #right-icon button p, .main-container .main-screen #myModal-recycle #mydivheader #right-icon button p {
+.main-container .main-screen #myModal-recycle #mydivheader #right-icon button p, .main-container .main-screen #myModal-project #mydivheader #right-icon button p {
   font-weight: bold;
 }
 
-.main-container .main-screen #myModal-project #modal-menu, .main-container .main-screen #myModal-recycle #modal-menu {
+.main-container .main-screen #myModal-recycle #modal-menu, .main-container .main-screen #myModal-project #modal-menu {
   background-color: silver;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main-container .main-screen #myModal-project #modal-menu p, .main-container .main-screen #myModal-recycle #modal-menu p {
+.main-container .main-screen #myModal-recycle #modal-menu p, .main-container .main-screen #myModal-project #modal-menu p {
   color: black;
   padding: 4px;
   margin: 0 4px;
 }
 
-.main-container .main-screen #myModal-project #modal-menu p span, .main-container .main-screen #myModal-recycle #modal-menu p span {
+.main-container .main-screen #myModal-recycle #modal-menu p span, .main-container .main-screen #myModal-project #modal-menu p span {
   text-decoration: underline;
 }
 
-.main-container .main-screen #myModal-project #modal-menu p:hover, .main-container .main-screen #myModal-recycle #modal-menu p:hover {
+.main-container .main-screen #myModal-recycle #modal-menu p:hover, .main-container .main-screen #myModal-project #modal-menu p:hover {
   cursor: pointer;
   background-color: #0202a8;
   color: white;
 }
 
-.main-container .main-screen #myModal-project #modal-main, .main-container .main-screen #myModal-recycle #modal-main {
+.main-container .main-screen #myModal-recycle #modal-main, .main-container .main-screen #myModal-project #modal-main {
   background-color: white;
   height: 85%;
   width: 99%;
@@ -133,7 +134,7 @@
   border-left: 2px solid black;
 }
 
-.main-container .main-screen #myModal-project #modal-bottom, .main-container .main-screen #myModal-recycle #modal-bottom {
+.main-container .main-screen #myModal-recycle #modal-bottom, .main-container .main-screen #myModal-project #modal-bottom {
   color: black;
   background-color: silver;
   width: 99%;
@@ -145,7 +146,240 @@
   border-left: 2px solid #2b2a2a;
 }
 
-.main-container .main-screen #myModal-project #modal-bottom p, .main-container .main-screen #myModal-recycle #modal-bottom p {
+.main-container .main-screen #myModal-recycle #modal-bottom p, .main-container .main-screen #myModal-project #modal-bottom p {
+  margin: 0 6px;
+  width: 50%;
+  text-align: left;
+}
+
+.main-container .main-screen #myModal-project {
+  display: block;
+  height: 80%;
+}
+
+.main-container .main-screen #myModal-project #mydivheader {
+  height: 3%;
+}
+
+.main-container .main-screen #myModal-project #modal-main {
+  height: 91%;
+  width: 99%;
+}
+
+.main-container .main-screen #myModal-project #modal-main #pro-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container .main-screen #myModal-project #modal-main #pro-tab .tab {
+  background-color: #b8b5b5;
+  border: 2px solid #4f4f4f;
+  color: black;
+  width: 50%;
+  padding: 5px;
+}
+
+.main-container .main-screen #myModal-project #modal-main #pro-tab .tab:hover {
+  cursor: pointer;
+}
+
+.main-container .main-screen #myModal-project #modal-main #client-pro p {
+  color: black;
+}
+
+.main-container .main-screen #myModal-project #modal-main #client-pro #client-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div:hover {
+  background-color: #d1d1d1;
+}
+
+.main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div video {
+  border-radius: 10px;
+  width: 40%;
+}
+
+.main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div video:hover {
+  cursor: pointer;
+  -webkit-animation: inout 1.5s infinite;
+          animation: inout 1.5s infinite;
+}
+
+@-webkit-keyframes inout {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes inout {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div #infosec {
+  text-align: center;
+}
+
+.main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div #infosec span {
+  color: black;
+  font-size: large;
+  text-decoration: underline;
+}
+
+.main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div #infosec .techUsed {
+  margin: 10px;
+  color: black;
+}
+
+.main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div #infosec p {
+  text-align: justify;
+  width: 70%;
+  margin: 6px auto;
+  color: black;
+}
+
+.main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div #infosec .lunchcode a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.main-container .main-screen #myModal-project #modal-main #personal-pro {
+  display: none;
+}
+
+.main-container .main-screen #myModal-project #modal-main #personal-pro p {
+  color: black;
+}
+
+.main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div:hover {
+  background-color: #d1d1d1;
+}
+
+.main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div video {
+  border-radius: 10px;
+  width: 40%;
+}
+
+.main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div video:hover {
+  cursor: pointer;
+  -webkit-animation: inout 1.5s infinite;
+          animation: inout 1.5s infinite;
+}
+
+@keyframes inout {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div #infosec {
+  text-align: center;
+}
+
+.main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div #infosec span {
+  color: black;
+  font-size: large;
+  text-decoration: underline;
+}
+
+.main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div #infosec .techUsed {
+  margin: 10px;
+  color: black;
+}
+
+.main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div #infosec p {
+  text-align: justify;
+  width: 70%;
+  margin: 6px auto;
+  color: black;
+}
+
+.main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div #infosec .lunchcode a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.main-container .main-screen #myModal-project #modal-bottom {
+  color: black;
+  background-color: silver;
+  width: 99%;
+  margin: 0 auto;
+  margin-top: 4px;
+  border-top: 2px solid #2b2a2a;
+  border-right: 2px solid #e2dfdf;
+  border-bottom: 2px solid #e2dfdf;
+  border-left: 2px solid #2b2a2a;
+}
+
+.main-container .main-screen #myModal-project #modal-bottom p {
   margin: 0 6px;
   width: 50%;
   text-align: left;
@@ -280,6 +514,7 @@
 }
 
 .main-container .bottom-bar #start-btn button {
+  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
