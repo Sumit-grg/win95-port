@@ -1,0 +1,248 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@mixin border-color {
+  border-top: 2px solid black;
+  border-right: 2px solid rgb(226, 223, 223);
+  border-bottom: 2px solid rgb(226, 223, 223);
+  border-left: 2px solid black;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  #winlogo {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    opacity: 0.3;
+  }
+  .main-screen {
+    width: 100%;
+    height: 97%;
+    background-color: rgb(0,128,130);
+    color: white;
+    padding: 20px;
+    // display: flex;
+    // flex-direction: column;
+    .icon{
+      padding: 2px;
+      margin: 20px;
+      display: inline-block;
+      text-align: center;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    #cv-icon{
+      img{
+        width: 40%;
+      }
+    }
+
+    /////modal project///////
+    #myModal-project {
+      // display: none;
+      position: absolute;
+      z-index: 9;
+      text-align: center;
+      border: 2px solid rgb(192,192,192);
+      width: 50%;
+      height: 50%;
+      background-color: rgb(192,192,192);
+      #mydivheader {
+        width: 100%;
+        height: 5%;
+        border: 1px solid rgb(192,192,192);
+        cursor: move;
+        z-index: 10;
+        background-color: rgb(2,2,168);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #left-icon{
+          display: flex;
+          align-items: center;
+          img {
+            padding: 5px;
+            width: 25%;
+          }
+          p {
+            color: white;
+          }
+        }
+        #right-icon{
+          z-index: 11;
+          padding: 4px;
+          button {
+            width: 20px;
+            p {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      #modal-menu{
+        background-color: rgb(192,192,192);
+        display: flex;
+        p{
+          color: black;
+          padding: 4px;
+          margin: 0 4px;
+          span {
+            text-decoration: underline;
+          }
+          &:hover{
+            cursor: pointer;
+            background-color: rgb(2,2,168);
+            color: white;
+          }
+        }
+      }
+      #modal-main{
+        background-color: white;
+        height: 85%;
+        width: 99%;
+        margin: 0 auto;
+        @include border-color;
+      }
+      #modal-bottom{
+        color: black;
+        background-color: rgb(192,192,192);
+        width: 99%;
+        margin: 0 auto;
+        margin-top: 4px;
+        border-top: 2px solid rgb(43, 42, 42);
+        border-right: 2px solid rgb(226, 223, 223);
+        border-bottom: 2px solid rgb(226, 223, 223);
+        border-left: 2px solid rgb(43, 42, 42);
+        p {
+          margin: 0 6px;
+          width: 50%;
+          text-align: left;
+        }
+      }
+    }
+    ///modal recycle bin/////
+    #myModal-recycle {
+      @extend #myModal-project;
+    }
+    
+    // modal-cv
+    #myModal-cv {
+      display: none;
+      position: absolute;
+      z-index: 9;
+      text-align: center;
+      border: 2px solid rgb(192,192,192);
+      width: 50%;
+      height: 80%;
+      background-color: rgb(192,192,192);
+      #mydivheader {
+        width: 100%;
+        height: 3%;
+        border: 1px solid rgb(192,192,192);
+        cursor: move;
+        z-index: 10;
+        background-color: rgb(2,2,168);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #left-icon{
+          display: flex;
+          align-items: center;
+          img {
+            padding: 5px;
+            width: 25%;
+          }
+          p {
+            color: white;
+          }
+        }
+        #right-icon{
+          z-index: 11;
+          padding: 4px;
+          button {
+            width: 20px;
+            p {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      #modal-menu{
+        background-color: rgb(192,192,192);
+        display: flex;
+        p{
+          color: black;
+          padding: 4px;
+          margin: 0 4px;
+          span {
+            text-decoration: underline;
+          }
+          &:hover{
+            cursor: pointer;
+            background-color: rgb(2,2,168);
+            color: white;
+          }
+        }
+      }
+      #modal-main{
+        border: 2px solid red;
+        background-color: white;
+        height: 91%;
+        width: 99%;
+        margin: 0 auto;
+        @include border-color;
+      }
+      #modal-bottom{
+        color: black;
+        background-color: rgb(192,192,192);
+        width: 99%;
+        margin: 0 auto;
+        margin-top: 4px;
+        border-top: 2px solid rgb(43, 42, 42);
+        border-right: 2px solid rgb(226, 223, 223);
+        border-bottom: 2px solid rgb(226, 223, 223);
+        border-left: 2px solid rgb(43, 42, 42);
+        p {
+          margin: 0 6px;
+          width: 50%;
+          text-align: left;
+        }
+      }
+
+    }
+
+
+  }
+
+  .bottom-bar {
+    border-top: 2px solid white;
+    background-color: rgb(192,192,192);
+    height: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #start-btn {
+      button {
+        display: flex;
+        align-items: center;
+        border-top: 2px solid white;
+        border-left: 2px solid white;
+        border-right: 2px solid rgb(128, 127, 127);
+        border-bottom: 2px solid rgb(128, 127, 127);
+      }
+    }
+    #right-con {
+      border-right: 2px solid white;
+      border-bottom: 2px solid white;
+      border-top: 2px solid rgb(128, 127, 127);
+      border-left: 2px solid rgb(128, 127, 127);
+      display: flex;
+      align-items: center;
+    }
+  }
+}

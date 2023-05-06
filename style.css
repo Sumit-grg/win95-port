@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+
+.main-container #winlogo {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  opacity: 0.3;
+}
+
+.main-container .main-screen {
+  width: 100%;
+  height: 97%;
+  background-color: #008082;
+  color: white;
+  padding: 20px;
+}
+
+.main-container .main-screen .icon {
+  padding: 2px;
+  margin: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.main-container .main-screen .icon:hover {
+  cursor: pointer;
+}
+
+.main-container .main-screen #cv-icon img {
+  width: 40%;
+}
+
+.main-container .main-screen #myModal-project, .main-container .main-screen #myModal-recycle {
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+  border: 2px solid silver;
+  width: 50%;
+  height: 50%;
+  background-color: silver;
+}
+
+.main-container .main-screen #myModal-project #mydivheader, .main-container .main-screen #myModal-recycle #mydivheader {
+  width: 100%;
+  height: 5%;
+  border: 1px solid silver;
+  cursor: move;
+  z-index: 10;
+  background-color: #0202a8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .main-screen #myModal-project #mydivheader #left-icon, .main-container .main-screen #myModal-recycle #mydivheader #left-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .main-screen #myModal-project #mydivheader #left-icon img, .main-container .main-screen #myModal-recycle #mydivheader #left-icon img {
+  padding: 5px;
+  width: 25%;
+}
+
+.main-container .main-screen #myModal-project #mydivheader #left-icon p, .main-container .main-screen #myModal-recycle #mydivheader #left-icon p {
+  color: white;
+}
+
+.main-container .main-screen #myModal-project #mydivheader #right-icon, .main-container .main-screen #myModal-recycle #mydivheader #right-icon {
+  z-index: 11;
+  padding: 4px;
+}
+
+.main-container .main-screen #myModal-project #mydivheader #right-icon button, .main-container .main-screen #myModal-recycle #mydivheader #right-icon button {
+  width: 20px;
+}
+
+.main-container .main-screen #myModal-project #mydivheader #right-icon button p, .main-container .main-screen #myModal-recycle #mydivheader #right-icon button p {
+  font-weight: bold;
+}
+
+.main-container .main-screen #myModal-project #modal-menu, .main-container .main-screen #myModal-recycle #modal-menu {
+  background-color: silver;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container .main-screen #myModal-project #modal-menu p, .main-container .main-screen #myModal-recycle #modal-menu p {
+  color: black;
+  padding: 4px;
+  margin: 0 4px;
+}
+
+.main-container .main-screen #myModal-project #modal-menu p span, .main-container .main-screen #myModal-recycle #modal-menu p span {
+  text-decoration: underline;
+}
+
+.main-container .main-screen #myModal-project #modal-menu p:hover, .main-container .main-screen #myModal-recycle #modal-menu p:hover {
+  cursor: pointer;
+  background-color: #0202a8;
+  color: white;
+}
+
+.main-container .main-screen #myModal-project #modal-main, .main-container .main-screen #myModal-recycle #modal-main {
+  background-color: white;
+  height: 85%;
+  width: 99%;
+  margin: 0 auto;
+  border-top: 2px solid black;
+  border-right: 2px solid #e2dfdf;
+  border-bottom: 2px solid #e2dfdf;
+  border-left: 2px solid black;
+}
+
+.main-container .main-screen #myModal-project #modal-bottom, .main-container .main-screen #myModal-recycle #modal-bottom {
+  color: black;
+  background-color: silver;
+  width: 99%;
+  margin: 0 auto;
+  margin-top: 4px;
+  border-top: 2px solid #2b2a2a;
+  border-right: 2px solid #e2dfdf;
+  border-bottom: 2px solid #e2dfdf;
+  border-left: 2px solid #2b2a2a;
+}
+
+.main-container .main-screen #myModal-project #modal-bottom p, .main-container .main-screen #myModal-recycle #modal-bottom p {
+  margin: 0 6px;
+  width: 50%;
+  text-align: left;
+}
+
+.main-container .main-screen #myModal-cv {
+  display: none;
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+  border: 2px solid silver;
+  width: 50%;
+  height: 80%;
+  background-color: silver;
+}
+
+.main-container .main-screen #myModal-cv #mydivheader {
+  width: 100%;
+  height: 3%;
+  border: 1px solid silver;
+  cursor: move;
+  z-index: 10;
+  background-color: #0202a8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .main-screen #myModal-cv #mydivheader #left-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .main-screen #myModal-cv #mydivheader #left-icon img {
+  padding: 5px;
+  width: 25%;
+}
+
+.main-container .main-screen #myModal-cv #mydivheader #left-icon p {
+  color: white;
+}
+
+.main-container .main-screen #myModal-cv #mydivheader #right-icon {
+  z-index: 11;
+  padding: 4px;
+}
+
+.main-container .main-screen #myModal-cv #mydivheader #right-icon button {
+  width: 20px;
+}
+
+.main-container .main-screen #myModal-cv #mydivheader #right-icon button p {
+  font-weight: bold;
+}
+
+.main-container .main-screen #myModal-cv #modal-menu {
+  background-color: silver;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container .main-screen #myModal-cv #modal-menu p {
+  color: black;
+  padding: 4px;
+  margin: 0 4px;
+}
+
+.main-container .main-screen #myModal-cv #modal-menu p span {
+  text-decoration: underline;
+}
+
+.main-container .main-screen #myModal-cv #modal-menu p:hover {
+  cursor: pointer;
+  background-color: #0202a8;
+  color: white;
+}
+
+.main-container .main-screen #myModal-cv #modal-main {
+  border: 2px solid red;
+  background-color: white;
+  height: 91%;
+  width: 99%;
+  margin: 0 auto;
+  border-top: 2px solid black;
+  border-right: 2px solid #e2dfdf;
+  border-bottom: 2px solid #e2dfdf;
+  border-left: 2px solid black;
+}
+
+.main-container .main-screen #myModal-cv #modal-bottom {
+  color: black;
+  background-color: silver;
+  width: 99%;
+  margin: 0 auto;
+  margin-top: 4px;
+  border-top: 2px solid #2b2a2a;
+  border-right: 2px solid #e2dfdf;
+  border-bottom: 2px solid #e2dfdf;
+  border-left: 2px solid #2b2a2a;
+}
+
+.main-container .main-screen #myModal-cv #modal-bottom p {
+  margin: 0 6px;
+  width: 50%;
+  text-align: left;
+}
+
+.main-container .bottom-bar {
+  border-top: 2px solid white;
+  background-color: silver;
+  height: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .bottom-bar #start-btn button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid #807f7f;
+  border-bottom: 2px solid #807f7f;
+}
+
+.main-container .bottom-bar #right-con {
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-top: 2px solid #807f7f;
+  border-left: 2px solid #807f7f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
