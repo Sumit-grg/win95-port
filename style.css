@@ -51,7 +51,7 @@
   background-color: silver;
 }
 
-.main-container .main-screen #myModal-recycle #mydivheader, .main-container .main-screen #myModal-project #mydivheader, .main-container .main-screen #myModal-player #mydivheader {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon, .main-container .main-screen #myModal-project #myModal-recycleCon, .main-container .main-screen #myModal-player #myModal-recycleCon {
   width: 100%;
   height: 5%;
   border: 1px solid silver;
@@ -69,7 +69,7 @@
           align-items: center;
 }
 
-.main-container .main-screen #myModal-recycle #mydivheader #left-icon, .main-container .main-screen #myModal-project #mydivheader #left-icon, .main-container .main-screen #myModal-player #mydivheader #left-icon {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon, .main-container .main-screen #myModal-project #myModal-recycleCon #left-icon, .main-container .main-screen #myModal-player #myModal-recycleCon #left-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,25 +78,25 @@
           align-items: center;
 }
 
-.main-container .main-screen #myModal-recycle #mydivheader #left-icon img, .main-container .main-screen #myModal-project #mydivheader #left-icon img, .main-container .main-screen #myModal-player #mydivheader #left-icon img {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon img, .main-container .main-screen #myModal-project #myModal-recycleCon #left-icon img, .main-container .main-screen #myModal-player #myModal-recycleCon #left-icon img {
   padding: 5px;
   width: 25%;
 }
 
-.main-container .main-screen #myModal-recycle #mydivheader #left-icon p, .main-container .main-screen #myModal-project #mydivheader #left-icon p, .main-container .main-screen #myModal-player #mydivheader #left-icon p {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon p, .main-container .main-screen #myModal-project #myModal-recycleCon #left-icon p, .main-container .main-screen #myModal-player #myModal-recycleCon #left-icon p {
   color: white;
 }
 
-.main-container .main-screen #myModal-recycle #mydivheader #right-icon, .main-container .main-screen #myModal-project #mydivheader #right-icon, .main-container .main-screen #myModal-player #mydivheader #right-icon {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon #right-icon, .main-container .main-screen #myModal-project #myModal-recycleCon #right-icon, .main-container .main-screen #myModal-player #myModal-recycleCon #right-icon {
   z-index: 11;
   padding: 4px;
 }
 
-.main-container .main-screen #myModal-recycle #mydivheader #right-icon button, .main-container .main-screen #myModal-project #mydivheader #right-icon button, .main-container .main-screen #myModal-player #mydivheader #right-icon button {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon #right-icon button, .main-container .main-screen #myModal-project #myModal-recycleCon #right-icon button, .main-container .main-screen #myModal-player #myModal-recycleCon #right-icon button {
   width: 20px;
 }
 
-.main-container .main-screen #myModal-recycle #mydivheader #right-icon button p, .main-container .main-screen #myModal-project #mydivheader #right-icon button p, .main-container .main-screen #myModal-player #mydivheader #right-icon button p {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon #right-icon button p, .main-container .main-screen #myModal-project #myModal-recycleCon #right-icon button p, .main-container .main-screen #myModal-player #myModal-recycleCon #right-icon button p {
   font-weight: bold;
 }
 
@@ -159,8 +159,53 @@
   left: 100px;
 }
 
-.main-container .main-screen #myModal-project #mydivheader {
+.main-container .main-screen #myModal-project #myModal-projectCon {
+  width: 100%;
   height: 3%;
+  border: 1px solid silver;
+  cursor: move;
+  z-index: 10;
+  background-color: #0202a8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .main-screen #myModal-project #myModal-projectCon #left-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .main-screen #myModal-project #myModal-projectCon #left-icon img {
+  padding: 5px;
+  width: 25%;
+}
+
+.main-container .main-screen #myModal-project #myModal-projectCon #left-icon p {
+  color: white;
+}
+
+.main-container .main-screen #myModal-project #myModal-projectCon #right-icon {
+  z-index: 11;
+  padding: 4px;
+}
+
+.main-container .main-screen #myModal-project #myModal-projectCon #right-icon button {
+  width: 20px;
+}
+
+.main-container .main-screen #myModal-project #myModal-projectCon #right-icon button p {
+  font-weight: bold;
 }
 
 .main-container .main-screen #myModal-project #modal-main {
@@ -411,7 +456,7 @@
   background-color: silver;
 }
 
-.main-container .main-screen #myModal-cv #mydivheader {
+.main-container .main-screen #myModal-cv #myModal-cvCon {
   width: 100%;
   height: 3%;
   border: 1px solid silver;
@@ -429,7 +474,7 @@
           align-items: center;
 }
 
-.main-container .main-screen #myModal-cv #mydivheader #left-icon {
+.main-container .main-screen #myModal-cv #myModal-cvCon #left-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,25 +483,25 @@
           align-items: center;
 }
 
-.main-container .main-screen #myModal-cv #mydivheader #left-icon img {
+.main-container .main-screen #myModal-cv #myModal-cvCon #left-icon img {
   padding: 5px;
   width: 25%;
 }
 
-.main-container .main-screen #myModal-cv #mydivheader #left-icon p {
+.main-container .main-screen #myModal-cv #myModal-cvCon #left-icon p {
   color: white;
 }
 
-.main-container .main-screen #myModal-cv #mydivheader #right-icon {
+.main-container .main-screen #myModal-cv #myModal-cvCon #right-icon {
   z-index: 11;
   padding: 4px;
 }
 
-.main-container .main-screen #myModal-cv #mydivheader #right-icon button {
+.main-container .main-screen #myModal-cv #myModal-cvCon #right-icon button {
   width: 20px;
 }
 
-.main-container .main-screen #myModal-cv #mydivheader #right-icon button p {
+.main-container .main-screen #myModal-cv #myModal-cvCon #right-icon button p {
   font-weight: bold;
 }
 
@@ -519,8 +564,62 @@
   bottom: 100px;
 }
 
+.main-container .main-screen #myModal-player #myModal-playerCon {
+  width: 100%;
+  height: 5%;
+  border: 1px solid silver;
+  cursor: move;
+  z-index: 10;
+  background-color: #0202a8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .main-screen #myModal-player #myModal-playerCon #left-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .main-screen #myModal-player #myModal-playerCon #left-icon img {
+  padding: 5px;
+  width: 25%;
+}
+
+.main-container .main-screen #myModal-player #myModal-playerCon #left-icon p {
+  color: white;
+}
+
+.main-container .main-screen #myModal-player #myModal-playerCon #right-icon {
+  z-index: 11;
+  padding: 4px;
+}
+
+.main-container .main-screen #myModal-player #myModal-playerCon #right-icon button {
+  width: 20px;
+}
+
+.main-container .main-screen #myModal-player #myModal-playerCon #right-icon button p {
+  font-weight: bold;
+}
+
 .main-container .main-screen #myModal-player #modal-main {
   background-color: silver;
+}
+
+.main-container .main-screen #myModal-player #modal-main input {
+  width: 100%;
+  z-index: 1000;
 }
 
 .main-container .main-screen #myModal-player #modal-main audio {

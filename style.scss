@@ -52,7 +52,7 @@
       width: 50%;
       height: 50%;
       background-color: rgb(192,192,192);
-      #mydivheader {
+      #myModal-recycleCon {
         width: 100%;
         height: 5%;
         border: 1px solid rgb(192,192,192);
@@ -126,14 +126,43 @@
         }
       }
     }
-
+/////////modal project////////////
     #myModal-project {
       @extend #myModal-recycle;
       height: 80%;
       top: 100px;
       left: 100px;
-      #mydivheader {
+      #myModal-projectCon {
+        width: 100%;
         height: 3%;
+        border: 1px solid rgb(192,192,192);
+        cursor: move;
+        z-index: 10;
+        background-color: rgb(2,2,168);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #left-icon{
+          display: flex;
+          align-items: center;
+          img {
+            padding: 5px;
+            width: 25%;
+          }
+          p {
+            color: white;
+          }
+        }
+        #right-icon{
+          z-index: 11;
+          padding: 4px;
+          button {
+            width: 20px;
+            p {
+              font-weight: bold;
+            }
+          }
+        }
       }
       #modal-main{
         height: 91%;
@@ -313,7 +342,7 @@
       }
     }
     
-    // modal-cv
+    // modal-cv//////////
     #myModal-cv {
       display: none;
       position: absolute;
@@ -323,7 +352,7 @@
       width: 50%;
       height: 80%;
       background-color: rgb(192,192,192);
-      #mydivheader {
+      #myModal-cvCon {
         width: 100%;
         height: 3%;
         border: 1px solid rgb(192,192,192);
@@ -405,8 +434,44 @@
       display: block;
       top: 100px;
       bottom: 100px;
+      #myModal-playerCon {
+        width: 100%;
+        height: 5%;
+        border: 1px solid rgb(192,192,192);
+        cursor: move;
+        z-index: 10;
+        background-color: rgb(2,2,168);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #left-icon{
+          display: flex;
+          align-items: center;
+          img {
+            padding: 5px;
+            width: 25%;
+          }
+          p {
+            color: white;
+          }
+        }
+        #right-icon{
+          z-index: 11;
+          padding: 4px;
+          button {
+            width: 20px;
+            p {
+              font-weight: bold;
+            }
+          }
+        }
+      }
       #modal-main{
         background-color: rgb(192,192,192);
+        input{
+          width: 100%;
+          z-index: 1000;
+        }
         audio {
           display: none;
         }

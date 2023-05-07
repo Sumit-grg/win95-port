@@ -19,9 +19,9 @@
 
   function dragElementProj(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-    if (document.getElementById(elmnt.id + "header")) {
+    if (document.getElementById(elmnt.id + "Con")) {
       /* if present, the header is where you move the DIV from:*/
-      document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+      document.getElementById(elmnt.id + "Con").onmousedown = dragMouseDown;
     } else {
       /* otherwise, move the DIV from anywhere inside the DIV:*/
       elmnt.onmousedown = dragMouseDown;
@@ -78,16 +78,17 @@ closebtnRec.addEventListener("click", ()=> {
 
   //Make the DIV element draggagle:
   dragElementRec(document.getElementById("myModal-recycle"));
-
+  
   function dragElementRec(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-    if (document.getElementById(elmnt.id + "header")) {
+    if (document.getElementById(elmnt.id + "Con")) {
       /* if present, the header is where you move the DIV from:*/
-      document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+      document.getElementById(elmnt.id + "Con").onmousedown = dragMouseDown;
     } else {
       /* otherwise, move the DIV from anywhere inside the DIV:*/
       elmnt.onmousedown = dragMouseDown;
     }
+    
 
     function dragMouseDown(e) {
       e = e || window.event;
@@ -142,9 +143,9 @@ closebtnCV.addEventListener("click", ()=> {
 
   function dragElementCV(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-    if (document.getElementById(elmnt.id + "header")) {
+    if (document.getElementById(elmnt.id + "Con")) {
       /* if present, the header is where you move the DIV from:*/
-      document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+      document.getElementById(elmnt.id + "Con").onmousedown = dragMouseDown;
     } else {
       /* otherwise, move the DIV from anywhere inside the DIV:*/
       elmnt.onmousedown = dragMouseDown;
@@ -203,9 +204,9 @@ closebtnCV.addEventListener("click", ()=> {
   
     function dragElementPlayer(elmnt) {
       var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-      if (document.getElementById(elmnt.id + "header")) {
+      if (document.getElementById(elmnt.id + "Con")) {
         /* if present, the header is where you move the DIV from:*/
-        document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+        document.getElementById(elmnt.id + "Con").onmousedown = dragMouseDown;
       } else {
         /* otherwise, move the DIV from anywhere inside the DIV:*/
         elmnt.onmousedown = dragMouseDown;

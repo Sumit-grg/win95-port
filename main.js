@@ -63,13 +63,17 @@ const mediaPlayer = document.getElementById("media-icon");
 
 const neverGonna = document.getElementById("myAudio");
 
+const audioSlider = document.getElementById("audioSlider");
+
 
 
 const audioTimeLeft = () => {
   let x = Math.floor(neverGonna.currentTime);
   (x < 10) ? x= `0${x}` : "";
   audioTime.innerHTML = `00:${x} / 01:00`;
+  // audioSlider.setAttribute("value", x);
 }
+
 const audioTimeInterval = () => {
   setInterval(()=>{
     audioTimeLeft();
@@ -123,4 +127,5 @@ closebtnPlayer.addEventListener("click", ()=> {
   neverGonna.pause();
 
 })
+
 

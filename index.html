@@ -46,7 +46,7 @@
 
       <!-- modal project -->
       <div id="myModal-project">
-        <div id="mydivheader">
+        <div id="myModal-projectCon">
           <div id="left-icon">
             <img src="./Asset/img/folder.png" alt="">
             <p>My Projects</p>
@@ -251,7 +251,7 @@
 
       <!-- modal recycle bin -->
       <div id="myModal-recycle">
-        <div id="mydivheader">
+        <div id="myModal-recycleCon">
           <div id="left-icon">
             <img src="./Asset/img/recycleBin.png" alt="">
             <p>Recycle Bin</p>
@@ -272,7 +272,7 @@
       </div>
       <!-- modal CV -->
       <div id="myModal-cv">
-        <div id="mydivheader">
+        <div id="myModal-cvCon">
           <div id="left-icon">
             <img src="./Asset/img/cv-icon.ico" alt="">
             <p>CV</p>
@@ -297,7 +297,7 @@
       </div>
       <!-- model media player÷÷ -->
       <div id="myModal-player">
-        <div id="mydivheader">
+        <div id="myModal-playerCon">
           <div id="left-icon">
             <img src="./Asset/img/media-player.png" alt="">
             <p>Media Player</p>
@@ -312,13 +312,14 @@
           <p><span>V</span>iew</p>
         </div>
         <div id="modal-main">
-          <audio id="myAudio" loop>
+          <audio id="myAudio" controls loop>
             <source src="./Asset/vid/nevergonna.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
           </audio>
           <div id="vid-gif">
             <img src="./Asset/vid/rick-gif.gif" alt="">
           </div>
+          <input type="range" min="0" max="60" value="0" id="audioSlider"> 
           <div id="control">
             <div id="audio-cont">
               <img id="playbtn" src="./Asset/img/play.ico" alt="">
