@@ -1,3 +1,5 @@
+const { setInterval } = require("timers/promises");
+
 //time -bottom right 
 const timeNow = document.getElementById("timeNow");
 
@@ -48,4 +50,52 @@ personalTab.addEventListener("click", ()=>{
   border: 2px solid rgb(79, 79, 79);font-weight: inherit`;
   modalMain.style.cssText = `border-left:2px solid black; border-bottom:2px solid black; border-right: 2px solid black`;
   objNum.innerHTML = '6 object(s)';
+
 })
+
+///////////media player//////////
+const playBtn = document.getElementById("playbtn");
+const pauseBtn = document.getElementById("pausebtn");
+const stopBtn = document.getElementById("stopbtn");
+const noVolBtn = document.getElementById("novolbtn");
+const volBtn = document.getElementById("volbtn");
+
+const mediaPlayer = document.getElementById("media-icon");
+
+const neverGonna = document.getElementById("myAudio");
+
+
+mediaPlayer.addEventListener("click", ()=> {
+  neverGonna.play();
+  console.log("click");
+})
+
+playBtn.addEventListener("click", ()=>{
+  neverGonna.play();
+})
+
+pauseBtn.addEventListener("click", ()=>{
+  neverGonna.pause();
+})
+
+// stopBtn.addEventListener("click", ()=>{
+//   neverGonna.stop();
+// })
+
+noVolBtn.addEventListener("click", ()=> {
+  let x = neverGonna.volume;
+  if (x > 0){
+    const y = x - 0.1;
+    x = y.toFixed(1);
+    neverGonna.volume = x;
+  }
+});
+volBtn.addEventListener("click", ()=> {
+  let x = neverGonna.volume;
+  if (x < 1){
+    const z = parseFloat(x) + 0.1;
+    x = z.toFixed(1);
+    neverGonna.volume = x;
+  }
+})
+

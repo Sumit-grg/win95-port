@@ -399,7 +399,70 @@
 
     }
 
-
+    // model media player
+    #myModal-player {
+      @extend #myModal-recycle;
+      display: block;
+      top: 100px;
+      bottom: 100px;
+      #modal-main{
+        background-color: rgb(192,192,192);
+        audio {
+          display: none;
+        }
+        #vid-gif{
+          height: 80%;
+          background-color: black;
+          img {
+            margin: auto 0;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+        #control {
+          height: 20%;
+          width: 90%;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          background-color: rgb(192,192,192);
+          // border: 2px solid red;
+          align-items: center;
+          #audio-cont {
+            display: flex;
+            img {
+              // @include border-color;
+              width: 50px;
+              margin: 4px 10px;
+              border: 2px double rgb(171, 169, 169);
+              border-radius: 5px;
+              padding: 4px;
+              &:hover{
+                cursor: pointer;
+                background-color: rgb(152, 151, 151);
+              }
+            }
+            img:first-child{
+              @include border-color;
+            }
+          }
+        }
+        #audio-time{
+          border: 2px solid rgb(106, 106, 106);
+          padding: 10px;
+          background-color: black;
+          p{
+            color: green;
+          }
+        }
+      }
+      #modal-bottom{
+        p {
+          font-size: small;
+        }
+      }
+    }
   }
 
   .bottom-bar {
