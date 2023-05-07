@@ -26,7 +26,7 @@
 }
 
 .main-container .main-screen .icon {
-  padding: 2px;
+  padding: 8px;
   margin: 20px;
   display: inline-block;
   text-align: center;
@@ -34,13 +34,15 @@
 
 .main-container .main-screen .icon:hover {
   cursor: pointer;
+  background-color: #8f8f8f;
+  border-radius: 3px;
 }
 
 .main-container .main-screen #cv-icon img {
   width: 40%;
 }
 
-.main-container .main-screen #myModal-recycle, .main-container .main-screen #myModal-project, .main-container .main-screen #myModal-player {
+.main-container .main-screen #myModal-recycle, .main-container .main-screen #myModal-project, .main-container .main-screen #myModal-player, .main-container .main-screen #myModal-explore {
   display: none;
   position: absolute;
   z-index: 9;
@@ -49,9 +51,11 @@
   width: 50%;
   height: 50%;
   background-color: silver;
+  top: 100px;
+  left: 100px;
 }
 
-.main-container .main-screen #myModal-recycle #myModal-recycleCon, .main-container .main-screen #myModal-project #myModal-recycleCon, .main-container .main-screen #myModal-player #myModal-recycleCon {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon, .main-container .main-screen #myModal-project #myModal-recycleCon, .main-container .main-screen #myModal-player #myModal-recycleCon, .main-container .main-screen #myModal-explore #myModal-recycleCon {
   width: 100%;
   height: 5%;
   border: 1px solid silver;
@@ -69,7 +73,7 @@
           align-items: center;
 }
 
-.main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon, .main-container .main-screen #myModal-project #myModal-recycleCon #left-icon, .main-container .main-screen #myModal-player #myModal-recycleCon #left-icon {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon, .main-container .main-screen #myModal-project #myModal-recycleCon #left-icon, .main-container .main-screen #myModal-player #myModal-recycleCon #left-icon, .main-container .main-screen #myModal-explore #myModal-recycleCon #left-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,52 +82,51 @@
           align-items: center;
 }
 
-.main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon img, .main-container .main-screen #myModal-project #myModal-recycleCon #left-icon img, .main-container .main-screen #myModal-player #myModal-recycleCon #left-icon img {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon img, .main-container .main-screen #myModal-project #myModal-recycleCon #left-icon img, .main-container .main-screen #myModal-player #myModal-recycleCon #left-icon img, .main-container .main-screen #myModal-explore #myModal-recycleCon #left-icon img {
   padding: 5px;
   width: 25%;
 }
 
-.main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon p, .main-container .main-screen #myModal-project #myModal-recycleCon #left-icon p, .main-container .main-screen #myModal-player #myModal-recycleCon #left-icon p {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon p, .main-container .main-screen #myModal-project #myModal-recycleCon #left-icon p, .main-container .main-screen #myModal-player #myModal-recycleCon #left-icon p, .main-container .main-screen #myModal-explore #myModal-recycleCon #left-icon p {
   color: white;
 }
 
-.main-container .main-screen #myModal-recycle #myModal-recycleCon #right-icon, .main-container .main-screen #myModal-project #myModal-recycleCon #right-icon, .main-container .main-screen #myModal-player #myModal-recycleCon #right-icon {
-  z-index: 11;
+.main-container .main-screen #myModal-recycle #myModal-recycleCon #right-icon, .main-container .main-screen #myModal-project #myModal-recycleCon #right-icon, .main-container .main-screen #myModal-player #myModal-recycleCon #right-icon, .main-container .main-screen #myModal-explore #myModal-recycleCon #right-icon {
   padding: 4px;
 }
 
-.main-container .main-screen #myModal-recycle #myModal-recycleCon #right-icon button, .main-container .main-screen #myModal-project #myModal-recycleCon #right-icon button, .main-container .main-screen #myModal-player #myModal-recycleCon #right-icon button {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon #right-icon button, .main-container .main-screen #myModal-project #myModal-recycleCon #right-icon button, .main-container .main-screen #myModal-player #myModal-recycleCon #right-icon button, .main-container .main-screen #myModal-explore #myModal-recycleCon #right-icon button {
   width: 20px;
 }
 
-.main-container .main-screen #myModal-recycle #myModal-recycleCon #right-icon button p, .main-container .main-screen #myModal-project #myModal-recycleCon #right-icon button p, .main-container .main-screen #myModal-player #myModal-recycleCon #right-icon button p {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon #right-icon button p, .main-container .main-screen #myModal-project #myModal-recycleCon #right-icon button p, .main-container .main-screen #myModal-player #myModal-recycleCon #right-icon button p, .main-container .main-screen #myModal-explore #myModal-recycleCon #right-icon button p {
   font-weight: bold;
 }
 
-.main-container .main-screen #myModal-recycle #modal-menu, .main-container .main-screen #myModal-project #modal-menu, .main-container .main-screen #myModal-player #modal-menu {
+.main-container .main-screen #myModal-recycle #modal-menu, .main-container .main-screen #myModal-project #modal-menu, .main-container .main-screen #myModal-player #modal-menu, .main-container .main-screen #myModal-explore #modal-menu {
   background-color: silver;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main-container .main-screen #myModal-recycle #modal-menu p, .main-container .main-screen #myModal-project #modal-menu p, .main-container .main-screen #myModal-player #modal-menu p {
+.main-container .main-screen #myModal-recycle #modal-menu p, .main-container .main-screen #myModal-project #modal-menu p, .main-container .main-screen #myModal-player #modal-menu p, .main-container .main-screen #myModal-explore #modal-menu p {
   color: black;
   padding: 4px;
   margin: 0 4px;
 }
 
-.main-container .main-screen #myModal-recycle #modal-menu p span, .main-container .main-screen #myModal-project #modal-menu p span, .main-container .main-screen #myModal-player #modal-menu p span {
+.main-container .main-screen #myModal-recycle #modal-menu p span, .main-container .main-screen #myModal-project #modal-menu p span, .main-container .main-screen #myModal-player #modal-menu p span, .main-container .main-screen #myModal-explore #modal-menu p span {
   text-decoration: underline;
 }
 
-.main-container .main-screen #myModal-recycle #modal-menu p:hover, .main-container .main-screen #myModal-project #modal-menu p:hover, .main-container .main-screen #myModal-player #modal-menu p:hover {
+.main-container .main-screen #myModal-recycle #modal-menu p:hover, .main-container .main-screen #myModal-project #modal-menu p:hover, .main-container .main-screen #myModal-player #modal-menu p:hover, .main-container .main-screen #myModal-explore #modal-menu p:hover {
   cursor: pointer;
   background-color: #0202a8;
   color: white;
 }
 
-.main-container .main-screen #myModal-recycle #modal-main, .main-container .main-screen #myModal-project #modal-main, .main-container .main-screen #myModal-player #modal-main {
+.main-container .main-screen #myModal-recycle #modal-main, .main-container .main-screen #myModal-project #modal-main, .main-container .main-screen #myModal-player #modal-main, .main-container .main-screen #myModal-explore #modal-main {
   background-color: white;
   height: 85%;
   width: 99%;
@@ -132,9 +135,29 @@
   border-right: 2px solid #e2dfdf;
   border-bottom: 2px solid #e2dfdf;
   border-left: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.main-container .main-screen #myModal-recycle #modal-bottom, .main-container .main-screen #myModal-project #modal-bottom, .main-container .main-screen #myModal-player #modal-bottom {
+.main-container .main-screen #myModal-recycle #modal-main .bin-folder, .main-container .main-screen #myModal-project #modal-main .bin-folder, .main-container .main-screen #myModal-player #modal-main .bin-folder, .main-container .main-screen #myModal-explore #modal-main .bin-folder {
+  padding: 4px;
+  margin: 6px;
+  height: 15%;
+}
+
+.main-container .main-screen #myModal-recycle #modal-main .bin-folder p, .main-container .main-screen #myModal-project #modal-main .bin-folder p, .main-container .main-screen #myModal-player #modal-main .bin-folder p, .main-container .main-screen #myModal-explore #modal-main .bin-folder p {
+  color: black;
+}
+
+.main-container .main-screen #myModal-recycle #modal-main .bin-folder:hover, .main-container .main-screen #myModal-project #modal-main .bin-folder:hover, .main-container .main-screen #myModal-player #modal-main .bin-folder:hover, .main-container .main-screen #myModal-explore #modal-main .bin-folder:hover {
+  cursor: pointer;
+  background-color: #c3c3c6;
+}
+
+.main-container .main-screen #myModal-recycle #modal-bottom, .main-container .main-screen #myModal-project #modal-bottom, .main-container .main-screen #myModal-player #modal-bottom, .main-container .main-screen #myModal-explore #modal-bottom {
   color: black;
   background-color: silver;
   width: 99%;
@@ -146,7 +169,7 @@
   border-left: 2px solid #2b2a2a;
 }
 
-.main-container .main-screen #myModal-recycle #modal-bottom p, .main-container .main-screen #myModal-project #modal-bottom p, .main-container .main-screen #myModal-player #modal-bottom p {
+.main-container .main-screen #myModal-recycle #modal-bottom p, .main-container .main-screen #myModal-project #modal-bottom p, .main-container .main-screen #myModal-player #modal-bottom p, .main-container .main-screen #myModal-explore #modal-bottom p {
   margin: 0 6px;
   width: 50%;
   text-align: left;
@@ -154,6 +177,7 @@
 }
 
 .main-container .main-screen #myModal-project {
+  display: none;
   height: 80%;
   top: 100px;
   left: 100px;
@@ -212,6 +236,7 @@
   height: 91%;
   width: 99%;
   overflow: scroll;
+  display: block;
 }
 
 .main-container .main-screen #myModal-project #modal-main #pro-tab {
@@ -529,6 +554,7 @@
 }
 
 .main-container .main-screen #myModal-cv #modal-main {
+  display: block;
   border: 2px solid red;
   background-color: white;
   height: 91%;
@@ -559,7 +585,7 @@
 }
 
 .main-container .main-screen #myModal-player {
-  display: block;
+  display: none;
   top: 100px;
   bottom: 100px;
 }
@@ -614,12 +640,14 @@
 }
 
 .main-container .main-screen #myModal-player #modal-main {
+  display: block;
   background-color: silver;
 }
 
 .main-container .main-screen #myModal-player #modal-main input {
   width: 100%;
-  z-index: 1000;
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
 }
 
 .main-container .main-screen #myModal-player #modal-main audio {
@@ -694,6 +722,120 @@
 .main-container .main-screen #myModal-player #modal-bottom p {
   width: 100%;
   font-size: small;
+}
+
+.main-container .main-screen #myModal-explore {
+  display: block;
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+  border: 2px solid silver;
+  width: 50%;
+  height: 50%;
+  background-color: silver;
+}
+
+.main-container .main-screen #myModal-explore #myModal-exploreCon {
+  width: 100%;
+  height: 5%;
+  border: 1px solid silver;
+  cursor: move;
+  z-index: 10;
+  background-color: #0202a8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .main-screen #myModal-explore #myModal-exploreCon #left-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .main-screen #myModal-explore #myModal-exploreCon #left-icon img {
+  padding: 5px;
+  width: 20%;
+}
+
+.main-container .main-screen #myModal-explore #myModal-exploreCon #left-icon p {
+  color: white;
+}
+
+.main-container .main-screen #myModal-explore #myModal-exploreCon #right-iconExplore {
+  z-index: 11;
+  padding: 4px;
+}
+
+.main-container .main-screen #myModal-explore #myModal-exploreCon #right-iconExplore button {
+  width: 20px;
+}
+
+.main-container .main-screen #myModal-explore #myModal-exploreCon #right-iconExplore button p {
+  font-weight: bold;
+}
+
+.main-container .main-screen #myModal-explore #modal-menu {
+  background-color: silver;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container .main-screen #myModal-explore #modal-menu p {
+  color: black;
+  padding: 4px;
+  margin: 0 4px;
+}
+
+.main-container .main-screen #myModal-explore #modal-menu p span {
+  text-decoration: underline;
+}
+
+.main-container .main-screen #myModal-explore #modal-menu p:hover {
+  cursor: pointer;
+  background-color: #0202a8;
+  color: white;
+}
+
+.main-container .main-screen #myModal-explore #modal-main {
+  display: block;
+  border: 2px solid red;
+  background-color: white;
+  height: 91%;
+  width: 99%;
+  margin: 0 auto;
+  border-top: 2px solid black;
+  border-right: 2px solid #e2dfdf;
+  border-bottom: 2px solid #e2dfdf;
+  border-left: 2px solid black;
+}
+
+.main-container .main-screen #myModal-explore #modal-bottom {
+  color: black;
+  background-color: silver;
+  width: 99%;
+  margin: 0 auto;
+  margin-top: 4px;
+  border-top: 2px solid #2b2a2a;
+  border-right: 2px solid #e2dfdf;
+  border-bottom: 2px solid #e2dfdf;
+  border-left: 2px solid #2b2a2a;
+}
+
+.main-container .main-screen #myModal-explore #modal-bottom p {
+  margin: 0 6px;
+  width: 50%;
+  text-align: left;
 }
 
 .main-container .bottom-bar {

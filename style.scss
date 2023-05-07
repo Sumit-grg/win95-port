@@ -28,12 +28,14 @@
     // display: flex;
     // flex-direction: column;
     .icon{
-      padding: 2px;
+      padding: 8px;
       margin: 20px;
       display: inline-block;
       text-align: center;
       &:hover{
         cursor: pointer;
+        background-color: rgb(143, 143, 143);
+        border-radius: 3px;
       }
     }
     #cv-icon{
@@ -52,6 +54,8 @@
       width: 50%;
       height: 50%;
       background-color: rgb(192,192,192);
+      top: 100px;
+      left: 100px;
       #myModal-recycleCon {
         width: 100%;
         height: 5%;
@@ -74,7 +78,6 @@
           }
         }
         #right-icon{
-          z-index: 11;
           padding: 4px;
           button {
             width: 20px;
@@ -107,6 +110,21 @@
         width: 99%;
         margin: 0 auto;
         @include border-color;
+        display: flex;
+        flex-wrap: wrap;
+        .bin-folder {
+          padding: 4px;
+          margin: 6px;
+          height: 15%;
+
+          p{
+            color: black;
+          }
+          &:hover {
+            cursor: pointer;
+            background-color: rgb(195, 195, 198);
+          }
+        }
       }
       #modal-bottom{
         color: black;
@@ -129,6 +147,7 @@
 /////////modal project////////////
     #myModal-project {
       @extend #myModal-recycle;
+      display: none;
       height: 80%;
       top: 100px;
       left: 100px;
@@ -168,6 +187,7 @@
         height: 91%;
         width: 99%;
         overflow: scroll;
+        display: block;
         #pro-tab {
           display: flex;
           position: sticky;
@@ -402,6 +422,7 @@
         }
       }
       #modal-main{
+        display: block;
         border: 2px solid red;
         background-color: white;
         height: 91%;
@@ -431,7 +452,7 @@
     // model media player
     #myModal-player {
       @extend #myModal-recycle;
-      display: block;
+      display: none;
       top: 100px;
       bottom: 100px;
       #myModal-playerCon {
@@ -467,10 +488,11 @@
         }
       }
       #modal-main{
+        display: block;
         background-color: rgb(192,192,192);
         input{
           width: 100%;
-          z-index: 1000;
+          transition: 0.1s ease;
         }
         audio {
           display: none;
@@ -529,7 +551,97 @@
         }
       }
     }
+
+
+    ////model internet explore////////
+    #myModal-explore{
+      @extend #myModal-recycle;
+      display: block;
+      position: absolute;
+      z-index: 9;
+      text-align: center;
+      border: 2px solid rgb(192,192,192);
+      width: 50%;
+      height: 50%;
+      background-color: rgb(192,192,192);
+      #myModal-exploreCon {
+        width: 100%;
+        height: 5%;
+        border: 1px solid rgb(192,192,192);
+        cursor: move;
+        z-index: 10;
+        background-color: rgb(2,2,168);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #left-icon{
+          display: flex;
+          align-items: center;
+          img {
+            padding: 5px;
+            width: 20%;
+          }
+          p {
+            color: white;
+          }
+        }
+        #right-iconExplore{
+          z-index: 11;
+          padding: 4px;
+          button {
+            width: 20px;
+            p {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      #modal-menu{
+        background-color: rgb(192,192,192);
+        display: flex;
+        p{
+          color: black;
+          padding: 4px;
+          margin: 0 4px;
+          span {
+            text-decoration: underline;
+          }
+          &:hover{
+            cursor: pointer;
+            background-color: rgb(2,2,168);
+            color: white;
+          }
+        }
+      }
+      #modal-main{
+        display: block;
+        border: 2px solid red;
+        background-color: white;
+        height: 91%;
+        width: 99%;
+        margin: 0 auto;
+        @include border-color;
+      }
+      #modal-bottom{
+        color: black;
+        background-color: rgb(192,192,192);
+        width: 99%;
+        margin: 0 auto;
+        margin-top: 4px;
+        border-top: 2px solid rgb(43, 42, 42);
+        border-right: 2px solid rgb(226, 223, 223);
+        border-bottom: 2px solid rgb(226, 223, 223);
+        border-left: 2px solid rgb(43, 42, 42);
+        p {
+          margin: 0 6px;
+          width: 50%;
+          text-align: left;
+        }
+      }
+
+    }
   }
+
 
   .bottom-bar {
     border-top: 2px solid white;

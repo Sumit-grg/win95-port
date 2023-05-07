@@ -69,26 +69,26 @@ const audioSlider = document.getElementById("audioSlider");
 
 const audioTimeLeft = () => {
   let x = Math.floor(neverGonna.currentTime);
-  (x < 10) ? x= `0${x}` : "";
-  audioTime.innerHTML = `00:${x} / 01:00`;
-  // audioSlider.setAttribute("value", x);
+  audioSlider.setAttribute("value", x);
+  let y = audioSlider.value;
+  (y < 10) ? y= `0${y}` : "";
+  audioTime.innerHTML = `00:${y} / 01:00`;
+
 }
 
 const audioTimeInterval = () => {
   setInterval(()=>{
     audioTimeLeft();
-    console.log("interval chalyo")
   }, 1000)
 }
 
 mediaPlayer.addEventListener("click", ()=> {
   neverGonna.play();
-  audioTimeInterval();
 })
 
 playBtn.addEventListener("click", ()=>{
+  audioTimeInterval();
   neverGonna.play();
-  console.log("click");
 })
 
 pauseBtn.addEventListener("click", ()=>{
@@ -127,5 +127,7 @@ closebtnPlayer.addEventListener("click", ()=> {
   neverGonna.pause();
 
 })
+
+
 
 
