@@ -9,7 +9,10 @@
   border-bottom: 2px solid rgb(226, 223, 223);
   border-left: 2px solid black;
 }
+body{
+  background-color: rgb(0,128,130);
 
+}
 .main-container {
   width: 100%;
   height: 100%;
@@ -18,11 +21,11 @@
     top: 20%;
     right: 10%;
     opacity: 0.3;
+    z-index: -100;
   }
   .main-screen {
     width: 100%;
-    height: 97%;
-    background-color: rgb(0,128,130);
+    height: 96%;
     color: white;
     padding: 20px;
     // display: flex;
@@ -41,6 +44,16 @@
     #cv-icon{
       img{
         width: 40%;
+      }
+    }
+    #sf-icon{
+      position: absolute;
+      top: 25px;
+      width: 9%;
+      // border: 2px solid red;
+      img{
+        opacity: 0.9;
+        width: 100%;
       }
     }
     
@@ -449,10 +462,9 @@
 
     }
 
-    // model media player
+    // model media player///////////////
     #myModal-player {
       @extend #myModal-recycle;
-      display: none;
       top: 100px;
       bottom: 100px;
       #myModal-playerCon {
@@ -664,7 +676,7 @@
     }
 ////////pc modal//////////
     #myModal-pc{
-      display: block;
+      display: none;
       position: absolute;
       top: 100px;
       left: 100px;
@@ -763,17 +775,112 @@
       }
     }
 
+    ////////modal street frigther /////////////
+    #myModal-sf {
+      display: block;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      z-index: 9;
+      text-align: center;
+      border: 2px solid rgb(192,192,192);
+      width: 70%;
+      height: 70%;
+      background-color: rgb(192,192,192);
+      #myModal-sfCon {
+        width: 100%;
+        height: 4%;
+        border: 1px solid rgb(192,192,192);
+        cursor: move;
+        z-index: 10;
+        background-color: rgb(2,2,168);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #left-icon{
+          display: flex;
+          align-items: center;
+          img {
+            margin-right: 8px;
+            padding: 5px;
+            width: 4%;
+          }
+          p {
+            color: white;
+          }
+        }
+        #right-iconSF{
+          z-index: 11;
+          padding: 4px;
+          button {
+            width: 20px;
+            p {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      #modal-menu{
+        background-color: rgb(192,192,192);
+        display: flex;
+        p{
+          color: black;
+          padding: 4px;
+          margin: 0 4px;
+          span {
+            text-decoration: underline;
+          }
+          &:hover{
+            cursor: pointer;
+            background-color: rgb(2,2,168);
+            color: white;
+          }
+        }
+      }
+      #modal-main{
+        display: block;
+        background-color: white;
+        height: 89%;
+        width: 99%;
+        margin: 0 auto;
+        @include border-color;
+        iframe {
+          border: 2px solid red;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      #modal-bottom{
+        color: black;
+        background-color: rgb(192,192,192);
+        width: 99%;
+        margin: 0 auto;
+        margin-top: 4px;
+        border-top: 2px solid rgb(43, 42, 42);
+        border-right: 2px solid rgb(226, 223, 223);
+        border-bottom: 2px solid rgb(226, 223, 223);
+        border-left: 2px solid rgb(43, 42, 42);
+        p {
+          margin: 0 6px;
+          width: 50%;
+          text-align: left;
+        }
+      }
+
+    }
+
   }
 
 
   .bottom-bar {
     border-top: 2px solid white;
     background-color: rgb(192,192,192);
-    height: 3%;
+    height: 4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     #start-btn {
+      margin-left: 2px;
       button {
         border: 2px solid red;
         display: flex;
@@ -782,15 +889,24 @@
         border-left: 2px solid white;
         border-right: 2px solid rgb(128, 127, 127);
         border-bottom: 2px solid rgb(128, 127, 127);
+        p, img{
+          margin: 0 6px; 
+          font-weight: bold;
+        }
       }
     }
     #right-con {
+      margin-right: 2px;
       border-right: 2px solid white;
       border-bottom: 2px solid white;
       border-top: 2px solid rgb(128, 127, 127);
       border-left: 2px solid rgb(128, 127, 127);
       display: flex;
       align-items: center;
+      img, p{
+        margin: 0 3px;
+        font-weight: bold;
+      }
     }
   }
 }
