@@ -1,5 +1,3 @@
-const { setInterval } = require("timers/promises");
-
 //time -bottom right 
 const timeNow = document.getElementById("timeNow");
 
@@ -16,14 +14,13 @@ setInterval(() => {
 
 const clientTab = document.getElementById('client-tab');
 const personalTab = document.getElementById('personal-tab');
-         ///display
+///display
 const personalProj = document.getElementById("personal-pro");
 const clientProj = document.getElementById("client-pro");
-       ///modal-main
+///modal-main
 const modalMain = document.getElementById("modal-main");
-      ///modal bottom obbject number
+///modal bottom obbject number
 const objNum = document.getElementById("num-obj");
-
 
 
 clientTab.addEventListener("click", ()=> {
@@ -60,27 +57,46 @@ const stopBtn = document.getElementById("stopbtn");
 const noVolBtn = document.getElementById("novolbtn");
 const volBtn = document.getElementById("volbtn");
 
+const audioTime = document.getElementById("timeAudio");
+
 const mediaPlayer = document.getElementById("media-icon");
 
 const neverGonna = document.getElementById("myAudio");
 
 
+
+const audioTimeLeft = () => {
+  let x = Math.floor(neverGonna.currentTime);
+  (x < 10) ? x= `0${x}` : "";
+  audioTime.innerHTML = `00:${x} / 01:00`;
+}
+const audioTimeInterval = () => {
+  setInterval(()=>{
+    audioTimeLeft();
+    console.log("interval chalyo")
+  }, 1000)
+}
+
 mediaPlayer.addEventListener("click", ()=> {
   neverGonna.play();
-  console.log("click");
+  audioTimeInterval();
 })
 
 playBtn.addEventListener("click", ()=>{
   neverGonna.play();
+  console.log("click");
 })
 
 pauseBtn.addEventListener("click", ()=>{
   neverGonna.pause();
+  console.log('curr' + Math.floor(neverGonna.currentTime));
+  console.log('dur' + neverGonna.duration)
 })
 
-// stopBtn.addEventListener("click", ()=>{
-//   neverGonna.stop();
-// })
+stopBtn.addEventListener("click", ()=>{
+  neverGonna.load();
+  neverGonna.pause();
+})
 
 noVolBtn.addEventListener("click", ()=> {
   let x = neverGonna.volume;
@@ -97,5 +113,14 @@ volBtn.addEventListener("click", ()=> {
     x = z.toFixed(1);
     neverGonna.volume = x;
   }
+})
+
+const closebtnPlayer = document.getElementById("right-iconPlayer");
+  
+closebtnPlayer.addEventListener("click", ()=> {
+  neverGonna.pause();
+  neverGonna.load();
+  neverGonna.pause();
+
 })
 

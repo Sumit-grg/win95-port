@@ -565,7 +565,7 @@
 .main-container .main-screen #myModal-player #modal-main #control #audio-cont img {
   width: 50px;
   margin: 4px 10px;
-  border: 2px double #aba9a9;
+  border: 2px double #787878;
   border-radius: 5px;
   padding: 4px;
 }
@@ -593,6 +593,7 @@
 }
 
 .main-container .main-screen #myModal-player #modal-bottom p {
+  width: 100%;
   font-size: small;
 }
 

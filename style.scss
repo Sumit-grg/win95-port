@@ -435,7 +435,7 @@
               // @include border-color;
               width: 50px;
               margin: 4px 10px;
-              border: 2px double rgb(171, 169, 169);
+              border: 2px double rgb(120, 120, 120);
               border-radius: 5px;
               padding: 4px;
               &:hover{
@@ -459,6 +459,7 @@
       }
       #modal-bottom{
         p {
+          width: 100%;
           font-size: small;
         }
       }
