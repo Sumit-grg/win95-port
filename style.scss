@@ -662,6 +662,106 @@
       }
 
     }
+////////pc modal//////////
+    #myModal-pc{
+      display: block;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      z-index: 9;
+      text-align: center;
+      border: 2px solid rgb(192,192,192);
+      width: 40%;
+      height: 40%;
+      background-color: rgb(192,192,192);
+      #myModal-pcCon {
+        width: 100%;
+        height: 6%;
+        border: 1px solid rgb(192,192,192);
+        cursor: move;
+        z-index: 10;
+        background-color: rgb(2,2,168);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #left-icon{
+          display: flex;
+          align-items: center;
+          img {
+            padding: 8px;
+            width: 25%;
+          }
+          p {
+            color: white;
+          }
+        }
+        #right-iconPC{
+          z-index: 11;
+          padding: 4px;
+          button {
+            width: 20px;
+            p {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      #modal-menu{
+        background-color: rgb(192,192,192);
+        display: flex;
+        p{
+          color: black;
+          padding: 4px;
+          margin: 0 4px;
+          span {
+            text-decoration: underline;
+          }
+          &:hover{
+            cursor: pointer;
+            background-color: rgb(2,2,168);
+            color: white;
+          }
+        }
+      }
+      #modal-main{
+        background-color: white;
+        height: 81%;
+        width: 99%;
+        margin: 0 auto;
+        @include border-color;
+        display: flex;
+        flex-wrap: wrap;
+        .pc-folder {
+          padding: 4px;
+          margin: 6px;
+          height: 22%;
+          p{
+            color: black;
+          }
+          &:hover {
+            cursor: pointer;
+            background-color: rgb(195, 195, 198);
+          }
+        }
+      }
+      #modal-bottom{
+        color: black;
+        background-color: rgb(192,192,192);
+        width: 99%;
+        margin: 0 auto;
+        margin-top: 4px;
+        border-top: 2px solid rgb(43, 42, 42);
+        border-right: 2px solid rgb(226, 223, 223);
+        border-bottom: 2px solid rgb(226, 223, 223);
+        border-left: 2px solid rgb(43, 42, 42);
+        p {
+          font-weight: bold;
+          margin: 0 6px;
+          width: 50%;
+          text-align: left;
+        }
+      }
+    }
 
   }
 
