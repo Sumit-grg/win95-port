@@ -218,7 +218,7 @@ closebtnCV.addEventListener("click", ()=> {
         // get the mouse cursor position at startup:
         pos3 = e.clientX;
         pos4 = e.clientY;
-        document.onmouseup = closeDragElementExplore;
+        document.onmouseup = closeDragElementPlayer;
         // call a function whenever the cursor moves:
         document.onmousemove = elementDrag;
       }
@@ -236,7 +236,7 @@ closebtnCV.addEventListener("click", ()=> {
         elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
       }
   
-      function closeDragElementExplore() {
+      function closeDragElementPlayer() {
         /* stop moving when mouse button is released:*/
         document.onmouseup = null;
         document.onmousemove = null;
@@ -250,14 +250,19 @@ closebtnCV.addEventListener("click", ()=> {
     const explore = document.getElementById("explore-icon");
     const myModalExplore =document.getElementById("myModal-explore");
   
+
+    const audioDial = document.getElementById("myAudio-dialup");
+
     explore.addEventListener("click", ()=>{
       myModalExplore.style.display = "block";
+      audioDial.play();
     })
   
     const closebtnExplore = document.getElementById("right-iconExplore");
   
     closebtnExplore.addEventListener("click", ()=> {
       myModalExplore.style.display = "none";
+      audioDial.load();
     })
   
   

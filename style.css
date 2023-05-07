@@ -42,7 +42,7 @@
   width: 40%;
 }
 
-.main-container .main-screen #myModal-recycle, .main-container .main-screen #myModal-project, .main-container .main-screen #myModal-player, .main-container .main-screen #myModal-explore {
+.main-container .main-screen #myModal-recycle, .main-container .main-screen #myModal-project, .main-container .main-screen #myModal-player {
   display: none;
   position: absolute;
   z-index: 9;
@@ -55,7 +55,7 @@
   left: 100px;
 }
 
-.main-container .main-screen #myModal-recycle #myModal-recycleCon, .main-container .main-screen #myModal-project #myModal-recycleCon, .main-container .main-screen #myModal-player #myModal-recycleCon, .main-container .main-screen #myModal-explore #myModal-recycleCon {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon, .main-container .main-screen #myModal-project #myModal-recycleCon, .main-container .main-screen #myModal-player #myModal-recycleCon {
   width: 100%;
   height: 5%;
   border: 1px solid silver;
@@ -73,7 +73,7 @@
           align-items: center;
 }
 
-.main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon, .main-container .main-screen #myModal-project #myModal-recycleCon #left-icon, .main-container .main-screen #myModal-player #myModal-recycleCon #left-icon, .main-container .main-screen #myModal-explore #myModal-recycleCon #left-icon {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon, .main-container .main-screen #myModal-project #myModal-recycleCon #left-icon, .main-container .main-screen #myModal-player #myModal-recycleCon #left-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,51 +82,51 @@
           align-items: center;
 }
 
-.main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon img, .main-container .main-screen #myModal-project #myModal-recycleCon #left-icon img, .main-container .main-screen #myModal-player #myModal-recycleCon #left-icon img, .main-container .main-screen #myModal-explore #myModal-recycleCon #left-icon img {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon img, .main-container .main-screen #myModal-project #myModal-recycleCon #left-icon img, .main-container .main-screen #myModal-player #myModal-recycleCon #left-icon img {
   padding: 5px;
   width: 25%;
 }
 
-.main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon p, .main-container .main-screen #myModal-project #myModal-recycleCon #left-icon p, .main-container .main-screen #myModal-player #myModal-recycleCon #left-icon p, .main-container .main-screen #myModal-explore #myModal-recycleCon #left-icon p {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon p, .main-container .main-screen #myModal-project #myModal-recycleCon #left-icon p, .main-container .main-screen #myModal-player #myModal-recycleCon #left-icon p {
   color: white;
 }
 
-.main-container .main-screen #myModal-recycle #myModal-recycleCon #right-icon, .main-container .main-screen #myModal-project #myModal-recycleCon #right-icon, .main-container .main-screen #myModal-player #myModal-recycleCon #right-icon, .main-container .main-screen #myModal-explore #myModal-recycleCon #right-icon {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon #right-icon, .main-container .main-screen #myModal-project #myModal-recycleCon #right-icon, .main-container .main-screen #myModal-player #myModal-recycleCon #right-icon {
   padding: 4px;
 }
 
-.main-container .main-screen #myModal-recycle #myModal-recycleCon #right-icon button, .main-container .main-screen #myModal-project #myModal-recycleCon #right-icon button, .main-container .main-screen #myModal-player #myModal-recycleCon #right-icon button, .main-container .main-screen #myModal-explore #myModal-recycleCon #right-icon button {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon #right-icon button, .main-container .main-screen #myModal-project #myModal-recycleCon #right-icon button, .main-container .main-screen #myModal-player #myModal-recycleCon #right-icon button {
   width: 20px;
 }
 
-.main-container .main-screen #myModal-recycle #myModal-recycleCon #right-icon button p, .main-container .main-screen #myModal-project #myModal-recycleCon #right-icon button p, .main-container .main-screen #myModal-player #myModal-recycleCon #right-icon button p, .main-container .main-screen #myModal-explore #myModal-recycleCon #right-icon button p {
+.main-container .main-screen #myModal-recycle #myModal-recycleCon #right-icon button p, .main-container .main-screen #myModal-project #myModal-recycleCon #right-icon button p, .main-container .main-screen #myModal-player #myModal-recycleCon #right-icon button p {
   font-weight: bold;
 }
 
-.main-container .main-screen #myModal-recycle #modal-menu, .main-container .main-screen #myModal-project #modal-menu, .main-container .main-screen #myModal-player #modal-menu, .main-container .main-screen #myModal-explore #modal-menu {
+.main-container .main-screen #myModal-recycle #modal-menu, .main-container .main-screen #myModal-project #modal-menu, .main-container .main-screen #myModal-player #modal-menu {
   background-color: silver;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main-container .main-screen #myModal-recycle #modal-menu p, .main-container .main-screen #myModal-project #modal-menu p, .main-container .main-screen #myModal-player #modal-menu p, .main-container .main-screen #myModal-explore #modal-menu p {
+.main-container .main-screen #myModal-recycle #modal-menu p, .main-container .main-screen #myModal-project #modal-menu p, .main-container .main-screen #myModal-player #modal-menu p {
   color: black;
   padding: 4px;
   margin: 0 4px;
 }
 
-.main-container .main-screen #myModal-recycle #modal-menu p span, .main-container .main-screen #myModal-project #modal-menu p span, .main-container .main-screen #myModal-player #modal-menu p span, .main-container .main-screen #myModal-explore #modal-menu p span {
+.main-container .main-screen #myModal-recycle #modal-menu p span, .main-container .main-screen #myModal-project #modal-menu p span, .main-container .main-screen #myModal-player #modal-menu p span {
   text-decoration: underline;
 }
 
-.main-container .main-screen #myModal-recycle #modal-menu p:hover, .main-container .main-screen #myModal-project #modal-menu p:hover, .main-container .main-screen #myModal-player #modal-menu p:hover, .main-container .main-screen #myModal-explore #modal-menu p:hover {
+.main-container .main-screen #myModal-recycle #modal-menu p:hover, .main-container .main-screen #myModal-project #modal-menu p:hover, .main-container .main-screen #myModal-player #modal-menu p:hover {
   cursor: pointer;
   background-color: #0202a8;
   color: white;
 }
 
-.main-container .main-screen #myModal-recycle #modal-main, .main-container .main-screen #myModal-project #modal-main, .main-container .main-screen #myModal-player #modal-main, .main-container .main-screen #myModal-explore #modal-main {
+.main-container .main-screen #myModal-recycle #modal-main, .main-container .main-screen #myModal-project #modal-main, .main-container .main-screen #myModal-player #modal-main {
   background-color: white;
   height: 85%;
   width: 99%;
@@ -142,22 +142,22 @@
       flex-wrap: wrap;
 }
 
-.main-container .main-screen #myModal-recycle #modal-main .bin-folder, .main-container .main-screen #myModal-project #modal-main .bin-folder, .main-container .main-screen #myModal-player #modal-main .bin-folder, .main-container .main-screen #myModal-explore #modal-main .bin-folder {
+.main-container .main-screen #myModal-recycle #modal-main .bin-folder, .main-container .main-screen #myModal-project #modal-main .bin-folder, .main-container .main-screen #myModal-player #modal-main .bin-folder {
   padding: 4px;
   margin: 6px;
   height: 15%;
 }
 
-.main-container .main-screen #myModal-recycle #modal-main .bin-folder p, .main-container .main-screen #myModal-project #modal-main .bin-folder p, .main-container .main-screen #myModal-player #modal-main .bin-folder p, .main-container .main-screen #myModal-explore #modal-main .bin-folder p {
+.main-container .main-screen #myModal-recycle #modal-main .bin-folder p, .main-container .main-screen #myModal-project #modal-main .bin-folder p, .main-container .main-screen #myModal-player #modal-main .bin-folder p {
   color: black;
 }
 
-.main-container .main-screen #myModal-recycle #modal-main .bin-folder:hover, .main-container .main-screen #myModal-project #modal-main .bin-folder:hover, .main-container .main-screen #myModal-player #modal-main .bin-folder:hover, .main-container .main-screen #myModal-explore #modal-main .bin-folder:hover {
+.main-container .main-screen #myModal-recycle #modal-main .bin-folder:hover, .main-container .main-screen #myModal-project #modal-main .bin-folder:hover, .main-container .main-screen #myModal-player #modal-main .bin-folder:hover {
   cursor: pointer;
   background-color: #c3c3c6;
 }
 
-.main-container .main-screen #myModal-recycle #modal-bottom, .main-container .main-screen #myModal-project #modal-bottom, .main-container .main-screen #myModal-player #modal-bottom, .main-container .main-screen #myModal-explore #modal-bottom {
+.main-container .main-screen #myModal-recycle #modal-bottom, .main-container .main-screen #myModal-project #modal-bottom, .main-container .main-screen #myModal-player #modal-bottom {
   color: black;
   background-color: silver;
   width: 99%;
@@ -169,7 +169,7 @@
   border-left: 2px solid #2b2a2a;
 }
 
-.main-container .main-screen #myModal-recycle #modal-bottom p, .main-container .main-screen #myModal-project #modal-bottom p, .main-container .main-screen #myModal-player #modal-bottom p, .main-container .main-screen #myModal-explore #modal-bottom p {
+.main-container .main-screen #myModal-recycle #modal-bottom p, .main-container .main-screen #myModal-project #modal-bottom p, .main-container .main-screen #myModal-player #modal-bottom p {
   margin: 0 6px;
   width: 50%;
   text-align: left;
@@ -702,13 +702,6 @@
   background-color: #989797;
 }
 
-.main-container .main-screen #myModal-player #modal-main #control #audio-cont img:first-child {
-  border-top: 2px solid black;
-  border-right: 2px solid #e2dfdf;
-  border-bottom: 2px solid #e2dfdf;
-  border-left: 2px solid black;
-}
-
 .main-container .main-screen #myModal-player #modal-main #audio-time {
   border: 2px solid #6a6a6a;
   padding: 10px;
@@ -725,19 +718,19 @@
 }
 
 .main-container .main-screen #myModal-explore {
-  display: block;
+  display: none;
   position: absolute;
   z-index: 9;
   text-align: center;
   border: 2px solid silver;
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 40%;
   background-color: silver;
 }
 
 .main-container .main-screen #myModal-explore #myModal-exploreCon {
   width: 100%;
-  height: 5%;
+  height: 7%;
   border: 1px solid silver;
   cursor: move;
   z-index: 10;
@@ -808,10 +801,16 @@
 }
 
 .main-container .main-screen #myModal-explore #modal-main {
-  display: block;
-  border: 2px solid red;
-  background-color: white;
-  height: 91%;
+  background-color: #dbd8d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: black;
+  height: 80%;
   width: 99%;
   margin: 0 auto;
   border-top: 2px solid black;
@@ -820,10 +819,41 @@
   border-left: 2px solid black;
 }
 
+.main-container .main-screen #myModal-explore #modal-main img {
+  border: 2px double #b4b4b4;
+  width: 100%;
+  height: 40%;
+}
+
+.main-container .main-screen #myModal-explore #modal-main #dial-box {
+  margin: 0 auto;
+  height: 60%;
+  width: 80%;
+  text-align: left;
+}
+
+.main-container .main-screen #myModal-explore #modal-main #dial-box p {
+  margin: 20px auto;
+}
+
+.main-container .main-screen #myModal-explore #modal-main #dial-box div {
+  padding: 6px;
+  border: 2px double #5a5a5a;
+}
+
+.main-container .main-screen #myModal-explore #modal-main #dial-box div p {
+  margin: 20px auto;
+}
+
+.main-container .main-screen #myModal-explore #modal-main #dial-box div p span {
+  font-weight: bold;
+}
+
 .main-container .main-screen #myModal-explore #modal-bottom {
   color: black;
   background-color: silver;
   width: 99%;
+  height: 5%;
   margin: 0 auto;
   margin-top: 4px;
   border-top: 2px solid #2b2a2a;
@@ -832,10 +862,8 @@
   border-left: 2px solid #2b2a2a;
 }
 
-.main-container .main-screen #myModal-explore #modal-bottom p {
-  margin: 0 6px;
-  width: 50%;
-  text-align: left;
+.main-container .main-screen #myModal-explore #modal-bottom audio {
+  display: none;
 }
 
 .main-container .bottom-bar {

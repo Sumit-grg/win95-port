@@ -129,5 +129,8 @@ closebtnPlayer.addEventListener("click", ()=> {
 })
 
 
+//////////////dial up internet explore sound ////////
+
+
 
 
