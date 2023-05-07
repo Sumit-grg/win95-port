@@ -150,11 +150,13 @@
   margin: 0 6px;
   width: 50%;
   text-align: left;
+  font-weight: bold;
 }
 
 .main-container .main-screen #myModal-project {
-  display: block;
   height: 80%;
+  top: 100px;
+  left: 100px;
 }
 
 .main-container .main-screen #myModal-project #mydivheader {
@@ -164,12 +166,16 @@
 .main-container .main-screen #myModal-project #modal-main {
   height: 91%;
   width: 99%;
+  overflow: scroll;
 }
 
 .main-container .main-screen #myModal-project #modal-main #pro-tab {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .main-container .main-screen #myModal-project #modal-main #pro-tab .tab {
@@ -178,10 +184,20 @@
   color: black;
   width: 50%;
   padding: 5px;
+  font-size: large;
 }
 
 .main-container .main-screen #myModal-project #modal-main #pro-tab .tab:hover {
   cursor: pointer;
+}
+
+.main-container .main-screen #myModal-project #modal-main #pro-tab #client-tab {
+  border-top: 2px solid black;
+  border-right: 2px solid #e2dfdf;
+  border-bottom: 2px solid #e2dfdf;
+  border-left: 2px solid black;
+  background-color: #e4e0e0;
+  font-weight: bolder;
 }
 
 .main-container .main-screen #myModal-project #modal-main #client-pro p {
@@ -204,7 +220,6 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 10px auto;
   padding: 10px;
 }
 

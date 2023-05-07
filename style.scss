@@ -122,72 +122,43 @@
           margin: 0 6px;
           width: 50%;
           text-align: left;
+          font-weight: bold
         }
       }
     }
 
-    /////modal project///////
-    // #myModal-project {
-    //   @extend #myModal-recycle;
-    //   display: block;
-    //   #modal-main {
-    //     #client-pro{
-    //       p {
-    //         color: black;
-    //       }
-    //       #client-flex{
-    //         display: flex;
-    //         .client-div{
-    //           // border: 2px solid red;
-    //           video {
-    //             width: 90%;
-    //             &:hover{
-    //               cursor: pointer;
-    //               animation: inout 1.5s infinite;
-    //               @keyframes inout {
-    //                 0% {
-    //                   transform: scale(1);
-    //                 }
-    //                 50% {
-    //                   transform: scale(0.9);
-    //                 }
-    //                 100% {
-    //                   transform: scale(1);
-    //                 }
-    //               }
-    //             }
-    //           }
-    //           p{
-    //             color: black;
-    //           }
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
-
     #myModal-project {
       @extend #myModal-recycle;
-      display: block;
       height: 80%;
+      top: 100px;
+      left: 100px;
       #mydivheader {
         height: 3%;
       }
       #modal-main{
         height: 91%;
         width: 99%;
+        overflow: scroll;
         #pro-tab {
           display: flex;
+          position: sticky;
+          top: 0;
           .tab{
             background-color: rgb(184, 181, 181);
             border: 2px solid rgb(79, 79, 79);
             color: black;
             width: 50%;
             padding: 5px;
+            font-size: large;
             // background-color: rgb(192,192,192);
             &:hover{
               cursor: pointer;
             }
+          }
+          #client-tab{
+            @include border-color;
+            background-color: rgb(228, 224, 224);
+            font-weight: bolder;
           }
         }
         #client-pro{
@@ -200,7 +171,7 @@
             .client-div{
               display: flex;
               justify-content: space-around;
-              margin: 10px auto;
+              // margin: 2px auto;
               padding: 10px;
               // border: 2px solid red;
               &:hover{

@@ -19,6 +19,9 @@ const personalProj = document.getElementById("personal-pro");
 const clientProj = document.getElementById("client-pro");
        ///modal-main
 const modalMain = document.getElementById("modal-main");
+      ///modal bottom obbject number
+const objNum = document.getElementById("num-obj");
+
 
 
 clientTab.addEventListener("click", ()=> {
@@ -26,11 +29,12 @@ clientTab.addEventListener("click", ()=> {
   clientProj.style.display = "block";
   clientTab.style.cssText = `  border-top: 2px solid black;
   border-right: 2px solid rgb(226, 223, 223);
-  border-bottom: 2px solid rgb(226, 223, 223);;
-  border-left: 2px solid black;background-color:rgb(228, 224, 224);`
+  border-bottom: 2px solid rgb(226, 223, 223);
+  border-left: 2px solid black;background-color:rgb(228, 224, 224);font-weight: bolder;`;
   personalTab.style.cssText = `background-color: rgb(184, 181, 181);
   border: 2px solid rgb(79, 79, 79);`;
   modalMain.style.cssText = `border-left:2px solid black; border-bottom:2px solid black; border-right: 2px solid black`;
+  objNum.innerHTML = '4 object(s)';
 })
 
 personalTab.addEventListener("click", ()=>{
@@ -39,8 +43,9 @@ personalTab.addEventListener("click", ()=>{
   personalTab.style.cssText = `  border-top: 2px solid black;
   border-right: 2px solid rgb(226, 223, 223);
   border-bottom: 2px solid rgb(226, 223, 223);
-  border-left: 2px solid black;rgb(228, 224, 224);`;
+  border-left: 2px solid black;background-color:rgb(228, 224, 224);font-weight: bolder;`;
   clientTab.style.cssText = `background-color: rgb(184, 181, 181);
-  border: 2px solid rgb(79, 79, 79);`;
+  border: 2px solid rgb(79, 79, 79);font-weight: inherit`;
   modalMain.style.cssText = `border-left:2px solid black; border-bottom:2px solid black; border-right: 2px solid black`;
+  objNum.innerHTML = '6 object(s)';
 })
