@@ -868,7 +868,7 @@ body{
     }
 
   }
-
+///////bottom bar/////////////
 
   .bottom-bar {
     border-top: 2px solid white;
@@ -880,6 +880,7 @@ body{
     #start-btn {
       margin-left: 2px;
       button {
+        background-color: rgb(192,192,192);
         border: 2px solid red;
         display: flex;
         align-items: center;
@@ -895,10 +896,9 @@ body{
     }
 
     #start-container{
-      position: relative;
-      bottom: 205px;
-      right: 260px;
-      display: flex;
+      position: absolute;
+      bottom: 46px;
+      display: none;
       #first-box-start{
         display: flex;
         border-bottom: 1px solid black;
@@ -921,22 +921,25 @@ body{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            .flex-item-right{
+            .flex-item-right-clientproj,.flex-item-right-personalproj,
+            .flex-item-right-internet,.flex-item-right-cv,
+            .flex-item-right-media,.flex-item-right-game,
+            .flex-item-right-logout {
               display: flex;
               justify-content: space-between;
-              svg{
-                margin-right: 4px;
-                width: 15px;
-              }
-            }
-            .flex-item-right {
               padding: 10px;
               &:hover{
                 cursor: pointer;
                 background-color: rgb(2,2,168);
                 color: white;
               }
+              .svgcl{
+                margin-right: 4px;
+                width: 15px;
+              }
             }
+            // .flex-item-right {
+            // }
             p{
               font-size: large;
               display: flex;
@@ -954,6 +957,7 @@ body{
       }
         ////second right client prog///////
       #right-clientproj{
+        display: none;
         background-color: rgb(173, 171, 171);
         height: 100%;
         border-top: 2px solid rgb(226, 223, 223);
@@ -965,7 +969,8 @@ body{
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          .flex-item-right{
+          .flex-item-rightc1,.flex-item-rightc2,.flex-item-rightc3,
+          .flex-item-rightc4{
             border-top: 2px solid rgb(140, 139, 139);
             display: flex;
             justify-content: space-between;
@@ -992,6 +997,7 @@ body{
       }
       ////second right personal prog///////
       #right-personalproj{
+        display: none;
         position: relative;
         top: 45px;
         background-color: rgb(173, 171, 171);
@@ -1005,7 +1011,8 @@ body{
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          .flex-item-right{
+          .flex-item-rightp1,.flex-item-rightp2,.flex-item-rightp3,
+          .flex-item-rightp4,.flex-item-rightp5,.flex-item-rightp6{
             border-top: 2px solid rgb(140, 139, 139);
             display: flex;
             justify-content: space-between;
@@ -1032,6 +1039,7 @@ body{
       }
       ////second right games///////
       #right-game{
+        display: none;
         position: relative;
         top: 253px;
         background-color: rgb(173, 171, 171);
@@ -1045,7 +1053,7 @@ body{
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          .flex-item-right{
+          .flex-item-rightg1,.flex-item-rightg2{
             border-top: 2px solid rgb(140, 139, 139);
             display: flex;
             justify-content: space-between;

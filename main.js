@@ -130,5 +130,59 @@ closebtnPlayer.addEventListener("click", ()=> {
 
 ///////////start menu list display on/of //////////
 
+const startBtn = document.getElementById("startbtn");
+const startContainer = document.getElementById("start-container");
+
+const startClient = document.getElementsByClassName("flex-item-right-clientproj")[0];
+const startPersonal = document.getElementsByClassName("flex-item-right-personalproj")[0];
+const startGame = document.getElementsByClassName("flex-item-right-game")[0];
+
+const secondStartClient = document.getElementById("right-clientproj");
+const secondStartPersonal = document.getElementById("right-personalproj");
+const secondStartGame = document.getElementById("right-game");
 
 
+const mainScreen = document.getElementsByClassName("main-screen")[0];
+
+startBtn.addEventListener("click", ()=>{
+  startBtn.style.cssText = `  border-top: 2px solid black;
+  border-right: 2px solid rgb(226, 223, 223);
+  border-bottom: 2px solid rgb(226, 223, 223);
+  border-left: 2px solid black;`
+
+  startContainer.style.display = "flex";
+
+  setTimeout(()=>{
+    startBtn.style.cssText = `border-top: 2px solid white;
+      border-left: 2px solid white;
+      border-right: 2px solid rgb(128, 127, 127);
+      border-bottom: 2px solid rgb(128, 127, 127);`},
+      200)
+})
+
+startClient.addEventListener("mouseover", ()=>{
+  secondStartClient.style.display = "block";
+})
+startClient.addEventListener("mouseout", ()=>{
+  secondStartClient.style.display = "none";
+})
+
+
+startPersonal.addEventListener("mouseover", ()=>{
+  secondStartPersonal.style.display = "block"; 
+})
+startPersonal.addEventListener("mouseout", ()=>{
+  secondStartPersonal.style.display = "none";
+})
+
+startGame.addEventListener("mouseover", ()=>{
+  secondStartGame.style.display = "block"; 
+})
+startGame.addEventListener("mouseout", ()=>{
+  secondStartGame.style.display = "none";
+})
+
+mainScreen.addEventListener("click", ()=> {
+  console.log("screen clicked main");
+  startContainer.style.display = "none";
+})

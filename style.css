@@ -1156,6 +1156,7 @@ body {
 }
 
 .main-container .bottom-bar #start-btn button {
+  background-color: silver;
   border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1175,12 +1176,9 @@ body {
 }
 
 .main-container .bottom-bar #start-container {
-  position: relative;
-  bottom: 205px;
-  right: 260px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: absolute;
+  bottom: 46px;
+  display: none;
 }
 
 .main-container .bottom-bar #start-container #first-box-start {
@@ -1225,28 +1223,61 @@ body {
           justify-content: space-between;
 }
 
-.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right {
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-personalproj,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-cv,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-game,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-logout, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-personalproj,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-cv,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-game,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-logout, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-personalproj,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-cv,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-game,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-logout, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-personalproj,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-cv,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-game,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-logout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right svg, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right svg, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right svg, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right svg {
-  margin-right: 4px;
-  width: 15px;
-}
-
-.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right {
   padding: 10px;
 }
 
-.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right:hover {
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-clientproj:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-personalproj:hover,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-cv:hover,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-media:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-game:hover,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-logout:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-clientproj:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-personalproj:hover,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-internet:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-cv:hover,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-media:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-game:hover,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-logout:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-clientproj:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-personalproj:hover,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-internet:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-cv:hover,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-media:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-game:hover,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-logout:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-clientproj:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-personalproj:hover,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-internet:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-cv:hover,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-media:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-game:hover,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-logout:hover {
   cursor: pointer;
   background-color: #0202a8;
   color: white;
+}
+
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-personalproj .svgcl,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-cv .svgcl,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-game .svgcl,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-logout .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-personalproj .svgcl,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-cv .svgcl,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-game .svgcl,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-logout .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-personalproj .svgcl,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-cv .svgcl,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-game .svgcl,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-logout .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-personalproj .svgcl,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-cv .svgcl,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-game .svgcl,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-logout .svgcl {
+  margin-right: 4px;
+  width: 15px;
 }
 
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 p {
@@ -1269,6 +1300,7 @@ body {
 }
 
 .main-container .bottom-bar #start-container #right-clientproj {
+  display: none;
   background-color: #adabab;
   height: 100%;
   border-top: 2px solid #e2dfdf;
@@ -1290,7 +1322,8 @@ body {
           justify-content: space-between;
 }
 
-.main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-right {
+.main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-rightc1, .main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-rightc2, .main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-rightc3,
+.main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-rightc4 {
   border-top: 2px solid #8c8b8b;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1301,7 +1334,8 @@ body {
   padding: 10px;
 }
 
-.main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-right:hover {
+.main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-rightc1:hover, .main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-rightc2:hover, .main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-rightc3:hover,
+.main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-rightc4:hover {
   cursor: pointer;
   background-color: #0202a8;
   color: white;
@@ -1327,6 +1361,7 @@ body {
 }
 
 .main-container .bottom-bar #start-container #right-personalproj {
+  display: none;
   position: relative;
   top: 45px;
   background-color: #adabab;
@@ -1350,7 +1385,8 @@ body {
           justify-content: space-between;
 }
 
-.main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-right {
+.main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp1, .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp2, .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp3,
+.main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp4, .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp5, .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp6 {
   border-top: 2px solid #8c8b8b;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1361,7 +1397,8 @@ body {
   padding: 10px;
 }
 
-.main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-right:hover {
+.main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp1:hover, .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp2:hover, .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp3:hover,
+.main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp4:hover, .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp5:hover, .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp6:hover {
   cursor: pointer;
   background-color: #0202a8;
   color: white;
@@ -1387,6 +1424,7 @@ body {
 }
 
 .main-container .bottom-bar #start-container #right-game {
+  display: none;
   position: relative;
   top: 253px;
   background-color: #adabab;
@@ -1410,7 +1448,7 @@ body {
           justify-content: space-between;
 }
 
-.main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-right {
+.main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2 {
   border-top: 2px solid #8c8b8b;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1421,7 +1459,7 @@ body {
   padding: 10px;
 }
 
-.main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-right:hover {
+.main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1:hover, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2:hover {
   cursor: pointer;
   background-color: #0202a8;
   color: white;
