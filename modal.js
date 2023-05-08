@@ -3,7 +3,7 @@
   const projectFolder = document.getElementById("folder-icon");
   const myModal =document.getElementById("myModal-project");
 
-  projectFolder.addEventListener("click", ()=>{
+  projectFolder.addEventListener("dblclick", ()=>{
     myModal.style.display = "block";
   })
 
@@ -65,7 +65,7 @@
 const recycleBin = document.getElementById("bin-icon");
 const myModalrecycle =document.getElementById("myModal-recycle");
 
-recycleBin.addEventListener("click", ()=>{
+recycleBin.addEventListener("dblclick", ()=>{
   myModalrecycle.style.display = "block";
 })
 
@@ -127,7 +127,7 @@ closebtnRec.addEventListener("click", ()=> {
 const cv = document.getElementById("cv-icon");
 const myModalcv =document.getElementById("myModal-cv");
 
-cv.addEventListener("click", ()=>{
+cv.addEventListener("dblclick", ()=>{
   myModalcv.style.display = "block";
 })
 
@@ -188,7 +188,7 @@ closebtnCV.addEventListener("click", ()=> {
     const mediaPlayer = document.getElementById("media-icon");
     const myModalPlayer =document.getElementById("myModal-player");
   
-    mediaPlayer.addEventListener("click", ()=>{
+    mediaPlayer.addEventListener("dblclick", ()=>{
       myModalPlayer.style.display = "block";
     })
   
@@ -253,7 +253,7 @@ closebtnCV.addEventListener("click", ()=> {
 
     const audioDial = document.getElementById("myAudio-dialup");
 
-    explore.addEventListener("click", ()=>{
+    explore.addEventListener("dblclick", ()=>{
       myModalExplore.style.display = "block";
       audioDial.play();
     })
@@ -315,7 +315,7 @@ closebtnCV.addEventListener("click", ()=> {
 const pc = document.getElementById("mypc-icon");
 const myModalpc =document.getElementById("myModal-pc");
 
-pc.addEventListener("click", ()=>{
+pc.addEventListener("dblclick", ()=>{
   myModalpc.style.display = "block";
 })
 
@@ -379,7 +379,7 @@ closebtnPC.addEventListener("click", ()=> {
 const sfIcon = document.getElementById("sf-icon");
 const myModalsf =document.getElementById("myModal-sf");
 
-sfIcon.addEventListener("click", ()=>{
+sfIcon.addEventListener("dblclick", ()=>{
   myModalsf.style.display = "block";
 })
 
@@ -433,3 +433,5 @@ closebtnSF.addEventListener("click", ()=> {
       document.onmousemove = null;
     }
   }
+
+

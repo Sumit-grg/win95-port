@@ -28,6 +28,7 @@ body{
     height: 96%;
     color: white;
     padding: 20px;
+    border: 2px solid red;
     // display: flex;
     // flex-direction: column;
     .icon{
@@ -48,9 +49,7 @@ body{
     }
     #sf-icon{
       position: absolute;
-      top: 25px;
       width: 9%;
-      // border: 2px solid red;
       img{
         opacity: 0.9;
         width: 100%;
@@ -777,7 +776,7 @@ body{
 
     ////////modal street frigther /////////////
     #myModal-sf {
-      display: block;
+      display: none;
       position: absolute;
       top: 100px;
       left: 100px;
@@ -840,12 +839,11 @@ body{
       #modal-main{
         display: block;
         background-color: white;
-        height: 89%;
+        height: 92%;
         width: 99%;
         margin: 0 auto;
         @include border-color;
         iframe {
-          border: 2px solid red;
           width: 100%;
           height: 100%;
         }

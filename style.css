@@ -27,6 +27,7 @@ body {
   height: 96%;
   color: white;
   padding: 20px;
+  border: 2px solid red;
 }
 
 .main-container .main-screen .icon {
@@ -48,7 +49,6 @@ body {
 
 .main-container .main-screen #sf-icon {
   position: absolute;
-  top: 25px;
   width: 9%;
 }
 
@@ -1016,7 +1016,7 @@ body {
 }
 
 .main-container .main-screen #myModal-sf {
-  display: block;
+  display: none;
   position: absolute;
   top: 100px;
   left: 100px;
@@ -1104,7 +1104,7 @@ body {
 .main-container .main-screen #myModal-sf #modal-main {
   display: block;
   background-color: white;
-  height: 89%;
+  height: 92%;
   width: 99%;
   margin: 0 auto;
   border-top: 2px solid black;
@@ -1114,7 +1114,6 @@ body {
 }
 
 .main-container .main-screen #myModal-sf #modal-main iframe {
-  border: 2px solid red;
   width: 100%;
   height: 100%;
 }
