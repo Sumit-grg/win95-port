@@ -28,7 +28,6 @@ body{
     height: 96%;
     color: white;
     padding: 20px;
-    border: 2px solid red;
     // display: flex;
     // flex-direction: column;
     .icon{
@@ -44,15 +43,16 @@ body{
     }
     #cv-icon{
       img{
-        width: 40%;
+        width: 45px;
       }
     }
     #sf-icon{
-      position: absolute;
-      width: 9%;
+      position: absolute;  //this is for draggable div
+      top: 25px;
+      left: 180px;
       img{
         opacity: 0.9;
-        width: 100%;
+        width: 80px;
       }
     }
     
@@ -399,7 +399,7 @@ body{
           align-items: center;
           img {
             padding: 5px;
-            width: 25%;
+            width: 25px;
           }
           p {
             color: white;
@@ -888,11 +888,191 @@ body{
         border-right: 2px solid rgb(128, 127, 127);
         border-bottom: 2px solid rgb(128, 127, 127);
         p, img{
-          margin: 0 6px; 
+          margin: 0 4px; 
           font-weight: bold;
         }
       }
     }
+
+    #start-container{
+      position: relative;
+      bottom: 205px;
+      right: 260px;
+      display: flex;
+      #first-box-start{
+        display: flex;
+        border-bottom: 1px solid black;
+        border-left: 1px solid rgb(226, 223, 223);
+        border-top: 1px solid rgb(226, 223, 223);
+        border-right: 1px solid black;
+        #left-start{
+          background-color: rgb(113, 113, 113);
+          padding-bottom: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          // border: 1px dotted red;
+        }
+        #right-start{
+          // border: 2px solid black;
+          background-color: rgb(173, 171, 171);
+          #right-sec1, #right-sec2, #right-sec3, #right-sec4{
+            border: 1px solid rgb(140, 139, 139);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .flex-item-right{
+              display: flex;
+              justify-content: space-between;
+              svg{
+                margin-right: 4px;
+                width: 15px;
+              }
+            }
+            .flex-item-right {
+              padding: 10px;
+              &:hover{
+                cursor: pointer;
+                background-color: rgb(2,2,168);
+                color: white;
+              }
+            }
+            p{
+              font-size: large;
+              display: flex;
+              align-items: center;
+              img{
+                margin-right: 6px;
+                width: 30px;
+              }
+              svg {
+                width: 10px;
+              }
+            }
+          }
+        }
+      }
+        ////second right client prog///////
+      #right-clientproj{
+        background-color: rgb(173, 171, 171);
+        height: 100%;
+        border-top: 2px solid rgb(226, 223, 223);
+        border-left: 2px solid rgb(226, 223, 223);
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        #right-sec1{
+          // border: 1px solid rgb(140, 139, 139);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .flex-item-right{
+            border-top: 2px solid rgb(140, 139, 139);
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            &:hover{
+              cursor: pointer;
+              background-color: rgb(2,2,168);
+              color: white;
+            }
+          }
+          p{
+            font-size: large;
+            display: flex;
+            align-items: center;
+            img{
+              margin-right: 6px;
+              width: 30px;
+            }
+            svg {
+              width: 10px;
+            }
+          }
+        }
+      }
+      ////second right personal prog///////
+      #right-personalproj{
+        position: relative;
+        top: 45px;
+        background-color: rgb(173, 171, 171);
+        height: 100%;
+        border-top: 2px solid rgb(226, 223, 223);
+        border-left: 2px solid rgb(226, 223, 223);
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        #right-sec1{
+          // border: 1px solid rgb(140, 139, 139);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .flex-item-right{
+            border-top: 2px solid rgb(140, 139, 139);
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            &:hover{
+              cursor: pointer;
+              background-color: rgb(2,2,168);
+              color: white;
+            }
+          }
+          p{
+            font-size: large;
+            display: flex;
+            align-items: center;
+            img{
+              margin-right: 6px;
+              width: 30px;
+            }
+            svg {
+              width: 10px;
+            }
+          }
+        }
+      }
+      ////second right games///////
+      #right-game{
+        position: relative;
+        top: 253px;
+        background-color: rgb(173, 171, 171);
+        height: 100%;
+        border-top: 2px solid rgb(226, 223, 223);
+        border-left: 2px solid rgb(226, 223, 223);
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        #right-sec1{
+          // border: 1px solid rgb(140, 139, 139);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .flex-item-right{
+            border-top: 2px solid rgb(140, 139, 139);
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            &:hover{
+              cursor: pointer;
+              background-color: rgb(2,2,168);
+              color: white;
+            }
+          }
+          p{
+            font-size: large;
+            display: flex;
+            align-items: center;
+            img{
+              margin-right: 6px;
+              width: 30px;
+            }
+            svg {
+              width: 10px;
+            }
+          }
+        }
+      }
+
+      }
+
     #right-con {
       margin-right: 2px;
       border-right: 2px solid white;

@@ -6,7 +6,7 @@ function addListeners(){
     document.getElementById('sf-icon').addEventListener('mousedown', mouseDown, false);
     window.addEventListener('mouseup', mouseUp, false);
 
-}
+ }
 
 function mouseUp()
 {

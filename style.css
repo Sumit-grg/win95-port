@@ -27,7 +27,6 @@ body {
   height: 96%;
   color: white;
   padding: 20px;
-  border: 2px solid red;
 }
 
 .main-container .main-screen .icon {
@@ -44,17 +43,18 @@ body {
 }
 
 .main-container .main-screen #cv-icon img {
-  width: 40%;
+  width: 45px;
 }
 
 .main-container .main-screen #sf-icon {
   position: absolute;
-  width: 9%;
+  top: 25px;
+  left: 180px;
 }
 
 .main-container .main-screen #sf-icon img {
   opacity: 0.9;
-  width: 100%;
+  width: 80px;
 }
 
 .main-container .main-screen #myModal-recycle, .main-container .main-screen #myModal-project, .main-container .main-screen #myModal-player {
@@ -525,7 +525,7 @@ body {
 
 .main-container .main-screen #myModal-cv #myModal-cvCon #left-icon img {
   padding: 5px;
-  width: 25%;
+  width: 25px;
 }
 
 .main-container .main-screen #myModal-cv #myModal-cvCon #left-icon p {
@@ -1170,8 +1170,280 @@ body {
 }
 
 .main-container .bottom-bar #start-btn button p, .main-container .bottom-bar #start-btn button img {
-  margin: 0 6px;
+  margin: 0 4px;
   font-weight: bold;
+}
+
+.main-container .bottom-bar #start-container {
+  position: relative;
+  bottom: 205px;
+  right: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container .bottom-bar #start-container #first-box-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid black;
+  border-left: 1px solid #e2dfdf;
+  border-top: 1px solid #e2dfdf;
+  border-right: 1px solid black;
+}
+
+.main-container .bottom-bar #start-container #first-box-start #left-start {
+  background-color: #717171;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.main-container .bottom-bar #start-container #first-box-start #right-start {
+  background-color: #adabab;
+}
+
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 {
+  border: 1px solid #8c8b8b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right svg, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right svg, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right svg, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right svg {
+  margin-right: 4px;
+  width: 15px;
+}
+
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right {
+  padding: 10px;
+}
+
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right:hover {
+  cursor: pointer;
+  background-color: #0202a8;
+  color: white;
+}
+
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 p {
+  font-size: large;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 p img {
+  margin-right: 6px;
+  width: 30px;
+}
+
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 p svg, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 p svg, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 p svg, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 p svg {
+  width: 10px;
+}
+
+.main-container .bottom-bar #start-container #right-clientproj {
+  background-color: #adabab;
+  height: 100%;
+  border-top: 2px solid #e2dfdf;
+  border-left: 2px solid #e2dfdf;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.main-container .bottom-bar #start-container #right-clientproj #right-sec1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-right {
+  border-top: 2px solid #8c8b8b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-right:hover {
+  cursor: pointer;
+  background-color: #0202a8;
+  color: white;
+}
+
+.main-container .bottom-bar #start-container #right-clientproj #right-sec1 p {
+  font-size: large;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .bottom-bar #start-container #right-clientproj #right-sec1 p img {
+  margin-right: 6px;
+  width: 30px;
+}
+
+.main-container .bottom-bar #start-container #right-clientproj #right-sec1 p svg {
+  width: 10px;
+}
+
+.main-container .bottom-bar #start-container #right-personalproj {
+  position: relative;
+  top: 45px;
+  background-color: #adabab;
+  height: 100%;
+  border-top: 2px solid #e2dfdf;
+  border-left: 2px solid #e2dfdf;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.main-container .bottom-bar #start-container #right-personalproj #right-sec1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-right {
+  border-top: 2px solid #8c8b8b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-right:hover {
+  cursor: pointer;
+  background-color: #0202a8;
+  color: white;
+}
+
+.main-container .bottom-bar #start-container #right-personalproj #right-sec1 p {
+  font-size: large;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .bottom-bar #start-container #right-personalproj #right-sec1 p img {
+  margin-right: 6px;
+  width: 30px;
+}
+
+.main-container .bottom-bar #start-container #right-personalproj #right-sec1 p svg {
+  width: 10px;
+}
+
+.main-container .bottom-bar #start-container #right-game {
+  position: relative;
+  top: 253px;
+  background-color: #adabab;
+  height: 100%;
+  border-top: 2px solid #e2dfdf;
+  border-left: 2px solid #e2dfdf;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.main-container .bottom-bar #start-container #right-game #right-sec1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-right {
+  border-top: 2px solid #8c8b8b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-right:hover {
+  cursor: pointer;
+  background-color: #0202a8;
+  color: white;
+}
+
+.main-container .bottom-bar #start-container #right-game #right-sec1 p {
+  font-size: large;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .bottom-bar #start-container #right-game #right-sec1 p img {
+  margin-right: 6px;
+  width: 30px;
+}
+
+.main-container .bottom-bar #start-container #right-game #right-sec1 p svg {
+  width: 10px;
 }
 
 .main-container .bottom-bar #right-con {
