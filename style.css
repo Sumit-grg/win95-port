@@ -9,6 +9,49 @@ body {
   background-color: #008082;
 }
 
+#fixed-back {
+  position: fixed;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.9;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid white;
+}
+
+#fixed-back img {
+  opacity: 0.7;
+  padding: 2px;
+  border-radius: 50px;
+  background-color: #e2e2e2;
+  width: 100px;
+}
+
+#fixed-back p {
+  margin-top: 6px;
+  background-color: silver;
+  border: 2px solid #717171;
+  border-radius: 5px;
+  padding: 6px;
+  font-size: x-large;
+  color: black;
+}
+
+#fixed-back p:hover {
+  cursor: pointer;
+  background-color: #919191;
+}
+
 .main-container {
   width: 100%;
   height: 100%;

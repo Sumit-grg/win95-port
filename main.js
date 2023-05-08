@@ -82,7 +82,7 @@ const audioTimeInterval = () => {
   }, 1000)
 }
 
-mediaPlayer.addEventListener("click", ()=> {
+mediaPlayer.addEventListener("dblclick", ()=> {
   neverGonna.play();
 })
 
@@ -133,9 +133,14 @@ closebtnPlayer.addEventListener("click", ()=> {
 const startBtn = document.getElementById("startbtn");
 const startContainer = document.getElementById("start-container");
 
+    ///start items//////
 const startClient = document.getElementsByClassName("flex-item-right-clientproj")[0];
 const startPersonal = document.getElementsByClassName("flex-item-right-personalproj")[0];
 const startGame = document.getElementsByClassName("flex-item-right-game")[0];
+const startInternet= document.getElementsByClassName("flex-item-right-internet")[0];
+const startCV = document.getElementsByClassName("flex-item-right-cv")[0];
+const startMedia = document.getElementsByClassName("flex-item-right-media")[0];
+const startLogout = document.getElementsByClassName("flex-item-right-logout")[0];
 
 const secondStartClient = document.getElementById("right-clientproj");
 const secondStartPersonal = document.getElementById("right-personalproj");
@@ -144,14 +149,13 @@ const secondStartGame = document.getElementById("right-game");
 
 const mainScreen = document.getElementsByClassName("main-screen")[0];
 
+
 startBtn.addEventListener("click", ()=>{
   startBtn.style.cssText = `  border-top: 2px solid black;
   border-right: 2px solid rgb(226, 223, 223);
   border-bottom: 2px solid rgb(226, 223, 223);
   border-left: 2px solid black;`
-
   startContainer.style.display = "flex";
-
   setTimeout(()=>{
     startBtn.style.cssText = `border-top: 2px solid white;
       border-left: 2px solid white;
@@ -160,29 +164,223 @@ startBtn.addEventListener("click", ()=>{
       200)
 })
 
+const startMenuOtherOff = () => {
+  secondStartPersonal.style.display = "none"; 
+  secondStartClient.style.display = "none";
+  secondStartGame.style.display = "none"; 
+}
+
 startClient.addEventListener("mouseover", ()=>{
   secondStartClient.style.display = "block";
+  secondStartPersonal.style.display = "none"; 
+  secondStartGame.style.display = "none"; 
 })
-startClient.addEventListener("mouseout", ()=>{
-  secondStartClient.style.display = "none";
-})
-
 
 startPersonal.addEventListener("mouseover", ()=>{
   secondStartPersonal.style.display = "block"; 
-})
-startPersonal.addEventListener("mouseout", ()=>{
-  secondStartPersonal.style.display = "none";
-})
-
-startGame.addEventListener("mouseover", ()=>{
-  secondStartGame.style.display = "block"; 
-})
-startGame.addEventListener("mouseout", ()=>{
+  secondStartClient.style.display = "none";
   secondStartGame.style.display = "none";
 })
 
+startGame.addEventListener("mouseover", ()=>{
+  secondStartPersonal.style.display = "none"; 
+  secondStartClient.style.display = "none";
+  secondStartGame.style.display = "block"; 
+})
+
+startInternet.addEventListener("mouseover", ()=>{
+  startMenuOtherOff();
+})
+
+startCV.addEventListener("mouseover", ()=>{
+  startMenuOtherOff();
+})
+
+startMedia.addEventListener("mouseover", ()=>{
+  startMenuOtherOff();
+})
+
+startLogout.addEventListener("mouseover", ()=>{
+  startMenuOtherOff();
+})
+
+          ////main screen
 mainScreen.addEventListener("click", ()=> {
-  console.log("screen clicked main");
   startContainer.style.display = "none";
 })
+
+
+///////start menu second list ////////
+
+const startGameG1 = document.getElementsByClassName("flex-item-rightg1")[0];
+const startGameG2 = document.getElementsByClassName("flex-item-rightg2")[0];
+const myModalsf =document.getElementById("myModal-sf");
+const myModalai =document.getElementById("myModal-ai");
+
+
+const startMenuOff = () => {
+  startContainer.style.display = "none";
+  secondStartPersonal.style.display = "none"; 
+  secondStartClient.style.display = "none";
+  secondStartGame.style.display = "none"; 
+}
+
+startGameG1.addEventListener("click", ()=>{
+  myModalsf.style.display = "block";
+  startMenuOff();
+})
+startGameG2.addEventListener("click", ()=>{
+  myModalai.style.display = "block";
+  startMenuOff();
+})
+
+///////////start menu client/////////
+const startClient1 = document.getElementsByClassName("flex-item-rightc1")[0];
+const startClient2 = document.getElementsByClassName("flex-item-rightc2")[0];
+const startClient3 = document.getElementsByClassName("flex-item-rightc3")[0];
+const startClient4 = document.getElementsByClassName("flex-item-rightc4")[0];
+const myModal =document.getElementById("myModal-project");
+
+const clientProjTab = () => {
+  personalProj.style.display = "none";
+  clientProj.style.display = "block";
+  clientTab.style.cssText = `  border-top: 2px solid black;
+  border-right: 2px solid rgb(226, 223, 223);
+  border-bottom: 2px solid rgb(226, 223, 223);
+  border-left: 2px solid black;background-color:rgb(228, 224, 224);font-weight: bolder;`;
+  personalTab.style.cssText = `background-color: rgb(184, 181, 181);
+  border: 2px solid rgb(79, 79, 79);`;
+  modalMain.style.cssText = `border-left:2px solid black; border-bottom:2px solid black; border-right: 2px solid black`;
+  objNum.innerHTML = '4 object(s)';
+}
+
+startClient1.addEventListener("click", ()=>{
+  myModal.style.display = "block";
+  startMenuOff();
+  clientProjTab();
+})
+startClient2.addEventListener("click", ()=>{
+  myModal.style.display = "block";
+  startMenuOff();
+  clientProjTab();
+})
+startClient3.addEventListener("click", ()=>{
+  myModal.style.display = "block";
+  startMenuOff();
+  clientProjTab();
+})
+startClient4.addEventListener("click", ()=>{
+  myModal.style.display = "block";
+  startMenuOff();
+  clientProjTab();
+})
+
+///////////start menu personal proj/////////
+const startPersonal1 = document.getElementsByClassName("flex-item-rightp1")[0];
+const startPersonal2 = document.getElementsByClassName("flex-item-rightp2")[0];
+const startPersonal3 = document.getElementsByClassName("flex-item-rightp3")[0];
+const startPersonal4 = document.getElementsByClassName("flex-item-rightp4")[0];
+const startPersonal5 = document.getElementsByClassName("flex-item-rightp5")[0];
+const startPersonal6 = document.getElementsByClassName("flex-item-rightp6")[0];
+
+const personalProjTab = () => {
+  personalProj.style.display = "block";
+  clientProj.style.display = "none";
+  personalTab.style.cssText = `  border-top: 2px solid black;
+  border-right: 2px solid rgb(226, 223, 223);
+  border-bottom: 2px solid rgb(226, 223, 223);
+  border-left: 2px solid black;background-color:rgb(228, 224, 224);font-weight: bolder;`;
+  clientTab.style.cssText = `background-color: rgb(184, 181, 181);
+  border: 2px solid rgb(79, 79, 79);font-weight: inherit`;
+  modalMain.style.cssText = `border-left:2px solid black; border-bottom:2px solid black; border-right: 2px solid black`;
+  objNum.innerHTML = '6 object(s)';
+}
+
+startPersonal1.addEventListener("click", ()=>{
+  myModal.style.display = "block";
+  startMenuOff();
+  personalProjTab();
+})
+startPersonal2.addEventListener("click", ()=>{
+  myModal.style.display = "block";
+  startMenuOff();
+  personalProjTab();
+})
+startPersonal3.addEventListener("click", ()=>{
+  myModal.style.display = "block";
+  startMenuOff();
+  personalProjTab();
+})
+startPersonal4.addEventListener("click", ()=>{
+  myModal.style.display = "block";
+  startMenuOff();
+  personalProjTab();
+})
+startPersonal5.addEventListener("click", ()=>{
+  myModal.style.display = "block";
+  startMenuOff();
+  personalProjTab();
+})
+startPersonal6.addEventListener("click", ()=>{
+  myModal.style.display = "block";
+  startMenuOff();
+  personalProjTab();
+})
+
+
+
+/////start internet explore/////
+const startExplore = document.getElementsByClassName("flex-item-right-internet")[0];
+const myModalExplore =document.getElementById("myModal-explore");
+
+startExplore.addEventListener("click", ()=>{
+  myModalExplore.style.display = "block";
+  startMenuOff();
+})
+
+///////////////start cv////
+const startMenuCV = document.getElementsByClassName("flex-item-right-cv")[0];
+const myModalcv =document.getElementById("myModal-cv");
+
+startMenuCV.addEventListener("click", ()=>{
+  myModalcv.style.display = "block";
+  startMenuOff();
+})
+
+///////////////start menu media///
+const startMenuMedia = document.getElementsByClassName("flex-item-right-media")[0];
+const myModalPlayer =document.getElementById("myModal-player");
+
+startMenuMedia.addEventListener("click", ()=>{
+  myModalPlayer.style.display = "block";
+  neverGonna.play();
+  startMenuOff();
+})
+
+///////////////start menu logout///
+const winShutAudio = new Audio("./Asset/vid/win95-shutdown.mp3");
+const winStartAudio = new Audio("./Asset/vid/win95-start.mp3");
+const startMenuLogout = document.getElementsByClassName("flex-item-right-logout")[0];
+const blackoutScreen = document.getElementById("fixed-back");
+const sfIcon = document.getElementById("sf-icon");
+
+startMenuLogout.addEventListener("click", ()=>{
+  blackoutScreen.style.display = "flex";
+  sfIcon.style.opacity = "0.1";
+  startMenuOff();
+  winShutAudio.volume = 0.3;
+  winShutAudio.play();
+})
+
+////log in after log out
+
+const loginBtn = document.getElementById("loginbtn");
+
+loginBtn.addEventListener("click", ()=>{
+  blackoutScreen.style.display = "none";
+  winStartAudio.volume = 0.6;
+  winStartAudio.play();
+  sfIcon.style.opacity = "1";
+})
+
+
