@@ -7,6 +7,7 @@
 
 body {
   background-color: #008082;
+  overflow: hidden;
 }
 
 #fixed-back {
@@ -109,8 +110,8 @@ body {
   width: 50%;
   height: 50%;
   background-color: silver;
-  top: 100px;
-  left: 100px;
+  top: 50px;
+  left: 50px;
 }
 
 .main-container .main-screen #myModal-recycle #myModal-recycleCon, .main-container .main-screen #myModal-project #myModal-recycleCon, .main-container .main-screen #myModal-player #myModal-recycleCon {
@@ -235,7 +236,7 @@ body {
 }
 
 .main-container .main-screen #myModal-project {
-  display: none;
+  display: block;
   height: 80%;
   top: 100px;
   left: 100px;
@@ -360,12 +361,6 @@ body {
   width: 40%;
 }
 
-.main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div video:hover {
-  cursor: pointer;
-  -webkit-animation: inout 1.5s infinite;
-          animation: inout 1.5s infinite;
-}
-
 @-webkit-keyframes inout {
   0% {
     -webkit-transform: scale(1);
@@ -461,10 +456,24 @@ body {
   width: 40%;
 }
 
-.main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div video:hover {
-  cursor: pointer;
-  -webkit-animation: inout 1.5s infinite;
-          animation: inout 1.5s infinite;
+@keyframes inout {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div img {
+  border-radius: 10px;
+  max-width: 40%;
 }
 
 @keyframes inout {
@@ -536,6 +545,8 @@ body {
   border: 2px solid silver;
   width: 50%;
   height: 80%;
+  top: 60px;
+  left: 80px;
   background-color: silver;
 }
 
@@ -783,6 +794,8 @@ body {
   width: 30%;
   height: 40%;
   background-color: silver;
+  top: 10px;
+  left: 200px;
 }
 
 .main-container .main-screen #myModal-explore #myModal-exploreCon {
@@ -926,8 +939,8 @@ body {
 .main-container .main-screen #myModal-pc {
   display: none;
   position: absolute;
-  top: 100px;
-  left: 100px;
+  top: 80px;
+  left: 150px;
   z-index: 9;
   text-align: center;
   border: 2px solid silver;
@@ -1061,8 +1074,8 @@ body {
 .main-container .main-screen #myModal-sf {
   display: none;
   position: absolute;
-  top: 100px;
-  left: 100px;
+  top: 60px;
+  left: 40px;
   z-index: 9;
   text-align: center;
   border: 2px solid silver;
