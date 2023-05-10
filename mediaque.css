@@ -1,1 +1,156 @@
-/* No CSS *//*# sourceMappingURL=mediaque.css.map */
+@media (max-width: 700px) {
+  .main-container .main-screen {
+    overflow: hidden;
+  }
+  .main-container .main-screen .icon {
+    padding: 6px;
+    margin: 6px;
+  }
+  .main-container .main-screen .icon img {
+    width: 40px;
+  }
+  .main-container .main-screen #cv-icon img {
+    width: 40px;
+  }
+  .main-container .main-screen #sf-icon img {
+    width: 70px;
+  }
+  .main-container .bottom-bar #start-btn {
+    margin-left: 2px;
+  }
+  .main-container .bottom-bar #start-btn button {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid #807f7f;
+    border-bottom: 1px solid #807f7f;
+  }
+  .main-container .bottom-bar #start-btn button img {
+    width: 20px;
+  }
+  .main-container .bottom-bar #start-btn button p {
+    font-weight: bold;
+  }
+  .main-container .bottom-bar #start-container {
+    bottom: 27px;
+    display: none;
+  }
+  .main-container .bottom-bar #start-container #first-box-start {
+    width: 49vw;
+  }
+  .main-container .bottom-bar #start-container #first-box-start #left-start {
+    width: 10%;
+    padding-bottom: 10px;
+  }
+  .main-container .bottom-bar #start-container #first-box-start #left-start img {
+    width: 20px;
+  }
+  .main-container .bottom-bar #start-container #first-box-start #right-start {
+    width: 90%;
+  }
+  .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-personalproj,
+  .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-cv,
+  .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-game,
+  .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-logout {
+    padding: 10px 0;
+  }
+  .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-personalproj .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-cv .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-game .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-logout .svgcl {
+    margin-right: 2px;
+    width: 6px;
+  }
+  .main-container .bottom-bar #start-container #first-box-start #right-start p {
+    font-size: small;
+  }
+  .main-container .bottom-bar #start-container #first-box-start #right-start p img {
+    margin-right: 6px;
+    width: 15px;
+  }
+  .main-container .bottom-bar #start-container #first-box-start #right-start p svg {
+    width: 10px;
+  }
+  .main-container .bottom-bar #right-clientproj {
+    width: 49vw;
+  }
+  .main-container .bottom-bar #right-clientproj #right-sec1 {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-container .bottom-bar #right-clientproj #right-sec1 .flex-item-rightc1, .main-container .bottom-bar #right-clientproj #right-sec1 .flex-item-rightc2, .main-container .bottom-bar #right-clientproj #right-sec1 .flex-item-rightc3,
+  .main-container .bottom-bar #right-clientproj #right-sec1 .flex-item-rightc4 {
+    padding: 10px 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-container .bottom-bar #right-clientproj #right-sec1 p {
+    font-size: small;
+  }
+  .main-container .bottom-bar #right-clientproj #right-sec1 p img {
+    margin-right: 6px;
+    width: 15px;
+  }
+  .main-container .bottom-bar #right-clientproj #right-sec1 p svg {
+    width: 6px;
+  }
+  .main-container .bottom-bar #right-personalproj {
+    top: 45px;
+    width: 49vw;
+  }
+  .main-container .bottom-bar #right-personalproj #right-sec1 {
+    width: 100%;
+  }
+  .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp1, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp2, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp3,
+  .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp4, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp5, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp6 {
+    padding: 10px 0;
+  }
+  .main-container .bottom-bar #right-personalproj #right-sec1 p {
+    font-size: small;
+  }
+  .main-container .bottom-bar #right-personalproj #right-sec1 p img {
+    margin-right: 6px;
+    width: 15px;
+  }
+  .main-container .bottom-bar #right-personalproj #right-sec1 p svg {
+    width: 6px;
+  }
+  .main-container .bottom-bar #right-game {
+    top: 180px;
+    width: 49vw;
+  }
+  .main-container .bottom-bar #right-game #right-sec1 {
+    width: 100%;
+  }
+  .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg1, .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg2 {
+    padding: 10px 0;
+  }
+  .main-container .bottom-bar #right-game #right-sec1 p {
+    font-size: small;
+  }
+  .main-container .bottom-bar #right-game #right-sec1 p img {
+    margin-right: 6px;
+    width: 15px;
+  }
+  .main-container .bottom-bar #right-game #right-sec1 p svg {
+    width: 6px;
+  }
+  .main-container #right-con {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-top: 1px solid #807f7f;
+    border-left: 1px solid #807f7f;
+    height: 21px;
+  }
+  .main-container #right-con img {
+    width: 25px;
+    margin-bottom: 6px;
+  }
+  .main-container #right-con p {
+    font-size: small;
+  }
+}
+/*# sourceMappingURL=mediaque.css.map */
