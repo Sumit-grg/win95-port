@@ -1,6 +1,5 @@
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
   .main-container .main-screen {
-    border: 2px solid red;
     overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -32,6 +31,365 @@
   .main-container .main-screen #sf-icon img {
     width: 70px;
   }
+  .main-container .main-screen #myModal-recycle {
+    display: none;
+    width: 80%;
+    height: 50%;
+    top: 100px;
+    left: 40px;
+    border: 1px solid silver;
+  }
+  .main-container .main-screen #myModal-recycle #myModal-recycleCon {
+    height: 6%;
+  }
+  .main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon {
+    width: 50%;
+  }
+  .main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon img {
+    padding: 5px;
+    width: 20%;
+  }
+  .main-container .main-screen #myModal-recycle #modal-main {
+    background-color: white;
+    height: 75%;
+    width: 99%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-container .main-screen #myModal-recycle #modal-main .bin-folder {
+    padding: 4px;
+    margin: 6px;
+    width: 25%;
+    height: 25%;
+  }
+  .main-container .main-screen #myModal-project {
+    display: none;
+    height: 90%;
+    width: 90%;
+    top: 0px;
+  }
+  .main-container .main-screen #myModal-project #myModal-projectCon {
+    width: 100%;
+    height: 4%;
+  }
+  .main-container .main-screen #myModal-project #myModal-projectCon #left-icon {
+    width: 50%;
+  }
+  .main-container .main-screen #myModal-project #myModal-projectCon #left-icon img {
+    width: 20%;
+  }
+  .main-container .main-screen #myModal-project #modal-main {
+    height: 86%;
+  }
+  .main-container .main-screen #myModal-project #modal-main #pro-tab .tab {
+    padding: 4px;
+    font-size: small;
+  }
+  .main-container .main-screen #myModal-project #modal-main #client-pro p {
+    color: black;
+  }
+  .main-container .main-screen #myModal-project #modal-main #client-pro #client-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div {
+    border-radius: 5px;
+    border-top: 1px dotted #878686;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+  }
+  .main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div video {
+    border-radius: 5px;
+    width: 90%;
+  }
+  .main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div #infosec span {
+    font-size: medium;
+  }
+  .main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div #infosec .techUsed {
+    margin: 8px;
+  }
+  .main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div #infosec p {
+    text-align: justify;
+    font-size: medium;
+  }
+  .main-container .main-screen #myModal-project #modal-main #personal-pro {
+    display: none;
+  }
+  .main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px auto;
+    padding: 10px;
+    border-top: 1px dotted #878686;
+    border-radius: 5px;
+  }
+  .main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div video {
+    border-radius: 5px;
+    width: 90%;
+  }
+  .main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div img {
+    border-radius: 5px;
+    max-width: 90%;
+  }
+  .main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div #infosec {
+    text-align: center;
+  }
+  .main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div #infosec span {
+    font-size: medium;
+  }
+  .main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div #infosec .techUsed {
+    margin: 8px;
+  }
+  .main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div #infosec p {
+    text-align: justify;
+    font-size: medium;
+  }
+  .main-container .main-screen #myModal-cv {
+    display: none;
+    width: 90%;
+    height: 90%;
+    top: 10px;
+    left: 10px;
+  }
+  .main-container .main-screen #myModal-cv #myModal-cvCon {
+    width: 100%;
+    height: 4%;
+  }
+  .main-container .main-screen #myModal-cv #myModal-cvCon #left-icon img {
+    padding: 5px;
+    width: 25px;
+  }
+  .main-container .main-screen #myModal-cv #modal-main {
+    display: block;
+    background-color: white;
+    height: 86%;
+    width: 99%;
+    margin: 0 auto;
+  }
+  .main-container .main-screen #myModal-player {
+    display: none;
+    width: 94%;
+    height: 70%;
+    top: 60px;
+    bottom: 100px;
+  }
+  .main-container .main-screen #myModal-player #myModal-playerCon {
+    height: 6%;
+  }
+  .main-container .main-screen #myModal-player #myModal-playerCon #left-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-container .main-screen #myModal-player #myModal-playerCon #left-icon img {
+    width: 20%;
+  }
+  .main-container .main-screen #myModal-player #modal-main {
+    height: 80%;
+    width: 99%;
+    display: block;
+  }
+  .main-container .main-screen #myModal-player #modal-main #vid-gif {
+    width: 99%;
+    background-color: black;
+  }
+  .main-container .main-screen #myModal-player #modal-main #vid-gif img {
+    width: 100%;
+  }
+  .main-container .main-screen #myModal-player #modal-main input {
+    width: 100%;
+    -webkit-transition: 0.1s ease;
+    transition: 0.1s ease;
+  }
+  .main-container .main-screen #myModal-player #modal-main audio {
+    display: none;
+  }
+  .main-container .main-screen #myModal-player #modal-main #control {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 12%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: silver;
+    align-items: center;
+  }
+  .main-container .main-screen #myModal-player #modal-main #control #audio-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main-container .main-screen #myModal-player #modal-main #control #audio-cont img {
+    width: 20%;
+    margin: 0 2px;
+    border: 1px solid #787878;
+    border-radius: 5px;
+    padding: 4px;
+  }
+  .main-container .main-screen #myModal-player #modal-main #control #audio-cont #novolbtn, .main-container .main-screen #myModal-player #modal-main #control #audio-cont #volbtn {
+    padding: 0 10px;
+  }
+  .main-container .main-screen #myModal-player #modal-main #audio-time {
+    border: 1px solid #6a6a6a;
+    padding: 1px;
+  }
+  .main-container .main-screen #myModal-player #modal-main #audio-time p {
+    font-size: small;
+  }
+  .main-container .main-screen #myModal-player #modal-main #media-logo {
+    display: none;
+  }
+  .main-container .main-screen #myModal-player #modal-bottom p {
+    width: 100%;
+    font-size: small;
+  }
+  .main-container .main-screen #myModal-explore {
+    display: none;
+    border: 1px solid silver;
+    width: 70%;
+    height: 60%;
+    top: 30px;
+    left: 100px;
+  }
+  .main-container .main-screen #myModal-explore #myModal-exploreCon #left-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-container .main-screen #myModal-explore #myModal-exploreCon #left-icon img {
+    padding: 4px;
+    width: 15%;
+  }
+  .main-container .main-screen #myModal-explore #modal-main {
+    height: 80%;
+    width: 99%;
+    margin: 0 auto;
+  }
+  .main-container .main-screen #myModal-explore #modal-main img {
+    border: 2px double #b4b4b4;
+    width: 100%;
+    height: 40%;
+  }
+  .main-container .main-screen #myModal-explore #modal-main #dial-box {
+    margin: 0 auto;
+    height: 60%;
+    width: 90%;
+    text-align: center;
+  }
+  .main-container .main-screen #myModal-explore #modal-main #dial-box p {
+    margin: 6px auto;
+  }
+  .main-container .main-screen #myModal-explore #modal-main #dial-box div {
+    padding: 4px;
+    border: 2px double #5a5a5a;
+  }
+  .main-container .main-screen #myModal-explore #modal-main #dial-box div p {
+    margin: 10px auto;
+  }
+  .main-container .main-screen #myModal-explore #modal-main #dial-box div p span {
+    font-weight: bold;
+  }
+  .main-container .main-screen #myModal-explore #modal-bottom p {
+    font-size: small;
+  }
+  .main-container .main-screen #myModal-explore #modal-bottom audio {
+    display: none;
+  }
+  .main-container .main-screen #myModal-pc {
+    display: none;
+    top: 100px;
+    left: 10px;
+    border: 1px solid silver;
+    width: 80%;
+    height: 50%;
+  }
+  .main-container .main-screen #myModal-pc #myModal-pcCon {
+    height: 7%;
+  }
+  .main-container .main-screen #myModal-pc #myModal-pcCon #left-icon img {
+    padding: 6px;
+    width: 20%;
+  }
+  .main-container .main-screen #myModal-pc #modal-main {
+    height: 74%;
+    width: 99%;
+  }
+  .main-container .main-screen #myModal-sf {
+    display: block;
+    top: 60px;
+    left: 40px;
+    border: 1px solid silver;
+    width: 94%;
+    height: 70%;
+  }
+  .main-container .main-screen #myModal-sf #myModal-sfCon {
+    height: 6%;
+    border: 1px solid silver;
+  }
+  .main-container .main-screen #myModal-sf #myModal-sfCon #left-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-container .main-screen #myModal-sf #myModal-sfCon #left-icon img {
+    margin-right: 6px;
+    padding: 4px;
+    width: 10%;
+  }
+  .main-container .main-screen #myModal-sf #myModal-sfCon #left-icon p {
+    font-size: small;
+  }
+  .main-container .main-screen #myModal-sf #modal-main {
+    display: block;
+    background-color: white;
+    height: 87%;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .main-container .main-screen #myModal-sf #modal-main iframe {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+  }
   .main-container .bottom-bar #start-btn {
     margin-left: 2px;
   }
@@ -45,10 +403,8 @@
     font-weight: bold;
   }
   .main-container .bottom-bar #start-container {
-    bottom: 27px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    bottom: 24px;
+    display: none;
   }
   .main-container .bottom-bar #start-container #first-box-start {
     width: 49vw;
