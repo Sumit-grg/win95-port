@@ -1,7 +1,12 @@
 @media (max-width: 700px){  
   .main-container {
     .main-screen {  
+      border: 2px solid red;
       overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: wrap;
       .icon{
         padding: 6px;
         margin: 6px;
@@ -15,27 +20,24 @@
         }
       }
       #sf-icon{
+        padding: 6px;
+        margin-top: 20px;
         img{
           width: 70px;
         }
       }
       ///////////modal-style.css goes from here///////
-      /// to here/////////////////
-  
+      /// to here/////////////////  
     }
-  ///////bottom bar/////////////
+    ///////bottom bar/////////////
   
     .bottom-bar {
       #start-btn {
         margin-left: 2px;
         button {
-          align-items: center;
-          border-top: 1px solid white;
-          border-left: 1px solid white;
-          border-right: 1px solid rgb(128, 127, 127);
-          border-bottom: 1px solid rgb(128, 127, 127);
+          height: 100%;
           img{
-            width: 20px;
+            width: 100%;
           }
           p{
             font-weight: bold;
@@ -45,7 +47,7 @@
   
       #start-container{
         bottom: 27px;
-        display: none;
+        display: flex;
         #first-box-start{
           width: 49vw;
           #left-start{
@@ -57,6 +59,8 @@
           }
           #right-start{
             width: 90%;
+            #right-sec1, #right-sec2, #right-sec3, #right-sec4{
+
               .flex-item-right-clientproj,.flex-item-right-personalproj,
               .flex-item-right-internet,.flex-item-right-cv,
               .flex-item-right-media,.flex-item-right-game,
@@ -64,67 +68,79 @@
                 padding: 10px 0;
                 .svgcl{
                   margin-right: 2px;
-                  width: 6px;
-                }
-              }
-              p{
-                font-size: small;
-                img{
-                  margin-right: 6px;
-                  width: 15px;
-                }
-                svg {
                   width: 10px;
+                }
+                p{
+                  font-size: small;
+                  img{
+                    margin-right: 6px;
+                    width: 15px;
+                  }
                 }
               }
             }
           }
         }
+      }
 
           ////second right client prog///////
           /// 
+        // #right-clientproj{
+        //   display: block;
+        //   width: 49vw;
+        //   #right-sec1{
+        //     border: 2px solid red;
+        //     width: 100%;
+        //     .flex-item-rightc1,.flex-item-rightc2,.flex-item-rightc3,
+        //     .flex-item-rightc4{
+        //       padding: 10px 0;
+        //       p{
+        //         font-size: small;
+        //         img{
+        //           margin-right: 6px;
+        //           width: 15px;
+        //         }
+        //       }
+        //     }
+        //   }
+        // }
+
         #right-clientproj{
           // display: block;
           width: 49vw;
           #right-sec1{
             width: 100%;
-            flex-wrap: wrap;
             .flex-item-rightc1,.flex-item-rightc2,.flex-item-rightc3,
             .flex-item-rightc4{
               padding: 10px 0;
-              flex-wrap: wrap;
             }
             p{
-              font-size: small;
+              font-size: small !important;
               img{
                 margin-right: 6px;
-                width: 15px;
-              }
-              svg {
-                width: 6px;
+                width: 12px !important;
               }
             }
           }
         }
+
+
         ////second right personal prog///////
         #right-personalproj{
-          // display: block;
-          top: 45px;
+          display: block;
+          top: 0px !important;
           width: 49vw;
           #right-sec1{
             width: 100%;
             .flex-item-rightp1,.flex-item-rightp2,.flex-item-rightp3,
             .flex-item-rightp4,.flex-item-rightp5,.flex-item-rightp6{
-              padding: 10px 0;
-            }
-            p{
-              font-size: small;
-              img{
-                margin-right: 6px;
-                width: 15px;
-              }
-              svg {
-                width: 6px;
+              padding: 10px 0 !important;
+              p{
+                font-size: small !important;
+                img{
+                  margin-right: 6px;
+                  width: 12px !important;
+                }
               }
             }
           }
@@ -132,7 +148,7 @@
 
         ////second right games///////
         #right-game{
-          top: 180px;
+          top: 185px !important;
           width: 49vw;
           #right-sec1{
             width: 100%;
@@ -140,10 +156,10 @@
               padding: 10px 0;
             }
             p{
-              font-size: small;
+              font-size: small !important;
               img{
                 margin-right: 6px;
-                width: 15px;
+                width: 12px !important;
               }
               svg {
                 width: 6px;
@@ -152,20 +168,16 @@
           }
         }
   
-      }
-  
-      #right-con {
-        border-right: 1px solid white;
-        border-bottom: 1px solid white;
-        border-top: 1px solid rgb(128, 127, 127);
-        border-left: 1px solid rgb(128, 127, 127);
-        height: 21px;
-        img {
-          width: 25px;
-          margin-bottom: 6px;
-        }
-        p{
-          font-size: small;
+        
+        #right-con {
+          height: 100%;
+          img {
+            width: 25px;
+            margin-bottom: 6px;
+          }
+          p{
+            font-size: small;
+          }
         }
       }
     }

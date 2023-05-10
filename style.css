@@ -90,12 +90,6 @@ body {
   width: 45px;
 }
 
-.main-container .main-screen #sf-icon {
-  position: absolute;
-  top: 25px;
-  left: 180px;
-}
-
 .main-container .main-screen #sf-icon img {
   opacity: 0.9;
   width: 80px;
@@ -121,6 +115,7 @@ body {
 }
 
 .main-container .bottom-bar #start-btn button {
+  height: 100%;
   background-color: silver;
   border: 2px solid red;
   display: -webkit-box;
@@ -135,9 +130,14 @@ body {
   border-bottom: 2px solid #807f7f;
 }
 
-.main-container .bottom-bar #start-btn button p, .main-container .bottom-bar #start-btn button img {
+.main-container .bottom-bar #start-btn button p {
   margin: 0 4px;
   font-weight: bold;
+}
+
+.main-container .bottom-bar #start-btn button img {
+  margin: 0 4px;
+  height: 100%;
 }
 
 .main-container .bottom-bar #start-container {
@@ -321,10 +321,6 @@ body {
   width: 30px;
 }
 
-.main-container .bottom-bar #start-container #right-clientproj #right-sec1 p svg {
-  width: 10px;
-}
-
 .main-container .bottom-bar #start-container #right-personalproj {
   display: none;
   position: relative;
@@ -461,6 +457,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
 }
 
 .main-container .bottom-bar #right-con img, .main-container .bottom-bar #right-con p {

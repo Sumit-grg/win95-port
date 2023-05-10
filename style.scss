@@ -81,9 +81,10 @@ body{
       }
     }
     #sf-icon{
-      position: absolute;  //this is for draggable div
-      top: 25px;
-      left: 180px;
+      //this is for draggable div
+      // position: absolute;  
+      // top: 25px;
+      // left: 180px;
       img{
         opacity: 0.9;
         width: 80px;
@@ -106,6 +107,7 @@ body{
       margin-left: 2px;
 
       button {
+        height: 100%;
         background-color: rgb(192,192,192);
         border: 2px solid red;
         display: flex;
@@ -114,9 +116,13 @@ body{
         border-left: 2px solid white;
         border-right: 2px solid rgb(128, 127, 127);
         border-bottom: 2px solid rgb(128, 127, 127);
-        p, img{
+        p{
           margin: 0 4px; 
           font-weight: bold;
+        }
+        img{
+          margin: 0 4px;
+          height: 100%;
         }
       }
     }
@@ -215,9 +221,6 @@ body{
               margin-right: 6px;
               width: 30px;
             }
-            svg {
-              width: 10px;
-            }
           }
         }
       }
@@ -315,6 +318,7 @@ body{
       border-left: 2px solid rgb(128, 127, 127);
       display: flex;
       align-items: center;
+      height: 100%;
       img, p{
         margin: 0 3px;
         font-weight: bold;

@@ -1,6 +1,19 @@
 @media (max-width: 700px) {
   .main-container .main-screen {
+    border: 2px solid red;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .main-container .main-screen .icon {
     padding: 6px;
@@ -12,6 +25,10 @@
   .main-container .main-screen #cv-icon img {
     width: 40px;
   }
+  .main-container .main-screen #sf-icon {
+    padding: 6px;
+    margin-top: 20px;
+  }
   .main-container .main-screen #sf-icon img {
     width: 70px;
   }
@@ -19,23 +36,19 @@
     margin-left: 2px;
   }
   .main-container .bottom-bar #start-btn button {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-top: 1px solid white;
-    border-left: 1px solid white;
-    border-right: 1px solid #807f7f;
-    border-bottom: 1px solid #807f7f;
+    height: 100%;
   }
   .main-container .bottom-bar #start-btn button img {
-    width: 20px;
+    width: 100%;
   }
   .main-container .bottom-bar #start-btn button p {
     font-weight: bold;
   }
   .main-container .bottom-bar #start-container {
     bottom: 27px;
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .main-container .bottom-bar #start-container #first-box-start {
     width: 49vw;
@@ -50,55 +63,88 @@
   .main-container .bottom-bar #start-container #first-box-start #right-start {
     width: 90%;
   }
-  .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-personalproj,
-  .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-cv,
-  .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-game,
-  .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-logout {
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-personalproj,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-cv,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-game,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-logout, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-personalproj,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-cv,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-game,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-logout, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-personalproj,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-cv,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-game,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-logout, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-personalproj,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-cv,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-game,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-logout {
     padding: 10px 0;
   }
-  .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-personalproj .svgcl,
-  .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-cv .svgcl,
-  .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-game .svgcl,
-  .main-container .bottom-bar #start-container #first-box-start #right-start .flex-item-right-logout .svgcl {
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-personalproj .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-cv .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-game .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-logout .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-personalproj .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-cv .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-game .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-logout .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-personalproj .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-cv .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-game .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-logout .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-personalproj .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-cv .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-game .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-logout .svgcl {
     margin-right: 2px;
-    width: 6px;
+    width: 10px;
   }
-  .main-container .bottom-bar #start-container #first-box-start #right-start p {
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-clientproj p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-personalproj p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-cv p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-media p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-game p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-logout p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-clientproj p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-personalproj p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-internet p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-cv p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-media p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-game p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-logout p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-clientproj p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-personalproj p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-internet p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-cv p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-media p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-game p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-logout p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-clientproj p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-personalproj p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-internet p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-cv p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-media p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-game p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-logout p {
     font-size: small;
   }
-  .main-container .bottom-bar #start-container #first-box-start #right-start p img {
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-clientproj p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-personalproj p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-cv p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-media p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-game p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-logout p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-clientproj p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-personalproj p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-internet p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-cv p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-media p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-game p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-logout p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-clientproj p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-personalproj p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-internet p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-cv p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-media p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-game p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-logout p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-clientproj p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-personalproj p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-internet p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-cv p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-media p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-game p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-logout p img {
     margin-right: 6px;
     width: 15px;
-  }
-  .main-container .bottom-bar #start-container #first-box-start #right-start p svg {
-    width: 10px;
   }
   .main-container .bottom-bar #right-clientproj {
     width: 49vw;
   }
   .main-container .bottom-bar #right-clientproj #right-sec1 {
     width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .main-container .bottom-bar #right-clientproj #right-sec1 .flex-item-rightc1, .main-container .bottom-bar #right-clientproj #right-sec1 .flex-item-rightc2, .main-container .bottom-bar #right-clientproj #right-sec1 .flex-item-rightc3,
   .main-container .bottom-bar #right-clientproj #right-sec1 .flex-item-rightc4 {
     padding: 10px 0;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .main-container .bottom-bar #right-clientproj #right-sec1 p {
-    font-size: small;
+    font-size: small !important;
   }
   .main-container .bottom-bar #right-clientproj #right-sec1 p img {
     margin-right: 6px;
-    width: 15px;
-  }
-  .main-container .bottom-bar #right-clientproj #right-sec1 p svg {
-    width: 6px;
+    width: 12px !important;
   }
   .main-container .bottom-bar #right-personalproj {
-    top: 45px;
+    display: block;
+    top: 0px !important;
     width: 49vw;
   }
   .main-container .bottom-bar #right-personalproj #right-sec1 {
@@ -106,20 +152,19 @@
   }
   .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp1, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp2, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp3,
   .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp4, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp5, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp6 {
-    padding: 10px 0;
+    padding: 10px 0 !important;
   }
-  .main-container .bottom-bar #right-personalproj #right-sec1 p {
-    font-size: small;
+  .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp1 p, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp2 p, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp3 p,
+  .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp4 p, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp5 p, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp6 p {
+    font-size: small !important;
   }
-  .main-container .bottom-bar #right-personalproj #right-sec1 p img {
+  .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp1 p img, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp2 p img, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp3 p img,
+  .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp4 p img, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp5 p img, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp6 p img {
     margin-right: 6px;
-    width: 15px;
-  }
-  .main-container .bottom-bar #right-personalproj #right-sec1 p svg {
-    width: 6px;
+    width: 12px !important;
   }
   .main-container .bottom-bar #right-game {
-    top: 180px;
+    top: 185px !important;
     width: 49vw;
   }
   .main-container .bottom-bar #right-game #right-sec1 {
@@ -129,27 +174,23 @@
     padding: 10px 0;
   }
   .main-container .bottom-bar #right-game #right-sec1 p {
-    font-size: small;
+    font-size: small !important;
   }
   .main-container .bottom-bar #right-game #right-sec1 p img {
     margin-right: 6px;
-    width: 15px;
+    width: 12px !important;
   }
   .main-container .bottom-bar #right-game #right-sec1 p svg {
     width: 6px;
   }
-  .main-container #right-con {
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
-    border-top: 1px solid #807f7f;
-    border-left: 1px solid #807f7f;
-    height: 21px;
+  .main-container .bottom-bar #right-con {
+    height: 100%;
   }
-  .main-container #right-con img {
+  .main-container .bottom-bar #right-con img {
     width: 25px;
     margin-bottom: 6px;
   }
-  .main-container #right-con p {
+  .main-container .bottom-bar #right-con p {
     font-size: small;
   }
 }
