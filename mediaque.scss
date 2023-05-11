@@ -71,6 +71,7 @@
       height: 90%;
       width: 90%;
       top: 0px;
+      left: 30px;
       #myModal-projectCon {
         width: 100%;
         height: 4%;
@@ -118,10 +119,6 @@
                   text-align: justify;
                   font-size: medium;
                 }
-                .lunchcode {
-                  a{
-                  }
-                }
               }
             }
           }
@@ -158,10 +155,6 @@
                 p{
                   text-align: justify;
                   font-size: medium;
-                }
-                .lunchcode {
-                  a{
-                  }
                 }
               }
             }
@@ -206,7 +199,7 @@
       width: 94%;
       height: 70%;
       top: 60px;
-      bottom: 100px;
+      left: 50px;
       #myModal-playerCon {
         height: 6%;
         #left-icon{
@@ -296,8 +289,6 @@
           }
         }
       }
-      #modal-menu{
-      }
       #modal-main{
         height: 80%;
         width: 99%;
@@ -362,15 +353,13 @@
         width: 99%;
 
       }
-      #modal-bottom{
-      }
     }
 
     ////////modal street frigther /////////////
     #myModal-sf {
       display: none;
       top: 60px;
-      left: 40px;
+      left: 10px;
       border: 1px solid rgb(192,192,192);
       width: 94%;
       height: 70%;
@@ -539,6 +528,534 @@
   }
 }
 
-// @media screen and (max-width: 1100) and (min-width: 700){
 
-// }
+
+
+//////////////media 700-1100/////////////////
+
+@media screen and (max-width: 1000px) and (min-width: 700px){
+  .main-container {
+    /////main screen///////////
+    .main-screen {  
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      .icon{
+        padding: 8px;
+        margin: 8px;
+        img{
+          width: 45px;
+        }
+      }
+      #cv-icon{
+        img{
+          width: 45px;
+        }
+      }
+      #sf-icon{
+        padding: 6px;
+        margin-top: 20px;
+        img{
+          width: 75px;
+        }
+      }
+
+
+      ///////////modal-style.css goes from here///////
+      /// to here///////////////// 
+      
+          ///modal recycle bin/////
+    #myModal-recycle {
+      display: none;
+      width: 80%;
+      height: 50%;
+      top: 100px;
+      left: 40px;
+      border: 2px solid rgb(192,192,192);
+      #myModal-recycleCon {
+        height: 6%;
+        #left-icon{
+          width: 50%;
+          img {
+            padding: 5px;
+            width: 25px;
+          }
+        }
+      }
+      #modal-main{
+        background-color: white;
+        height: 80%;
+        width: 99%;
+        
+        display: flex;
+        flex-wrap: wrap;
+        .bin-folder {
+          padding: 4px;
+          margin: 6px;
+          width: 25%;
+          height: 25%;
+        }
+      }
+      #modal-bottom{
+        height: 25px;
+      }
+    }
+
+    /////////modal project////////////
+    #myModal-project {
+      display: none;
+      height: 80%;
+      width: 80%;
+      top: 0px;
+      #myModal-projectCon {
+        width: 100%;
+        height: 4%;
+        #left-icon{
+          width: 50%;
+          img {
+            width: 25px;
+          }
+        }
+      }
+      #modal-main{
+        height: 90%;
+        #pro-tab {
+          .tab{
+            padding: 4px;
+            font-size: large;
+          }
+        }
+        #client-pro{
+          p {
+            color: black;
+          }
+          #client-flex{
+            display: flex;
+            flex-direction: column;
+            .client-div{
+              border-radius: 5px;
+              border-top: 1px dotted rgb(135, 134, 134);
+              align-items: center;
+              display: flex;
+              flex-direction: column;
+              padding: 10px;
+              video {
+                border-radius: 5px;
+                width: 90%;
+              }
+              #infosec {
+                span {
+                  font-size: medium;
+                }
+                .techUsed {
+                  margin: 10px;
+                }
+                p{
+                  text-align: justify;
+                  font-size: medium;
+                }
+              }
+            }
+          }
+        }
+
+        #personal-pro{
+          display: none;
+          #personal-flex{
+            .personal-div{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              align-items: center;
+              margin: 10px auto;
+              padding: 10px;
+              border-top: 1px dotted rgb(135, 134, 134);
+              border-radius: 5px;
+              video {
+                border-radius: 5px;
+                width: 90%;
+              }
+              img{
+                border-radius: 5px;
+                max-width: 90%;
+              }
+              #infosec {
+                text-align: center;
+                span {
+                  font-size: medium;
+                }
+                .techUsed {
+                  margin: 8px;
+                }
+                p{
+                  text-align: justify;
+                  font-size: medium;
+                }
+              }
+            }
+          }
+        }
+        
+      }
+    }
+    
+    // modal-cv//////////
+    #myModal-cv {
+      display: none;
+      width: 80%;
+      height: 80%;
+      top: 10px;
+      left: 10px;
+      #myModal-cvCon {
+        width: 100%;
+        height: 4%;
+        #left-icon{
+          img {
+            padding: 5px;
+            width: 25px;
+          }
+        }
+      }
+      #modal-main{
+        display: block;
+        background-color: white;
+        height: 89%;
+        width: 99%;
+        margin: 0 auto;
+        p{
+          color: black;
+        }
+      }
+    }
+
+    // model media player///////////////
+    #myModal-player {
+      display: none;
+      width: 80%;
+      height: 60%;
+      top: 60px;
+      left: 50px;
+      #myModal-playerCon {
+        height: 6%;
+        #left-icon{
+          display: flex;
+          align-items: center;
+          img {
+            width: 20%;
+          }
+        }
+      }
+      #modal-main{
+        height: 80%;
+        width: 99%;
+        display: block;
+        #vid-gif{
+          width: 99%;
+          background-color: black;
+          img {
+            width: 80%;
+            height: 90%;
+          }
+        }
+        input{
+          width: 100%;
+          transition: 0.1s ease;
+        }
+        audio {
+          display: none;
+        }
+        #control {
+          align-items: center;
+          width: 100%;
+          // height: 12%;
+          display: flex;
+          background-color: rgb(192,192,192);
+          // align-items: center;
+          #audio-cont {
+            display: flex;
+            img {
+              width: 20%;
+              margin: 0 6px;
+              border: 1px solid rgb(120, 120, 120);
+              border-radius: 5px;
+              padding: 4px;
+            }
+
+            #novolbtn, #volbtn {
+              padding: 10px;
+            }
+          }
+        }
+        #audio-time{
+          border: 2px solid rgb(106, 106, 106);
+          padding: 4px;
+          p{
+            font-size: medium;
+          }
+
+        }
+        // #media-logo {
+        //   display: none;
+        // }
+      }
+    }
+
+
+    ////model internet explore////////
+    #myModal-explore{
+      display: none;
+      border: 2px solid rgb(192,192,192);
+      width: 60%;
+      height: 50%;
+      top: 30px;
+      left: 100px;
+      #myModal-exploreCon {
+        #left-icon{
+          display: flex;
+          align-items: center;
+          img {
+            padding: 4px;
+            width: 15%;
+          }
+        }
+      }
+      #modal-main{
+        height: 80%;
+        width: 99%;
+        margin: 0 auto;
+        
+        img{
+          border: 2px double rgb(180, 180, 180);
+          width: 100%;
+          height: 40%;
+        }
+        #dial-box {
+          margin: 0 auto;
+          // border: 2px solid red;
+          height: 60%;
+          width: 90%;
+          text-align: center;
+          p{
+            margin: 10px auto;
+          }
+          div{
+            padding: 6px;
+            border: 2px double rgb(90, 90, 90);
+            p{
+              margin: 20px auto;
+              span {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+      #modal-bottom{
+        p{
+          font-size: medium;
+        }
+        audio {
+          display: none;
+        }
+      }
+
+    }
+
+    ////////pc modal//////////
+    #myModal-pc{
+      display: none;
+      top: 100px;
+      left: 60px;
+      border: 1px solid rgb(192,192,192);
+      width: 60%;
+      height: 40%;
+      #myModal-pcCon {
+        height: 7%;
+        #left-icon{
+          img {
+            padding: 6px;
+            width: 20%;
+          }
+        }
+      }
+      #modal-main{
+        height: 74%;
+        width: 99%;
+
+      }
+    }
+
+    ////////modal street frigther /////////////
+    #myModal-sf {
+      display: none;
+      top: 60px;
+      left: 40px;
+      border: 1px solid rgb(192,192,192);
+      width: 94%;
+      height: 70%;
+      #myModal-sfCon {
+        height: 6%;
+        border: 1px solid rgb(192,192,192);
+        #left-icon{
+          display: flex;
+          align-items: center;
+          img {
+            margin-right: 8px;
+            padding: 4px;
+            width: 30px;
+          }
+          p {
+            font-size: medium;
+          }
+        }
+      }
+      #modal-main{
+        display: block;
+        background-color: white;
+        height: 87%;
+        width: 100%;
+        margin: 0 auto;
+        iframe {
+          width: 100%;
+        }
+      }
+
+    }
+
+    }
+    ///////bottom bar/////////////
+  
+    .bottom-bar {
+      #start-btn {
+        margin-left: 2px;
+        button {
+          height: 100%;
+          img{
+            width: 100%;
+          }
+          p{
+            font-weight: bold;
+          }
+        }
+      }
+
+      ///start container/////
+      #start-container{
+        bottom: 40px;
+        display: none;
+        #first-box-start{
+          width: 40vw;
+          #left-start{
+            width: 8%;
+            padding-bottom: 10px;
+            img{
+              width: 20px;
+            }
+          }
+          #right-start{
+            width: 92%;
+            #right-sec1, #right-sec2, #right-sec3, #right-sec4{
+              
+              .flex-item-right-clientproj,.flex-item-right-personalproj,
+              .flex-item-right-internet,.flex-item-right-cv,
+              .flex-item-right-media,.flex-item-right-game,
+              .flex-item-right-logout {
+                padding: 10px 0;
+                .svgcl{
+                  margin-right: 8px;
+                  width: 10px;
+                }
+                p{
+                  font-size: medium;
+                  img{
+                    margin-right: 8px;
+                    width: 25px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+        ////////second right start client/////////
+        #right-clientproj{
+          display: none;
+          width: 49vw;
+          #right-sec1{
+            width: 100%;
+            .flex-item-rightc1,.flex-item-rightc2,.flex-item-rightc3,
+            .flex-item-rightc4{
+              padding: 10px 0;
+            }
+            p{
+              font-size: medium !important;
+              img{
+                margin-right: 6px;
+                width: 25px !important;
+              }
+            }
+          }
+        }
+
+
+        ////second right personal prog///////
+        #right-personalproj{
+          display: none;
+          top: 0px !important;
+          width: 49vw;
+          #right-sec1{
+            width: 100%;
+            .flex-item-rightp1,.flex-item-rightp2,.flex-item-rightp3,
+            .flex-item-rightp4,.flex-item-rightp5,.flex-item-rightp6{
+              padding: 10px 0 !important;
+              p{
+                font-size: medium !important;
+                img{
+                  margin-right: 6px;
+                  width: 25px !important;
+                }
+              }
+            }
+          }
+        }
+
+        ////second right games///////
+        #right-game{
+          top: 190px !important;
+          width: 49vw;
+          #right-sec1{
+            width: 100%;
+            .flex-item-rightg1,.flex-item-rightg2{
+              padding: 10px 0;
+            }
+            p{
+              font-size: medium !important;
+              img{
+                margin-right: 6px;
+                width: 25px !important;
+              }
+              svg {
+                width: 25px;
+              }
+            }
+          }
+        }
+  
+        ////////bottom bar right time////////////////
+        #right-con {
+          height: 100%;
+          img {
+            width: 25px;
+            margin-bottom: 6px;
+          }
+          p{
+            font-size: small;
+          }
+        }
+    }
+
+
+  }
+}

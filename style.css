@@ -71,6 +71,18 @@ body {
   height: 96%;
   color: white;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main-container .main-screen .icon {
@@ -93,6 +105,14 @@ body {
 .main-container .main-screen #sf-icon img {
   opacity: 0.9;
   width: 80px;
+}
+
+.main-container .main-screen #alien-icon a {
+  text-decoration: none;
+}
+
+.main-container .main-screen #alien-icon a p {
+  color: white;
 }
 
 .main-container .bottom-bar {
@@ -439,6 +459,11 @@ body {
 .main-container .bottom-bar #start-container #right-game #right-sec1 p img {
   margin-right: 6px;
   width: 30px;
+}
+
+.main-container .bottom-bar #start-container #right-game #right-sec1 p a {
+  text-decoration: none;
+  color: black;
 }
 
 .main-container .bottom-bar #start-container #right-game #right-sec1 p svg {

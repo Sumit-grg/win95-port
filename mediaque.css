@@ -70,6 +70,7 @@
     height: 90%;
     width: 90%;
     top: 0px;
+    left: 30px;
   }
   .main-container .main-screen #myModal-project #myModal-projectCon {
     width: 100%;
@@ -201,7 +202,7 @@
     width: 94%;
     height: 70%;
     top: 60px;
-    bottom: 100px;
+    left: 50px;
   }
   .main-container .main-screen #myModal-player #myModal-playerCon {
     height: 6%;
@@ -355,7 +356,7 @@
   .main-container .main-screen #myModal-sf {
     display: none;
     top: 60px;
-    left: 40px;
+    left: 10px;
     border: 1px solid silver;
     width: 94%;
     height: 70%;
@@ -538,6 +539,555 @@
   }
   .main-container .bottom-bar #right-game #right-sec1 p svg {
     width: 6px;
+  }
+  .main-container .bottom-bar #right-con {
+    height: 100%;
+  }
+  .main-container .bottom-bar #right-con img {
+    width: 25px;
+    margin-bottom: 6px;
+  }
+  .main-container .bottom-bar #right-con p {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .main-container .main-screen {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-container .main-screen .icon {
+    padding: 8px;
+    margin: 8px;
+  }
+  .main-container .main-screen .icon img {
+    width: 45px;
+  }
+  .main-container .main-screen #cv-icon img {
+    width: 45px;
+  }
+  .main-container .main-screen #sf-icon {
+    padding: 6px;
+    margin-top: 20px;
+  }
+  .main-container .main-screen #sf-icon img {
+    width: 75px;
+  }
+  .main-container .main-screen #myModal-recycle {
+    display: none;
+    width: 80%;
+    height: 50%;
+    top: 100px;
+    left: 40px;
+    border: 2px solid silver;
+  }
+  .main-container .main-screen #myModal-recycle #myModal-recycleCon {
+    height: 6%;
+  }
+  .main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon {
+    width: 50%;
+  }
+  .main-container .main-screen #myModal-recycle #myModal-recycleCon #left-icon img {
+    padding: 5px;
+    width: 25px;
+  }
+  .main-container .main-screen #myModal-recycle #modal-main {
+    background-color: white;
+    height: 80%;
+    width: 99%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-container .main-screen #myModal-recycle #modal-main .bin-folder {
+    padding: 4px;
+    margin: 6px;
+    width: 25%;
+    height: 25%;
+  }
+  .main-container .main-screen #myModal-recycle #modal-bottom {
+    height: 25px;
+  }
+  .main-container .main-screen #myModal-project {
+    display: none;
+    height: 80%;
+    width: 80%;
+    top: 0px;
+  }
+  .main-container .main-screen #myModal-project #myModal-projectCon {
+    width: 100%;
+    height: 4%;
+  }
+  .main-container .main-screen #myModal-project #myModal-projectCon #left-icon {
+    width: 50%;
+  }
+  .main-container .main-screen #myModal-project #myModal-projectCon #left-icon img {
+    width: 25px;
+  }
+  .main-container .main-screen #myModal-project #modal-main {
+    height: 90%;
+  }
+  .main-container .main-screen #myModal-project #modal-main #pro-tab .tab {
+    padding: 4px;
+    font-size: large;
+  }
+  .main-container .main-screen #myModal-project #modal-main #client-pro p {
+    color: black;
+  }
+  .main-container .main-screen #myModal-project #modal-main #client-pro #client-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div {
+    border-radius: 5px;
+    border-top: 1px dotted #878686;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+  }
+  .main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div video {
+    border-radius: 5px;
+    width: 90%;
+  }
+  .main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div #infosec span {
+    font-size: medium;
+  }
+  .main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div #infosec .techUsed {
+    margin: 10px;
+  }
+  .main-container .main-screen #myModal-project #modal-main #client-pro #client-flex .client-div #infosec p {
+    text-align: justify;
+    font-size: medium;
+  }
+  .main-container .main-screen #myModal-project #modal-main #personal-pro {
+    display: none;
+  }
+  .main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px auto;
+    padding: 10px;
+    border-top: 1px dotted #878686;
+    border-radius: 5px;
+  }
+  .main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div video {
+    border-radius: 5px;
+    width: 90%;
+  }
+  .main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div img {
+    border-radius: 5px;
+    max-width: 90%;
+  }
+  .main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div #infosec {
+    text-align: center;
+  }
+  .main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div #infosec span {
+    font-size: medium;
+  }
+  .main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div #infosec .techUsed {
+    margin: 8px;
+  }
+  .main-container .main-screen #myModal-project #modal-main #personal-pro #personal-flex .personal-div #infosec p {
+    text-align: justify;
+    font-size: medium;
+  }
+  .main-container .main-screen #myModal-cv {
+    display: none;
+    width: 80%;
+    height: 80%;
+    top: 10px;
+    left: 10px;
+  }
+  .main-container .main-screen #myModal-cv #myModal-cvCon {
+    width: 100%;
+    height: 4%;
+  }
+  .main-container .main-screen #myModal-cv #myModal-cvCon #left-icon img {
+    padding: 5px;
+    width: 25px;
+  }
+  .main-container .main-screen #myModal-cv #modal-main {
+    display: block;
+    background-color: white;
+    height: 89%;
+    width: 99%;
+    margin: 0 auto;
+  }
+  .main-container .main-screen #myModal-cv #modal-main p {
+    color: black;
+  }
+  .main-container .main-screen #myModal-player {
+    display: none;
+    width: 80%;
+    height: 60%;
+    top: 60px;
+    left: 50px;
+  }
+  .main-container .main-screen #myModal-player #myModal-playerCon {
+    height: 6%;
+  }
+  .main-container .main-screen #myModal-player #myModal-playerCon #left-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-container .main-screen #myModal-player #myModal-playerCon #left-icon img {
+    width: 20%;
+  }
+  .main-container .main-screen #myModal-player #modal-main {
+    height: 80%;
+    width: 99%;
+    display: block;
+  }
+  .main-container .main-screen #myModal-player #modal-main #vid-gif {
+    width: 99%;
+    background-color: black;
+  }
+  .main-container .main-screen #myModal-player #modal-main #vid-gif img {
+    width: 80%;
+    height: 90%;
+  }
+  .main-container .main-screen #myModal-player #modal-main input {
+    width: 100%;
+    -webkit-transition: 0.1s ease;
+    transition: 0.1s ease;
+  }
+  .main-container .main-screen #myModal-player #modal-main audio {
+    display: none;
+  }
+  .main-container .main-screen #myModal-player #modal-main #control {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: silver;
+  }
+  .main-container .main-screen #myModal-player #modal-main #control #audio-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main-container .main-screen #myModal-player #modal-main #control #audio-cont img {
+    width: 20%;
+    margin: 0 6px;
+    border: 1px solid #787878;
+    border-radius: 5px;
+    padding: 4px;
+  }
+  .main-container .main-screen #myModal-player #modal-main #control #audio-cont #novolbtn, .main-container .main-screen #myModal-player #modal-main #control #audio-cont #volbtn {
+    padding: 10px;
+  }
+  .main-container .main-screen #myModal-player #modal-main #audio-time {
+    border: 2px solid #6a6a6a;
+    padding: 4px;
+  }
+  .main-container .main-screen #myModal-player #modal-main #audio-time p {
+    font-size: medium;
+  }
+  .main-container .main-screen #myModal-explore {
+    display: none;
+    border: 2px solid silver;
+    width: 60%;
+    height: 50%;
+    top: 30px;
+    left: 100px;
+  }
+  .main-container .main-screen #myModal-explore #myModal-exploreCon #left-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-container .main-screen #myModal-explore #myModal-exploreCon #left-icon img {
+    padding: 4px;
+    width: 15%;
+  }
+  .main-container .main-screen #myModal-explore #modal-main {
+    height: 80%;
+    width: 99%;
+    margin: 0 auto;
+  }
+  .main-container .main-screen #myModal-explore #modal-main img {
+    border: 2px double #b4b4b4;
+    width: 100%;
+    height: 40%;
+  }
+  .main-container .main-screen #myModal-explore #modal-main #dial-box {
+    margin: 0 auto;
+    height: 60%;
+    width: 90%;
+    text-align: center;
+  }
+  .main-container .main-screen #myModal-explore #modal-main #dial-box p {
+    margin: 10px auto;
+  }
+  .main-container .main-screen #myModal-explore #modal-main #dial-box div {
+    padding: 6px;
+    border: 2px double #5a5a5a;
+  }
+  .main-container .main-screen #myModal-explore #modal-main #dial-box div p {
+    margin: 20px auto;
+  }
+  .main-container .main-screen #myModal-explore #modal-main #dial-box div p span {
+    font-weight: bold;
+  }
+  .main-container .main-screen #myModal-explore #modal-bottom p {
+    font-size: medium;
+  }
+  .main-container .main-screen #myModal-explore #modal-bottom audio {
+    display: none;
+  }
+  .main-container .main-screen #myModal-pc {
+    display: none;
+    top: 100px;
+    left: 60px;
+    border: 1px solid silver;
+    width: 60%;
+    height: 40%;
+  }
+  .main-container .main-screen #myModal-pc #myModal-pcCon {
+    height: 7%;
+  }
+  .main-container .main-screen #myModal-pc #myModal-pcCon #left-icon img {
+    padding: 6px;
+    width: 20%;
+  }
+  .main-container .main-screen #myModal-pc #modal-main {
+    height: 74%;
+    width: 99%;
+  }
+  .main-container .main-screen #myModal-sf {
+    display: none;
+    top: 60px;
+    left: 40px;
+    border: 1px solid silver;
+    width: 94%;
+    height: 70%;
+  }
+  .main-container .main-screen #myModal-sf #myModal-sfCon {
+    height: 6%;
+    border: 1px solid silver;
+  }
+  .main-container .main-screen #myModal-sf #myModal-sfCon #left-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-container .main-screen #myModal-sf #myModal-sfCon #left-icon img {
+    margin-right: 8px;
+    padding: 4px;
+    width: 30px;
+  }
+  .main-container .main-screen #myModal-sf #myModal-sfCon #left-icon p {
+    font-size: medium;
+  }
+  .main-container .main-screen #myModal-sf #modal-main {
+    display: block;
+    background-color: white;
+    height: 87%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main-container .main-screen #myModal-sf #modal-main iframe {
+    width: 100%;
+  }
+  .main-container .bottom-bar #start-btn {
+    margin-left: 2px;
+  }
+  .main-container .bottom-bar #start-btn button {
+    height: 100%;
+  }
+  .main-container .bottom-bar #start-btn button img {
+    width: 100%;
+  }
+  .main-container .bottom-bar #start-btn button p {
+    font-weight: bold;
+  }
+  .main-container .bottom-bar #start-container {
+    bottom: 40px;
+    display: none;
+  }
+  .main-container .bottom-bar #start-container #first-box-start {
+    width: 40vw;
+  }
+  .main-container .bottom-bar #start-container #first-box-start #left-start {
+    width: 8%;
+    padding-bottom: 10px;
+  }
+  .main-container .bottom-bar #start-container #first-box-start #left-start img {
+    width: 20px;
+  }
+  .main-container .bottom-bar #start-container #first-box-start #right-start {
+    width: 92%;
+  }
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-personalproj,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-cv,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-game,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-logout, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-personalproj,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-cv,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-game,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-logout, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-personalproj,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-cv,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-game,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-logout, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-personalproj,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-cv,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-game,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-logout {
+    padding: 10px 0;
+  }
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-personalproj .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-cv .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-game .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-logout .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-personalproj .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-cv .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-game .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-logout .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-personalproj .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-cv .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-game .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-logout .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-personalproj .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-cv .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-game .svgcl,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-logout .svgcl {
+    margin-right: 8px;
+    width: 10px;
+  }
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-clientproj p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-personalproj p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-cv p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-media p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-game p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-logout p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-clientproj p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-personalproj p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-internet p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-cv p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-media p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-game p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-logout p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-clientproj p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-personalproj p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-internet p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-cv p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-media p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-game p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-logout p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-clientproj p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-personalproj p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-internet p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-cv p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-media p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-game p,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-logout p {
+    font-size: medium;
+  }
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-clientproj p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-personalproj p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-cv p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-media p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-game p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-logout p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-clientproj p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-personalproj p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-internet p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-cv p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-media p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-game p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-logout p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-clientproj p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-personalproj p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-internet p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-cv p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-media p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-game p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-logout p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-clientproj p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-personalproj p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-internet p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-cv p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-media p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-game p img,
+  .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-logout p img {
+    margin-right: 8px;
+    width: 25px;
+  }
+  .main-container .bottom-bar #right-clientproj {
+    display: none;
+    width: 49vw;
+  }
+  .main-container .bottom-bar #right-clientproj #right-sec1 {
+    width: 100%;
+  }
+  .main-container .bottom-bar #right-clientproj #right-sec1 .flex-item-rightc1, .main-container .bottom-bar #right-clientproj #right-sec1 .flex-item-rightc2, .main-container .bottom-bar #right-clientproj #right-sec1 .flex-item-rightc3,
+  .main-container .bottom-bar #right-clientproj #right-sec1 .flex-item-rightc4 {
+    padding: 10px 0;
+  }
+  .main-container .bottom-bar #right-clientproj #right-sec1 p {
+    font-size: medium !important;
+  }
+  .main-container .bottom-bar #right-clientproj #right-sec1 p img {
+    margin-right: 6px;
+    width: 25px !important;
+  }
+  .main-container .bottom-bar #right-personalproj {
+    display: none;
+    top: 0px !important;
+    width: 49vw;
+  }
+  .main-container .bottom-bar #right-personalproj #right-sec1 {
+    width: 100%;
+  }
+  .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp1, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp2, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp3,
+  .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp4, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp5, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp6 {
+    padding: 10px 0 !important;
+  }
+  .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp1 p, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp2 p, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp3 p,
+  .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp4 p, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp5 p, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp6 p {
+    font-size: medium !important;
+  }
+  .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp1 p img, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp2 p img, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp3 p img,
+  .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp4 p img, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp5 p img, .main-container .bottom-bar #right-personalproj #right-sec1 .flex-item-rightp6 p img {
+    margin-right: 6px;
+    width: 25px !important;
+  }
+  .main-container .bottom-bar #right-game {
+    top: 190px !important;
+    width: 49vw;
+  }
+  .main-container .bottom-bar #right-game #right-sec1 {
+    width: 100%;
+  }
+  .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg1, .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg2 {
+    padding: 10px 0;
+  }
+  .main-container .bottom-bar #right-game #right-sec1 p {
+    font-size: medium !important;
+  }
+  .main-container .bottom-bar #right-game #right-sec1 p img {
+    margin-right: 6px;
+    width: 25px !important;
+  }
+  .main-container .bottom-bar #right-game #right-sec1 p svg {
+    width: 25px;
   }
   .main-container .bottom-bar #right-con {
     height: 100%;

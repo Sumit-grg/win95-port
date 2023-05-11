@@ -108,6 +108,7 @@
     #myModal-project {
       @extend #myModal-recycle;
       display: none;
+      width: 60%;
       height: 80%;
       top: 100px;
       left: 100px;
@@ -152,6 +153,7 @@
           display: flex;
           position: sticky;
           top: 0;
+          z-index: 100;
           .tab{
             background-color: rgb(184, 181, 181);
             border: 2px solid rgb(79, 79, 79);
@@ -179,10 +181,9 @@
             flex-direction: column;
             .client-div{
               display: flex;
-              justify-content: space-around;
+              // justify-content: space-between;
               // margin: 2px auto;
               padding: 10px;
-              // border: 2px solid red;
               &:hover{
                 background-color: rgb(209, 209, 209);;
               }
@@ -207,7 +208,7 @@
               }
               #infosec {
                 text-align: center;
-                // border: 2px solid red;
+                width: 60%;
                 span {
                   color: black;
                   font-size: large;
@@ -246,7 +247,7 @@
             flex-direction: column;
             .personal-div{
               display: flex;
-              justify-content: space-around;
+              // justify-content: space-around;
               margin: 10px auto;
               padding: 10px;
               // border: 2px solid red;
@@ -292,6 +293,7 @@
                 }
               }
               #infosec {
+                width: 60%;
                 text-align: center;
                 // border: 2px solid red;
                 span {
@@ -348,10 +350,10 @@
       z-index: 9;
       text-align: center;
       border: 2px solid rgb(192,192,192);
-      width: 50%;
+      width: 60%;
       height: 80%;
       top: 60px;
-      left: 80px;
+      left: 150px;
       background-color: rgb(192,192,192);
       #myModal-cvCon {
         width: 100%;
@@ -433,8 +435,11 @@
     // model media player///////////////
     #myModal-player {
       @extend #myModal-recycle;
+      display: none;
       top: 100px;
-      bottom: 100px;
+      left: 150px;
+      // width: 60%;
+      // height: 60%;
       #myModal-playerCon {
         width: 100%;
         height: 5%;
@@ -478,9 +483,13 @@
           display: none;
         }
         #vid-gif{
+          width: 100%;
           height: 80%;
           background-color: black;
           img {
+            width: 80%;
+            height: 80%;
+            // border: 2px solid red;
             margin: auto 0;
             position: relative;
             top: 50%;
@@ -755,7 +764,7 @@
       text-align: center;
       border: 2px solid rgb(192,192,192);
       width: 70%;
-      height: 70%;
+      height: 80%;
       background-color: rgb(192,192,192);
       #myModal-sfCon {
         width: 100%;
@@ -780,6 +789,99 @@
           }
         }
         #right-iconSF{
+          z-index: 11;
+          padding: 4px;
+          button {
+            width: 20px;
+            p {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      #modal-menu{
+        background-color: rgb(192,192,192);
+        display: flex;
+        p{
+          color: black;
+          padding: 4px;
+          margin: 0 4px;
+          span {
+            text-decoration: underline;
+          }
+          &:hover{
+            cursor: pointer;
+            background-color: rgb(2,2,168);
+            color: white;
+          }
+        }
+      }
+      #modal-main{
+        display: block;
+        background-color: white;
+        height: 92%;
+        width: 99%;
+        margin: 0 auto;
+        @include border-color;
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      #modal-bottom{
+        color: black;
+        background-color: rgb(192,192,192);
+        width: 99%;
+        margin: 0 auto;
+        margin-top: 4px;
+        border-top: 2px solid rgb(43, 42, 42);
+        border-right: 2px solid rgb(226, 223, 223);
+        border-bottom: 2px solid rgb(226, 223, 223);
+        border-left: 2px solid rgb(43, 42, 42);
+        p {
+          margin: 0 6px;
+          width: 50%;
+          text-align: left;
+        }
+      }
+
+    }
+
+    ////////modal alien invasion /////////////
+    #myModal-ai {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 40px;
+      z-index: 9;
+      text-align: center;
+      border: 2px solid rgb(192,192,192);
+      width: 70%;
+      height: 80%;
+      background-color: rgb(192,192,192);
+      #myModal-aiCon {
+        width: 100%;
+        height: 4%;
+        border: 1px solid rgb(192,192,192);
+        cursor: move;
+        z-index: 10;
+        background-color: rgb(2,2,168);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #left-icon{
+          display: flex;
+          align-items: center;
+          img {
+            margin-right: 8px;
+            padding: 5px;
+            width: 4%;
+          }
+          p {
+            color: white;
+          }
+        }
+        #right-iconAI{
           z-index: 11;
           padding: 4px;
           button {

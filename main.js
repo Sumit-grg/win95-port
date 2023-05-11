@@ -149,6 +149,8 @@ const secondStartGame = document.getElementById("right-game");
 
 const mainScreen = document.getElementsByClassName("main-screen")[0];
 
+const audioDial = document.getElementById("myAudio-dialup");
+
 
 startBtn.addEventListener("click", ()=>{
   startBtn.style.cssText = `  border-top: 2px solid black;
@@ -336,6 +338,7 @@ const myModalExplore =document.getElementById("myModal-explore");
 startExplore.addEventListener("click", ()=>{
   myModalExplore.style.display = "block";
   startMenuOff();
+  audioDial.play();
 })
 
 ///////////////start cv////

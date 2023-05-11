@@ -3,7 +3,7 @@
   const projectFolder = document.getElementById("folder-icon");
   const myModal =document.getElementById("myModal-project");
 
-  projectFolder.addEventListener("dblclick", ()=>{
+  projectFolder.addEventListener("click", ()=>{
     myModal.style.display = "block";
   })
 
@@ -65,7 +65,7 @@
 const recycleBin = document.getElementById("bin-icon");
 const myModalrecycle =document.getElementById("myModal-recycle");
 
-recycleBin.addEventListener("dblclick", ()=>{
+recycleBin.addEventListener("click", ()=>{
   myModalrecycle.style.display = "block";
 })
 
@@ -127,7 +127,7 @@ closebtnRec.addEventListener("click", ()=> {
 const cv = document.getElementById("cv-icon");
 const myModalcv =document.getElementById("myModal-cv");
 
-cv.addEventListener("dblclick", ()=>{
+cv.addEventListener("click", ()=>{
   myModalcv.style.display = "block";
 })
 
@@ -188,7 +188,7 @@ closebtnCV.addEventListener("click", ()=> {
     const mediaPlayer = document.getElementById("media-icon");
     const myModalPlayer =document.getElementById("myModal-player");
   
-    mediaPlayer.addEventListener("dblclick", ()=>{
+    mediaPlayer.addEventListener("click", ()=>{
       myModalPlayer.style.display = "block";
     })
   
@@ -253,7 +253,7 @@ closebtnCV.addEventListener("click", ()=> {
 
     const audioDial = document.getElementById("myAudio-dialup");
 
-    explore.addEventListener("dblclick", ()=>{
+    explore.addEventListener("click", ()=>{
       myModalExplore.style.display = "block";
       audioDial.play();
     })
@@ -315,7 +315,7 @@ closebtnCV.addEventListener("click", ()=> {
 const pc = document.getElementById("mypc-icon");
 const myModalpc =document.getElementById("myModal-pc");
 
-pc.addEventListener("dblclick", ()=>{
+pc.addEventListener("click", ()=>{
   myModalpc.style.display = "block";
 })
 
@@ -379,7 +379,7 @@ closebtnPC.addEventListener("click", ()=> {
 const sfIcon = document.getElementById("sf-icon");
 const myModalsf =document.getElementById("myModal-sf");
 
-sfIcon.addEventListener("dblclick", ()=>{
+sfIcon.addEventListener("click", ()=>{
   myModalsf.style.display = "block";
 })
 
@@ -389,6 +389,11 @@ closebtnSF.addEventListener("click", ()=> {
   myModalsf.style.display = "none";
 })
 
+
+const startGameG1 = document.getElementsByClassName("flex-item-rightg1")[0];
+startGameG1.addEventListener("click", ()=>{
+  myModalsf.style.display = "block";
+})
 
   //Make the DIV element draggagle:
   dragElementSF(document.getElementById("myModal-sf"));
@@ -428,6 +433,74 @@ closebtnSF.addEventListener("click", ()=> {
     }
 
     function closeDragElementSF() {
+      /* stop moving when mouse button is released:*/
+      document.onmouseup = null;
+      document.onmousemove = null;
+    }
+  }
+
+
+  //////////Alien invasion modal.////////////
+
+    
+    //Modal open and close
+const aiIcon = document.getElementById("alien-icon");
+const myModalai =document.getElementById("myModal-ai");
+
+aiIcon.addEventListener("click", ()=>{
+  myModalai.style.display = "block";
+})
+
+const closebtnAI = document.getElementById("right-iconAI");
+
+closebtnAI.addEventListener("click", ()=> {
+  myModalai.style.display = "none";
+})
+
+
+const startGameG2 = document.getElementsByClassName("flex-item-rightg2")[0];
+startGameG2.addEventListener("click", ()=>{
+  myModalai.style.display = "block";
+})
+
+  //Make the DIV element draggagle:
+  dragElementAI(document.getElementById("myModal-ai"));
+
+  function dragElementAI(elmnt) {
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    if (document.getElementById(elmnt.id + "Con")) {
+      /* if present, the header is where you move the DIV from:*/
+      document.getElementById(elmnt.id + "Con").onmousedown = dragMouseDown;
+    } else {
+      /* otherwise, move the DIV from anywhere inside the DIV:*/
+      elmnt.onmousedown = dragMouseDown;
+    }
+
+    function dragMouseDown(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // get the mouse cursor position at startup:
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      document.onmouseup = closeDragElementAI;
+      // call a function whenever the cursor moves:
+      document.onmousemove = elementDrag;
+    }
+
+    function elementDrag(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // calculate the new cursor position:
+      pos1 = pos3 - e.clientX;
+      pos2 = pos4 - e.clientY;
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      // set the element's new position:
+      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+
+    function closeDragElementAI() {
       /* stop moving when mouse button is released:*/
       document.onmouseup = null;
       document.onmousemove = null;

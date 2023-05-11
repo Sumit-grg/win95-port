@@ -62,8 +62,10 @@ body{
     height: 96%;
     color: white;
     padding: 20px;
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
     .icon{
       padding: 8px;
       margin: 20px;
@@ -81,13 +83,21 @@ body{
       }
     }
     #sf-icon{
-      //this is for draggable div
+      // this is for draggable div
       // position: absolute;  
       // top: 25px;
       // left: 180px;
       img{
         opacity: 0.9;
         width: 80px;
+      }
+    }
+    #alien-icon{
+      a{
+        text-decoration: none;
+        p{
+          color: white;
+        }
       }
     }
     ///////////modal-style.css goes from here///////
@@ -127,6 +137,8 @@ body{
       }
     }
 
+    /////////start container //////
+    /// 
     #start-container{
       position: absolute;
       bottom: 46px;
@@ -300,6 +312,10 @@ body{
             img{
               margin-right: 6px;
               width: 30px;
+            }
+            a{
+              text-decoration: none;
+              color: black;
             }
             svg {
               width: 10px;
