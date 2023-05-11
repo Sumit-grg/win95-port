@@ -193,6 +193,9 @@
     width: 99%;
     margin: 0 auto;
   }
+  .main-container .main-screen #myModal-cv #modal-main p {
+    color: black;
+  }
   .main-container .main-screen #myModal-player {
     display: none;
     width: 94%;
@@ -350,7 +353,7 @@
     width: 99%;
   }
   .main-container .main-screen #myModal-sf {
-    display: block;
+    display: none;
     top: 60px;
     left: 40px;
     border: 1px solid silver;

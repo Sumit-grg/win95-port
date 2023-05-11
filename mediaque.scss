@@ -194,7 +194,9 @@
         height: 86%;
         width: 99%;
         margin: 0 auto;
-        
+        p{
+          color: black;
+        }
       }
     }
 
@@ -366,7 +368,7 @@
 
     ////////modal street frigther /////////////
     #myModal-sf {
-      display: block;
+      display: none;
       top: 60px;
       left: 40px;
       border: 1px solid rgb(192,192,192);
@@ -537,6 +539,6 @@
   }
 }
 
-@media screen and (max-width: 1100) and (min-width: 700){
+// @media screen and (max-width: 1100) and (min-width: 700){
 
-}
+// }
