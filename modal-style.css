@@ -531,11 +531,6 @@
   border-left: 2px solid black;
 }
 
-#myModal-cv #modal-main iframe {
-  width: 100%;
-  height: 100%;
-}
-
 #myModal-cv #modal-bottom {
   color: black;
   background-color: silver;
