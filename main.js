@@ -82,7 +82,7 @@ const audioTimeInterval = () => {
   }, 1000)
 }
 
-mediaPlayer.addEventListener("dblclick", ()=> {
+mediaPlayer.addEventListener("click", ()=> {
   neverGonna.play();
 })
 
