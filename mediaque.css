@@ -70,7 +70,7 @@
     height: 90%;
     width: 90%;
     top: 0px;
-    left: 30px;
+    left: 20px;
   }
   .main-container .main-screen #myModal-project #myModal-projectCon {
     width: 100%;
@@ -201,8 +201,8 @@
     display: none;
     width: 94%;
     height: 70%;
-    top: 60px;
-    left: 50px;
+    top: 80px;
+    left: 10px;
   }
   .main-container .main-screen #myModal-player #myModal-playerCon {
     height: 6%;

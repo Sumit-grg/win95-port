@@ -71,7 +71,7 @@
       height: 90%;
       width: 90%;
       top: 0px;
-      left: 30px;
+      left: 20px;
       #myModal-projectCon {
         width: 100%;
         height: 4%;
@@ -198,8 +198,8 @@
       display: none;
       width: 94%;
       height: 70%;
-      top: 60px;
-      left: 50px;
+      top: 80px;
+      left: 10px;
       #myModal-playerCon {
         height: 6%;
         #left-icon{
@@ -536,6 +536,7 @@
 @media screen and (max-width: 1000px) and (min-width: 700px){
   .main-container {
     /////main screen///////////
+
     .main-screen {  
       overflow: hidden;
       display: flex;

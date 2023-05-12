@@ -377,7 +377,8 @@ closebtnPC.addEventListener("click", ()=> {
   
     //Modal open and close
 const sfIcon = document.getElementById("sf-icon");
-const myModalsf =document.getElementById("myModal-sf");
+const myModalsf = document.getElementById("myModal-sf");
+const sfIframe = document.getElementById("myFrameSF");
 
 sfIcon.addEventListener("click", ()=>{
   myModalsf.style.display = "block";
@@ -387,6 +388,7 @@ const closebtnSF = document.getElementById("right-iconSF");
 
 closebtnSF.addEventListener("click", ()=> {
   myModalsf.style.display = "none";
+  sfIframe.setAttribute("src", " ");
 })
 
 
@@ -446,6 +448,7 @@ startGameG1.addEventListener("click", ()=>{
     //Modal open and close
 const aiIcon = document.getElementById("alien-icon");
 const myModalai =document.getElementById("myModal-ai");
+const aiIframe = document.getElementById("myFrameAI");
 
 aiIcon.addEventListener("click", ()=>{
   myModalai.style.display = "block";
@@ -455,6 +458,7 @@ const closebtnAI = document.getElementById("right-iconAI");
 
 closebtnAI.addEventListener("click", ()=> {
   myModalai.style.display = "none";
+  aiIframe.setAttribute("src", "");
 })
 
 
