@@ -123,6 +123,12 @@ body {
   color: white;
 }
 
+.main-container .main-screen iframe {
+  border: 2px solid red;
+  width: 50%;
+  height: 70%;
+}
+
 .main-container .bottom-bar {
   border-top: 2px solid white;
   background-color: silver;
