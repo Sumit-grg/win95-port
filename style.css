@@ -98,8 +98,16 @@ body {
   border-radius: 3px;
 }
 
-.main-container .main-screen #cv-icon img {
+.main-container .main-screen #cv-icon a {
+  text-decoration: none;
+}
+
+.main-container .main-screen #cv-icon a img {
   width: 45px;
+}
+
+.main-container .main-screen #cv-icon a p {
+  color: white;
 }
 
 .main-container .main-screen #sf-icon img {

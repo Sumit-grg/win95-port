@@ -78,8 +78,14 @@ body{
       }
     }
     #cv-icon{
-      img{
-        width: 45px;
+      a{
+        text-decoration: none;
+        img{
+          width: 45px;
+        }
+        p{
+          color: white;
+        }
       }
     }
     #sf-icon{
