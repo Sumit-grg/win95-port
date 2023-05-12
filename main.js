@@ -83,6 +83,7 @@ const audioTimeInterval = () => {
 }
 
 mediaPlayer.addEventListener("click", ()=> {
+  audioTimeInterval();
   neverGonna.play();
 })
 
@@ -358,6 +359,7 @@ startMenuMedia.addEventListener("click", ()=>{
   myModalPlayer.style.display = "block";
   neverGonna.play();
   startMenuOff();
+  audioTimeInterval();
 })
 
 ///////////////start menu logout///
