@@ -692,7 +692,7 @@
   text-align: center;
   border: 2px solid silver;
   width: 30%;
-  height: 40%;
+  height: auto;
   background-color: silver;
   top: 10px;
   left: 200px;
