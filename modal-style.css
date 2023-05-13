@@ -135,7 +135,7 @@
 #myModal-project {
   border: 2px solid silver;
   position: absolute;
-  display: block;
+  display: none;
   width: 60%;
   height: 80%;
   top: 40px;
