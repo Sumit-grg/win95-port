@@ -35,7 +35,7 @@
     #myModal-recycle {
       display: none;
       width: 80%;
-      height: 50%;
+      height: auto;
       top: 100px;
       left: 40px;
       border: 1px solid rgb(192,192,192);
@@ -44,14 +44,24 @@
         #left-icon{
           width: 50%;
           img {
-            padding: 5px;
-            width: 20%;
+            padding: 4px;
+            width: 25px;
+          }
+        }
+        #right-iconRec{
+          padding: 2px;
+          border-radius: 1px;
+          button {
+            width: 25px;
+            p {
+              font-weight: bold;
+            }
           }
         }
       }
       #modal-main{
         background-color: white;
-        height: 75%;
+        height: 250px;
         width: 99%;
         
         display: flex;
@@ -74,11 +84,11 @@
       left: 20px;
       #myModal-projectCon {
         width: 100%;
-        height: 4%;
+        height: 25px;
         #left-icon{
           width: 50%;
           img {
-            width: 20%;
+            width: 25px;
           }
         }
       }
@@ -87,7 +97,7 @@
         #pro-tab {
           .tab{
             padding: 4px;
-            font-size: small;
+            font-size: medium;
           }
         }
         #client-pro{
@@ -162,18 +172,23 @@
         }
         
       }
+      #modal-bottom{
+        p {
+          font-size: small;
+        }
+      }
     }
     
     // modal-cv//////////
     #myModal-cv {
       display: none;
       width: 90%;
-      height: 90%;
+      height: 70%;
       top: 10px;
       left: 10px;
       #myModal-cvCon {
         width: 100%;
-        height: 4%;
+        height: 25px;
         #left-icon{
           img {
             padding: 5px;
@@ -196,29 +211,31 @@
     // model media player///////////////
     #myModal-player {
       display: none;
-      width: 94%;
-      height: 70%;
+      width: 90%;
+      height: auto;
       top: 80px;
       left: 10px;
       #myModal-playerCon {
-        height: 6%;
+        height: 25px;
         #left-icon{
           display: flex;
           align-items: center;
           img {
-            width: 20%;
+            padding: 4px;
+            width: 25px;
           }
         }
       }
       #modal-main{
-        height: 80%;
+        height: 300px;
         width: 99%;
         display: block;
         #vid-gif{
-          width: 99%;
+          width: 100%;
           background-color: black;
           img {
-            width: 100%;
+            width: 90%;
+            height: 80%;
           }
         }
         input{
@@ -276,16 +293,17 @@
       display: none;
       border: 1px solid rgb(192,192,192);
       width: 70%;
-      height: 60%;
+      height: auto;
       top: 30px;
       left: 100px;
       #myModal-exploreCon {
+        height: 25px;
         #left-icon{
           display: flex;
           align-items: center;
           img {
             padding: 4px;
-            width: 15%;
+            width: 25px;
           }
         }
       }
@@ -338,19 +356,19 @@
       left: 10px;
       border: 1px solid rgb(192,192,192);
       width: 80%;
-      height: 50%;
+      height: auto;
       #myModal-pcCon {
-        height: 7%;
+        height: 25px;
         #left-icon{
           img {
-            padding: 6px;
-            width: 20%;
+            padding: 4px;
+            width: 25px;
           }
         }
       }
       #modal-main{
-        height: 74%;
-        width: 99%;
+        height: 200px;
+        width: 100%;
 
       }
     }
@@ -364,7 +382,7 @@
       width: 94%;
       height: 70%;
       #myModal-sfCon {
-        height: 6%;
+        height: 25px;
         border: 1px solid rgb(192,192,192);
         #left-icon{
           display: flex;
@@ -372,7 +390,7 @@
           img {
             margin-right: 6px;
             padding: 4px;
-            width: 10%;
+            width: 25px;
           }
           p {
             font-size: small;
@@ -387,9 +405,39 @@
         margin: 0 auto;
         iframe {
           width: 100%;
+          height: 100%;
         }
       }
 
+    }
+
+    ////////modal alien invasion /////////////
+    #myModal-ai {
+      display: none;
+      top: 20px;
+      left: 20px;
+      width: 90%;
+      height: 90%;
+      #myModal-aiCon {
+        height: 25px;
+        #left-icon{
+          img {
+            padding: 2px;
+            width: 25px;
+          }
+        }
+      }
+      #modal-main{
+        display: block;
+        background-color: white;
+        height: 90%;
+        width: 99%;
+        margin: 0 auto;
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
 
     }

@@ -516,16 +516,15 @@
   color: white;
 }
 
-#myModal-cv #myModal-cvCon #right-icon {
-  z-index: 11;
+#myModal-cv #myModal-cvCon #right-iconCV {
   padding: 4px;
 }
 
-#myModal-cv #myModal-cvCon #right-icon button {
+#myModal-cv #myModal-cvCon #right-iconCV button {
   width: 20px;
 }
 
-#myModal-cv #myModal-cvCon #right-icon button p {
+#myModal-cv #myModal-cvCon #right-iconCV button p {
   font-weight: bold;
 }
 
@@ -626,16 +625,16 @@
   color: white;
 }
 
-#myModal-player #myModal-playerCon #right-icon {
+#myModal-player #myModal-playerCon #right-iconPlayer {
   z-index: 11;
   padding: 4px;
 }
 
-#myModal-player #myModal-playerCon #right-icon button {
+#myModal-player #myModal-playerCon #right-iconPlayer button {
   width: 20px;
 }
 
-#myModal-player #myModal-playerCon #right-icon button p {
+#myModal-player #myModal-playerCon #right-iconPlayer button p {
   font-weight: bold;
 }
 
