@@ -728,6 +728,7 @@
       #modal-menu{
         background-color: rgb(192,192,192);
         display: flex;
+        flex-wrap: wrap;
         p{
           color: black;
           padding: 4px;
