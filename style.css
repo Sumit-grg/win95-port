@@ -169,9 +169,9 @@ body {
 }
 
 .main-container .bottom-bar #start-container {
-  position: absolute;
-  bottom: 46px;
   display: none;
+  position: absolute;
+  bottom: 30px;
 }
 
 .main-container .bottom-bar #start-container #first-box-start {
