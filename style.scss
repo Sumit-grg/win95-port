@@ -75,11 +75,6 @@ body{
 }
 #winsboot{
   display: none;
-  video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-  }
   img{
     width: 100vw;
     height: 100vh;
@@ -247,7 +242,7 @@ body{
             flex-direction: column;
             justify-content: space-between;
             .flex-item-right-clientproj,.flex-item-right-personalproj,
-            .flex-item-right-internet,.flex-item-right-cv,
+            .flex-item-right-internet,.flex-item-right-about,
             .flex-item-right-media,.flex-item-right-game,
             .flex-item-right-logout {
               display: flex;
@@ -385,21 +380,22 @@ body{
               background-color: rgb(2,2,168);
               color: white;
             }
-          }
-          p{
-            font-size: large;
-            display: flex;
-            align-items: center;
-            img{
-              margin-right: 6px;
-              width: 30px;
-            }
-            a{
-              text-decoration: none;
-              color: black;
-            }
-            svg {
-              width: 10px;
+            p{
+              font-size: large;
+              display: flex;
+              align-items: center;
+              img{
+                margin-right: 6px;
+                width: 30px;
+              }
+              a{
+                text-decoration: none;
+                color: black;
+                width: 100%;
+              }
+              svg {
+                width: 10px;
+              }
             }
           }
         }

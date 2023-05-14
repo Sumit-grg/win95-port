@@ -80,13 +80,6 @@ body {
   display: none;
 }
 
-#winsboot video {
-  width: 100vw;
-  height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 #winsboot img {
   width: 100vw;
   height: 100vh;
@@ -300,16 +293,16 @@ body {
 }
 
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-personalproj,
-.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-cv,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-about,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-game,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-logout, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-personalproj,
-.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-cv,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-about,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-game,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-logout, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-personalproj,
-.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-cv,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-about,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-game,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-logout, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-personalproj,
-.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-cv,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-about,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-game,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-logout {
   display: -webkit-box;
@@ -322,16 +315,16 @@ body {
 }
 
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-clientproj:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-personalproj:hover,
-.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-cv:hover,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-about:hover,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-media:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-game:hover,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-logout:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-clientproj:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-personalproj:hover,
-.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-internet:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-cv:hover,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-internet:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-about:hover,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-media:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-game:hover,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-logout:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-clientproj:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-personalproj:hover,
-.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-internet:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-cv:hover,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-internet:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-about:hover,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-media:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-game:hover,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-logout:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-clientproj:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-personalproj:hover,
-.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-internet:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-cv:hover,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-internet:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-about:hover,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-media:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-game:hover,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-logout:hover {
   cursor: pointer;
@@ -340,16 +333,16 @@ body {
 }
 
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-personalproj .svgcl,
-.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-cv .svgcl,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-about .svgcl,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-game .svgcl,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-logout .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-personalproj .svgcl,
-.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-cv .svgcl,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-about .svgcl,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-game .svgcl,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 .flex-item-right-logout .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-personalproj .svgcl,
-.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-cv .svgcl,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-about .svgcl,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-game .svgcl,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 .flex-item-right-logout .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-personalproj .svgcl,
-.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-cv .svgcl,
+.main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-about .svgcl,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-game .svgcl,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-logout .svgcl {
   margin-right: 4px;
@@ -537,7 +530,7 @@ body {
   color: white;
 }
 
-.main-container .bottom-bar #start-container #right-game #right-sec1 p {
+.main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1 p, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2 p {
   font-size: large;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -547,17 +540,18 @@ body {
           align-items: center;
 }
 
-.main-container .bottom-bar #start-container #right-game #right-sec1 p img {
+.main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1 p img, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2 p img {
   margin-right: 6px;
   width: 30px;
 }
 
-.main-container .bottom-bar #start-container #right-game #right-sec1 p a {
+.main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1 p a, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2 p a {
   text-decoration: none;
   color: black;
+  width: 100%;
 }
 
-.main-container .bottom-bar #start-container #right-game #right-sec1 p svg {
+.main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1 p svg, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2 p svg {
   width: 10px;
 }
 

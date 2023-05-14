@@ -139,7 +139,8 @@ const startClient = document.getElementsByClassName("flex-item-right-clientproj"
 const startPersonal = document.getElementsByClassName("flex-item-right-personalproj")[0];
 const startGame = document.getElementsByClassName("flex-item-right-game")[0];
 const startInternet= document.getElementsByClassName("flex-item-right-internet")[0];
-const startCV = document.getElementsByClassName("flex-item-right-cv")[0];
+// const startCV = document.getElementsByClassName("flex-item-right-cv")[0];
+const startAbout = document.getElementsByClassName("flex-item-right-about")[0];
 const startMedia = document.getElementsByClassName("flex-item-right-media")[0];
 const startLogout = document.getElementsByClassName("flex-item-right-logout")[0];
 
@@ -195,7 +196,11 @@ startInternet.addEventListener("mouseover", ()=>{
   startMenuOtherOff();
 })
 
-startCV.addEventListener("mouseover", ()=>{
+// startCV.addEventListener("mouseover", ()=>{
+//   startMenuOtherOff();
+// })
+
+startAbout.addEventListener("mouseover", ()=>{
   startMenuOtherOff();
 })
 
@@ -343,11 +348,20 @@ startExplore.addEventListener("click", ()=>{
 })
 
 ///////////////start cv////
-const startMenuCV = document.getElementsByClassName("flex-item-right-cv")[0];
-const myModalcv =document.getElementById("myModal-cv");
+// const startMenuCV = document.getElementsByClassName("flex-item-right-cv")[0];
+// const myModalcv =document.getElementById("myModal-cv");
 
-startMenuCV.addEventListener("click", ()=>{
-  myModalcv.style.display = "block";
+// startMenuCV.addEventListener("click", ()=>{
+//   myModalcv.style.display = "block";
+//   startMenuOff();
+// })
+
+//////////start about//////////
+const startMenuAbout = document.getElementsByClassName("flex-item-right-about")[0];
+const myModalabout =document.getElementById("myModal-about");
+
+startMenuAbout.addEventListener("click", ()=>{
+  myModalabout.style.display = "block";
   startMenuOff();
 })
 
