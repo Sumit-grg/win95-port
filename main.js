@@ -221,7 +221,7 @@ mainScreen.addEventListener("click", ()=> {
 ///////start menu second list ////////
 
 const startGameG1 = document.getElementsByClassName("flex-item-rightg1")[0];
-const startGameG2 = document.getElementsByClassName("flex-item-rightg2")[0];
+// const startGameG2 = document.getElementsByClassName("flex-item-rightg2")[0];
 const myModalsf =document.getElementById("myModal-sf");
 const myModalai =document.getElementById("myModal-ai");
 
@@ -237,10 +237,10 @@ startGameG1.addEventListener("click", ()=>{
   myModalsf.style.display = "block";
   startMenuOff();
 })
-startGameG2.addEventListener("click", ()=>{
-  myModalai.style.display = "block";
-  startMenuOff();
-})
+// startGameG2.addEventListener("click", ()=>{
+//   myModalai.style.display = "block";
+//   startMenuOff();
+// })
 
 ///////////start menu client/////////
 const startClient1 = document.getElementsByClassName("flex-item-rightc1")[0];
