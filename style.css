@@ -493,7 +493,7 @@ body {
 .main-container .bottom-bar #start-container #right-game {
   display: none;
   position: relative;
-  top: 253px;
+  top: 255px;
   background-color: #adabab;
   height: 100%;
   border-top: 2px solid #e2dfdf;
@@ -523,7 +523,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px;
 }
 
 .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1:hover, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2:hover {
@@ -532,7 +531,21 @@ body {
   color: white;
 }
 
-.main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1 p, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2 p {
+.main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1 a, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2 a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1 a:hover, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2 a:hover {
+  cursor: pointer;
+  background-color: #0202a8;
+  color: white;
+}
+
+.main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1 a p, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2 a p {
   font-size: large;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -542,19 +555,9 @@ body {
           align-items: center;
 }
 
-.main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1 p img, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2 p img {
+.main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1 a p img, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2 a p img {
   margin-right: 6px;
   width: 30px;
-}
-
-.main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1 p a, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2 p a {
-  text-decoration: none;
-  color: black;
-  width: 100%;
-}
-
-.main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1 p svg, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2 p svg {
-  width: 10px;
 }
 
 .main-container .bottom-bar #right-con {

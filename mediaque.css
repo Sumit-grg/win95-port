@@ -674,24 +674,26 @@
     width: 12px !important;
   }
   .main-container .bottom-bar #right-game {
-    top: 185px !important;
+    display: none;
     width: 49vw;
+    top: 190px !important;
   }
-  .main-container .bottom-bar #right-game #right-sec1 {
-    width: 100%;
+  .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg1:hover, .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg2:hover {
+    cursor: pointer;
+    background-color: #0202a8;
+    color: white;
   }
-  .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg1, .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg2 {
-    padding: 10px 0;
+  .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg1 a:hover, .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg2 a:hover {
+    cursor: pointer;
+    background-color: #0202a8;
+    color: white;
   }
-  .main-container .bottom-bar #right-game #right-sec1 p {
+  .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg1 a p, .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg2 a p {
     font-size: small !important;
   }
-  .main-container .bottom-bar #right-game #right-sec1 p img {
+  .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg1 a p img, .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg2 a p img {
     margin-right: 6px;
     width: 12px !important;
-  }
-  .main-container .bottom-bar #right-game #right-sec1 p svg {
-    width: 6px;
   }
   .main-container .bottom-bar #right-con {
     height: 100%;
@@ -1255,24 +1257,34 @@
     width: 25px !important;
   }
   .main-container .bottom-bar #right-game {
-    top: 190px !important;
-    width: 49vw;
-  }
-  .main-container .bottom-bar #right-game #right-sec1 {
-    width: 100%;
+    display: none;
+    top: 230px !important;
   }
   .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg1, .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg2 {
-    padding: 10px 0;
+    border-top: 2px solid #8c8b8b;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .main-container .bottom-bar #right-game #right-sec1 p {
+  .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg1:hover, .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg2:hover {
+    cursor: pointer;
+    background-color: #0202a8;
+    color: white;
+  }
+  .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg1 a:hover, .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg2 a:hover {
+    cursor: pointer;
+    background-color: #0202a8;
+    color: white;
+  }
+  .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg1 a p, .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg2 a p {
     font-size: medium !important;
   }
-  .main-container .bottom-bar #right-game #right-sec1 p img {
+  .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg1 a p img, .main-container .bottom-bar #right-game #right-sec1 .flex-item-rightg2 a p img {
     margin-right: 6px;
     width: 25px !important;
-  }
-  .main-container .bottom-bar #right-game #right-sec1 p svg {
-    width: 25px;
   }
   .main-container .bottom-bar #right-con {
     height: 100%;

@@ -648,21 +648,29 @@
 
         ////second right games///////
         #right-game{
-          top: 185px !important;
+          display: none;
           width: 49vw;
+          top: 190px !important;
           #right-sec1{
-            width: 100%;
             .flex-item-rightg1,.flex-item-rightg2{
-              padding: 10px 0;
-            }
-            p{
-              font-size: small !important;
-              img{
-                margin-right: 6px;
-                width: 12px !important;
+              &:hover{
+                cursor: pointer;
+                background-color: rgb(2,2,168);
+                color: white;
               }
-              svg {
-                width: 6px;
+              a{
+                &:hover{
+                  cursor: pointer;
+                  background-color: rgb(2,2,168);
+                  color: white;
+                }
+                p{
+                  font-size: small !important;
+                  img{
+                    margin-right: 6px;
+                    width: 12px !important;
+                  }
+                }
               }
             }
           }
@@ -1221,21 +1229,34 @@
 
         ////second right games///////
         #right-game{
-          top: 190px !important;
-          width: 49vw;
+          display: none;
+          top: 230px !important;
           #right-sec1{
-            width: 100%;
             .flex-item-rightg1,.flex-item-rightg2{
-              padding: 10px 0;
-            }
-            p{
-              font-size: medium !important;
-              img{
-                margin-right: 6px;
-                width: 25px !important;
+              border-top: 2px solid rgb(140, 139, 139);
+              display: flex;
+              justify-content: space-between;
+              // padding: 10px;
+              &:hover{
+                cursor: pointer;
+                background-color: rgb(2,2,168);
+                color: white;
               }
-              svg {
-                width: 25px;
+              a{
+                // border: 1px solid red;
+                &:hover{
+                  cursor: pointer;
+                  background-color: rgb(2,2,168);
+                  color: white;
+                }
+                p{
+                  font-size: medium !important;
+
+                  img{
+                    margin-right: 6px;
+                    width: 25px !important;
+                  }
+                }
               }
             }
           }
