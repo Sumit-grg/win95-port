@@ -1,10 +1,4 @@
 @media screen and (max-width: 700px) {
-  body {
-    background-color: #008082;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-  }
   #boot-container #bootup {
     width: 96%;
     margin: 0 auto;
