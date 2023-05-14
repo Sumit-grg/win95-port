@@ -1,4 +1,39 @@
 @media screen and (max-width: 700px){  
+  #boot-container{
+    #bootup{
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      padding: 10px 4px 4px 4px;
+      justify-content: space-between;
+      #boot-left{
+        p{
+          font-size: small;
+        }
+        #boot1,#boot2,#boot3,#boot4{
+          display: none;
+        }
+      }
+      #boot-right{
+        img{
+          width: 100px;
+        }
+      }
+    }
+    #bootdown{
+      p{
+        font-size: small;
+      }
+    }
+  }
+  #winsboot{
+    display: none;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   .main-container {
     /////main screen///////////
     .main-screen {  
@@ -582,6 +617,19 @@
 //////////////media 700-1100/////////////////
 
 @media screen and (max-width: 1000px) and (min-width: 700px){
+  #boot-container{
+    #bootup{
+      width: 90%;
+    }
+    #bootmiddle{
+      width: 90%;
+    }
+    #bootdown{
+      width: 90%;
+    }
+  }
+
+
   .main-container {
     /////main screen///////////
 

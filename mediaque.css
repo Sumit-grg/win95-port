@@ -1,4 +1,34 @@
 @media screen and (max-width: 700px) {
+  #boot-container #bootup {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 4px 4px 4px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #boot-container #bootup #boot-left p {
+    font-size: small;
+  }
+  #boot-container #bootup #boot-left #boot1, #boot-container #bootup #boot-left #boot2, #boot-container #bootup #boot-left #boot3, #boot-container #bootup #boot-left #boot4 {
+    display: none;
+  }
+  #boot-container #bootup #boot-right img {
+    width: 100px;
+  }
+  #boot-container #bootdown p {
+    font-size: small;
+  }
+  #winsboot {
+    display: none;
+  }
+  #winsboot img {
+    width: 100%;
+    height: 100%;
+  }
   .main-container .main-screen {
     overflow: hidden;
     display: -webkit-box;
@@ -597,6 +627,15 @@
 }
 
 @media screen and (max-width: 1000px) and (min-width: 700px) {
+  #boot-container #bootup {
+    width: 90%;
+  }
+  #boot-container #bootmiddle {
+    width: 90%;
+  }
+  #boot-container #bootdown {
+    width: 90%;
+  }
   .main-container .main-screen {
     overflow: hidden;
     display: -webkit-box;
