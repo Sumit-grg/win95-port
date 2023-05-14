@@ -4,7 +4,7 @@
   z-index: 9;
   text-align: center;
   border: 2px solid silver;
-  width: 40%;
+  width: auto;
   height: auto;
   background-color: silver;
   top: 50px;
@@ -101,7 +101,7 @@
 #myModal-recycle #modal-main .bin-folder, #myModal-player #modal-main .bin-folder {
   padding: 4px;
   margin: 6px;
-  height: 15%;
+  height: 70px;
 }
 
 #myModal-recycle #modal-main .bin-folder p, #myModal-player #modal-main .bin-folder p {
@@ -879,7 +879,7 @@
 }
 
 #myModal-about {
-  display: block;
+  display: none;
   position: absolute;
   z-index: 9;
   text-align: center;
@@ -987,17 +987,19 @@
 
 #myModal-about #modal-main #socials {
   padding: 10px;
-  border: 1px dotted #5c5b5b;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 #myModal-about #modal-main #socials #about-cv {
-  width: 200px;
+  width: 100%;
   margin: 0 auto;
 }
 
 #myModal-about #modal-main #socials #about-cv a {
-  margin: 4px;
-  width: 200px;
+  margin: 4px 0;
+  width: 100%;
   padding: 6px;
   text-decoration: none;
   color: black;
@@ -1020,9 +1022,9 @@
 }
 
 #myModal-about #modal-main #socials #about-cv a:hover {
-  color: #e8e6e6;
-  background-color: #aca9a9;
   cursor: pointer;
+  background-color: #0202a8;
+  color: white;
 }
 
 #myModal-about #modal-main #socials #about-main {
@@ -1040,9 +1042,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #myModal-about #modal-main #socials #about-main #about-left a {
@@ -1051,8 +1054,8 @@
 }
 
 #myModal-about #modal-main #socials #about-main #about-left p {
-  margin: 4px;
-  width: 200px;
+  margin: 4px 0;
+  width: 100%;
   padding: 6px;
   background-color: #eceaea;
   border: 1px solid #6b6a6a;
@@ -1063,23 +1066,24 @@
 }
 
 #myModal-about #modal-main #socials #about-main #about-left p:hover {
-  color: #e8e6e6;
-  background-color: #aca9a9;
   cursor: pointer;
+  background-color: #0202a8;
+  color: white;
 }
 
 #myModal-about #modal-main #socials #about-main #about-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #myModal-about #modal-main #socials #about-main #about-right p {
-  margin: 4px;
-  width: 200px;
+  margin: 4px 0;
+  width: 100%;
   padding: 6px;
   background-color: #eceaea;
   border: 1px solid #6b6a6a;
@@ -1090,26 +1094,9 @@
 }
 
 #myModal-about #modal-main #socials #about-main #about-right p:hover {
-  color: #e8e6e6;
-  background-color: #aca9a9;
   cursor: pointer;
-}
-
-#myModal-about #modal-bottom {
-  color: black;
-  background-color: silver;
-  width: 99%;
-  height: 5%;
-  margin: 0 auto;
-  margin-top: 4px;
-  border-top: 2px solid #2b2a2a;
-  border-right: 2px solid #e2dfdf;
-  border-bottom: 2px solid #e2dfdf;
-  border-left: 2px solid #2b2a2a;
-}
-
-#myModal-about #modal-bottom audio {
-  display: none;
+  background-color: #0202a8;
+  color: white;
 }
 
 #myModal-pc {
@@ -1216,7 +1203,7 @@
 #myModal-pc #modal-main .pc-folder {
   padding: 4px;
   margin: 6px;
-  height: 22%;
+  height: 80px;
 }
 
 #myModal-pc #modal-main .pc-folder p {

@@ -124,18 +124,18 @@ closebtnRec.addEventListener("click", ()=> {
 
   ///////////////////modal CV//////////////
   //Modal open and close
-const cv = document.getElementById("cv-icon");
-const myModalcv =document.getElementById("myModal-cv");
+// const cv = document.getElementById("cv-icon");
+// const myModalcv =document.getElementById("myModal-cv");
 
-cv.addEventListener("click", ()=>{
-  myModalcv.style.display = "block";
-})
+// cv.addEventListener("click", ()=>{
+//   myModalcv.style.display = "block";
+// })
 
-const closebtnCV = document.getElementById("right-iconCV");
+// const closebtnCV = document.getElementById("right-iconCV");
 
-closebtnCV.addEventListener("click", ()=> {
-  myModalcv.style.display = "none";
-})
+// closebtnCV.addEventListener("click", ()=> {
+//   myModalcv.style.display = "none";
+// })
 
 
   //Make the DIV element draggagle:
@@ -515,7 +515,7 @@ startGameG2.addEventListener("click", ()=>{
 
     //Modal open and close
     const about = document.getElementById("about-icon");
-    const myModalAbout =document.getElementById("myModal-about");
+    const myModalAbout = document.getElementById("myModal-about");
   
 
     about.addEventListener("click", ()=>{
@@ -524,6 +524,22 @@ startGameG2.addEventListener("click", ()=>{
   
     const closebtnabout = document.getElementById("right-iconAbout");
   
+    const email = document.getElementById("email");
+    const phone = document.getElementById("phone");
+    
+    email.addEventListener("click",()=>{
+      email.innerHTML = "Sumit_grg7@yahoo.co.uk";
+    })
+    
+    phone.addEventListener("click",()=>{
+      phone.innerHTML = "07882773360";
+    })
+    
+    closebtnabout.addEventListener("click", ()=> {
+      myModalAbout.style.display = "none";
+      email.innerHTML = `<i class="fas fa-envelope fa-1x"></i>Email`;
+      phone.innerHTML = `<i class="fas fa-phone-square-alt fa-1x"></i>Phone`;
+    })
     
     
     //Make the DIV element draggagle:
@@ -570,19 +586,3 @@ startGameG2.addEventListener("click", ()=>{
       }
     }
     
-    const email = document.getElementById("email");
-    const phone = document.getElementById("phone");
-    
-    email.addEventListener("click",()=>{
-      email.innerHTML = "Sumit_grg7@yahoo.co.uk";
-    })
-    
-    phone.addEventListener("click",()=>{
-      phone.innerHTML = "07882773360";
-    })
-    
-    closebtnabout.addEventListener("click", ()=> {
-      myModalAbout.style.display = "none";
-      email.innerHTML = `<i class="fas fa-envelope fa-1x"></i>Email`;
-      phone.innerHTML = `<i class="fas fa-phone-square-alt fa-1x"></i>Phone`;
-    })

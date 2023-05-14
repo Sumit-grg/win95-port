@@ -103,7 +103,7 @@
     padding: 4px;
     margin: 6px;
     width: 25%;
-    height: 25%;
+    height: 90px;
   }
   .main-container .main-screen #myModal-project {
     display: none;
@@ -464,6 +464,79 @@
   .main-container .main-screen #myModal-ai #modal-main iframe {
     width: 100%;
     height: 100%;
+  }
+  .main-container .main-screen #myModal-about {
+    display: none;
+    top: 10px;
+    left: 5px;
+  }
+  .main-container .main-screen #myModal-about #modal-main {
+    width: 300px;
+  }
+  .main-container .main-screen #myModal-about #modal-main #img-con {
+    width: 100%;
+  }
+  .main-container .main-screen #myModal-about #modal-main #img-con img {
+    width: 200px;
+    border-radius: 5px;
+  }
+  .main-container .main-screen #myModal-about #modal-main #socials #about-cv {
+    width: 100%;
+  }
+  .main-container .main-screen #myModal-about #modal-main #socials #about-cv a {
+    width: 100%;
+  }
+  .main-container .main-screen #myModal-about #modal-main #socials #about-cv a img {
+    width: 20px;
+  }
+  .main-container .main-screen #myModal-about #modal-main #socials #about-cv a:hover {
+    cursor: pointer;
+    background-color: #0202a8;
+    color: white;
+  }
+  .main-container .main-screen #myModal-about #modal-main #socials #about-main {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-container .main-screen #myModal-about #modal-main #socials #about-main #about-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-container .main-screen #myModal-about #modal-main #socials #about-main #about-left p {
+    width: 100%;
+  }
+  .main-container .main-screen #myModal-about #modal-main #socials #about-main #about-left p:hover {
+    cursor: pointer;
+    background-color: #0202a8;
+    color: white;
+  }
+  .main-container .main-screen #myModal-about #modal-main #socials #about-main #about-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-container .main-screen #myModal-about #modal-main #socials #about-main #about-right p {
+    width: 100%;
+  }
+  .main-container .main-screen #myModal-about #modal-main #socials #about-main #about-right p:hover {
+    cursor: pointer;
+    background-color: #0202a8;
+    color: white;
   }
   .main-container .bottom-bar #start-btn {
     margin-left: 2px;
