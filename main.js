@@ -435,4 +435,3 @@ const date = new Date;
 const fullDate = document.getElementById("date");
 fullDate.innerHTML = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
 
-

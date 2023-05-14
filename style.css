@@ -11,6 +11,7 @@ body {
 }
 
 #boot-container {
+  display: none;
   background-color: black;
   background-image: radial-gradient(rgba(37, 35, 35, 0.75), black 120%);
   width: 100vw;
@@ -128,7 +129,7 @@ body {
 }
 
 .main-container {
-  display: none;
+  display: block;
   width: 100%;
   height: 100%;
 }
@@ -173,21 +174,21 @@ body {
   border-radius: 3px;
 }
 
-.main-container .main-screen #cv-icon a {
-  text-decoration: none;
-}
-
-.main-container .main-screen #cv-icon a img {
+.main-container .main-screen #cv-icon img {
   width: 45px;
 }
 
-.main-container .main-screen #cv-icon a p {
+.main-container .main-screen #cv-icon p {
   color: white;
 }
 
 .main-container .main-screen #sf-icon img {
   opacity: 0.9;
   width: 80px;
+}
+
+.main-container .main-screen #about-icon img {
+  width: 45px;
 }
 
 .main-container .main-screen #alien-icon a {

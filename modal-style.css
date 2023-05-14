@@ -878,6 +878,240 @@
   display: none;
 }
 
+#myModal-about {
+  display: block;
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+  border: 2px solid silver;
+  width: auto;
+  height: auto;
+  background-color: silver;
+  top: 40px;
+  left: 150px;
+}
+
+#myModal-about #myModal-aboutCon {
+  width: 100%;
+  height: 25px;
+  border: 1px solid silver;
+  cursor: move;
+  z-index: 10;
+  background-color: #0202a8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#myModal-about #myModal-aboutCon #left-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#myModal-about #myModal-aboutCon #left-icon img {
+  padding: 4px;
+  width: 30px;
+}
+
+#myModal-about #myModal-aboutCon #left-icon p {
+  color: white;
+}
+
+#myModal-about #myModal-aboutCon #right-iconAbout {
+  z-index: 11;
+  padding: 4px;
+}
+
+#myModal-about #myModal-aboutCon #right-iconAbout button {
+  width: 20px;
+}
+
+#myModal-about #myModal-aboutCon #right-iconAbout button p {
+  font-weight: bold;
+}
+
+#myModal-about #modal-menu {
+  background-color: silver;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 25px;
+}
+
+#myModal-about #modal-menu p {
+  color: black;
+  padding: 4px;
+  margin: 0 4px;
+}
+
+#myModal-about #modal-menu p span {
+  text-decoration: underline;
+}
+
+#myModal-about #modal-menu p:hover {
+  cursor: pointer;
+  background-color: #0202a8;
+  color: white;
+}
+
+#myModal-about #modal-main {
+  background-color: #dbd8d8;
+  border-top: 2px solid black;
+  border-right: 2px solid #e2dfdf;
+  border-bottom: 2px solid #e2dfdf;
+  border-left: 2px solid black;
+  width: 500px;
+  color: black;
+}
+
+#myModal-about #modal-main #img-con {
+  width: 100%;
+  background-color: #a6a6a6;
+}
+
+#myModal-about #modal-main #img-con img {
+  border: 1px solid #929090;
+  width: 200px;
+  border-radius: 5px;
+}
+
+#myModal-about #modal-main #socials {
+  padding: 10px;
+  border: 1px dotted #5c5b5b;
+}
+
+#myModal-about #modal-main #socials #about-cv {
+  width: 200px;
+  margin: 0 auto;
+}
+
+#myModal-about #modal-main #socials #about-cv a {
+  margin: 4px;
+  width: 200px;
+  padding: 6px;
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eceaea;
+  border: 1px solid #6b6a6a;
+}
+
+#myModal-about #modal-main #socials #about-cv a img {
+  width: 25px;
+  margin: 0 4px;
+}
+
+#myModal-about #modal-main #socials #about-cv a:hover {
+  color: #e8e6e6;
+  background-color: #aca9a9;
+  cursor: pointer;
+}
+
+#myModal-about #modal-main #socials #about-main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#myModal-about #modal-main #socials #about-main #about-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#myModal-about #modal-main #socials #about-main #about-left a {
+  text-decoration: none;
+  color: black;
+}
+
+#myModal-about #modal-main #socials #about-main #about-left p {
+  margin: 4px;
+  width: 200px;
+  padding: 6px;
+  background-color: #eceaea;
+  border: 1px solid #6b6a6a;
+}
+
+#myModal-about #modal-main #socials #about-main #about-left p i {
+  margin: 0 4px;
+}
+
+#myModal-about #modal-main #socials #about-main #about-left p:hover {
+  color: #e8e6e6;
+  background-color: #aca9a9;
+  cursor: pointer;
+}
+
+#myModal-about #modal-main #socials #about-main #about-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#myModal-about #modal-main #socials #about-main #about-right p {
+  margin: 4px;
+  width: 200px;
+  padding: 6px;
+  background-color: #eceaea;
+  border: 1px solid #6b6a6a;
+}
+
+#myModal-about #modal-main #socials #about-main #about-right p i {
+  margin: 0 4px;
+}
+
+#myModal-about #modal-main #socials #about-main #about-right p:hover {
+  color: #e8e6e6;
+  background-color: #aca9a9;
+  cursor: pointer;
+}
+
+#myModal-about #modal-bottom {
+  color: black;
+  background-color: silver;
+  width: 99%;
+  height: 5%;
+  margin: 0 auto;
+  margin-top: 4px;
+  border-top: 2px solid #2b2a2a;
+  border-right: 2px solid #e2dfdf;
+  border-bottom: 2px solid #e2dfdf;
+  border-left: 2px solid #2b2a2a;
+}
+
+#myModal-about #modal-bottom audio {
+  display: none;
+}
+
 #myModal-pc {
   display: none;
   position: absolute;
