@@ -409,6 +409,7 @@ const boot1 = document.getElementById("boot1");
 const boot2 = document.getElementById("boot2");
 const boot3 = document.getElementById("boot3");
 const boot4 = document.getElementById("boot4");
+const boot5 = document.getElementById("boot5");
 
 const bootContainer = document.getElementById("boot-container");
 const bootmiddle = document.getElementById("bootmiddle");
@@ -428,10 +429,13 @@ setInterval(()=>{
 setInterval(()=>{
   boot4.style.display = "block";
 }, 1300);
+setInterval(()=>{
+  boot5.style.display = "block";
+}, 1700);
 
 setInterval(()=>{
   bootmiddle.style.display = "block";
-}, 1600);
+}, 2100);
 
 bootBtn.addEventListener('click', ()=>{
   bootContainer.style.display = "none";
@@ -441,7 +445,7 @@ bootBtn.addEventListener('click', ()=>{
     winStartAudio.play();
     winsBootLogo.style.display = "none";
     mainContainer.style.display = "block";
-  },2500)
+  },2300)
 })
 
 

@@ -37,7 +37,7 @@ body {
   color: #a2a1a2;
 }
 
-#boot-container #bootup #boot-left #boot1, #boot-container #bootup #boot-left #boot2, #boot-container #bootup #boot-left #boot3, #boot-container #bootup #boot-left #boot4 {
+#boot-container #bootup #boot-left #boot1, #boot-container #bootup #boot-left #boot2, #boot-container #bootup #boot-left #boot3, #boot-container #bootup #boot-left #boot4, #boot-container #bootup #boot-left #boot5 {
   display: none;
 }
 
