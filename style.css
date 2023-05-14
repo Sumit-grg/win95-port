@@ -11,7 +11,7 @@ body {
 }
 
 #boot-container {
-  display: none;
+  display: block;
   background-color: black;
   background-image: radial-gradient(rgba(37, 35, 35, 0.75), black 120%);
   width: 100vw;
@@ -80,6 +80,13 @@ body {
   display: none;
 }
 
+#winsboot video {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #winsboot img {
   width: 100vw;
   height: 100vh;
@@ -129,7 +136,7 @@ body {
 }
 
 .main-container {
-  display: block;
+  display: none;
   width: 100%;
   height: 100%;
 }

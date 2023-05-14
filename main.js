@@ -427,7 +427,7 @@ bootBtn.addEventListener('click', ()=>{
     winStartAudio.play();
     winsBootLogo.style.display = "none";
     mainContainer.style.display = "block";
-  },2000)
+  },2500)
 })
 
 
