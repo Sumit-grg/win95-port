@@ -389,3 +389,50 @@ loginBtn.addEventListener("click", ()=>{
 })
 
 
+//////bootup windows///////
+
+const boot1 = document.getElementById("boot1");
+const boot2 = document.getElementById("boot2");
+const boot3 = document.getElementById("boot3");
+const boot4 = document.getElementById("boot4");
+
+const bootContainer = document.getElementById("boot-container");
+const bootmiddle = document.getElementById("bootmiddle");
+const bootBtn = document.getElementById("bootbtn");
+const winsBootLogo = document.getElementById("winsboot");
+const mainContainer = document.getElementsByClassName("main-container")[0];
+
+setInterval(()=>{
+  boot1.style.display = "block";
+}, 100);
+setInterval(()=>{
+  boot2.style.display = "block";
+}, 500);
+setInterval(()=>{
+  boot3.style.display = "block";
+}, 900);
+setInterval(()=>{
+  boot4.style.display = "block";
+}, 1300);
+
+setInterval(()=>{
+  bootmiddle.style.display = "block";
+}, 1600);
+
+bootBtn.addEventListener('click', ()=>{
+  bootContainer.style.display = "none";
+  winsBootLogo.style.display = "block";
+  setTimeout(()=>{
+    winStartAudio.volume = 0.6;
+    winStartAudio.play();
+    winsBootLogo.style.display = "none";
+    mainContainer.style.display = "block";
+  },2000)
+})
+
+
+const date = new Date;
+const fullDate = document.getElementById("date");
+fullDate.innerHTML = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
+
+
