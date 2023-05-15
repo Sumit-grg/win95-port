@@ -382,10 +382,12 @@ const winStartAudio = new Audio("./Asset/vid/win95-start.mp3");
 const startMenuLogout = document.getElementsByClassName("flex-item-right-logout")[0];
 const blackoutScreen = document.getElementById("fixed-back");
 const sfIcon = document.getElementById("sf-icon");
+const bottomBar = document.getElementsByClassName("bottom-bar")[0];
 
 startMenuLogout.addEventListener("click", ()=>{
   blackoutScreen.style.display = "flex";
   sfIcon.style.opacity = "0.1";
+  bottomBar.style.display = "none";
   startMenuOff();
   winShutAudio.volume = 0.3;
   winShutAudio.play();
@@ -397,6 +399,7 @@ const loginBtn = document.getElementById("loginbtn");
 
 loginBtn.addEventListener("click", ()=>{
   blackoutScreen.style.display = "none";
+  bottomBar.style.display = "flex";
   winStartAudio.volume = 0.6;
   winStartAudio.play();
   sfIcon.style.opacity = "1";
