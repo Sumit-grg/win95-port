@@ -1,65 +1,53 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #008082;
+  background-color: rgb(0, 128, 130);
   overflow: hidden;
 }
 
 #boot-container {
   display: block;
   background-color: black;
-  background-image: radial-gradient(rgba(37, 35, 35, 0.75), black 120%);
+  background-image: radial-gradient(rgba(37, 35, 35, 0.75), rgb(0, 0, 0) 120%);
   width: 100%;
   height: 100%;
 }
-
 #boot-container #bootup {
   width: 80%;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 60px 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 #boot-container #bootup #boot-left p {
   letter-spacing: 2px;
-  color: #a2a1a2;
+  color: rgb(162, 161, 162);
 }
-
 #boot-container #bootup #boot-left #boot1, #boot-container #bootup #boot-left #boot2, #boot-container #bootup #boot-left #boot3, #boot-container #bootup #boot-left #boot4, #boot-container #bootup #boot-left #boot5 {
   display: none;
 }
-
 #boot-container #bootup #boot-right img {
   width: 200px;
 }
-
 #boot-container #bootmiddle {
   display: none;
   text-align: center;
   width: 80%;
   margin: 0 auto;
 }
-
 #boot-container #bootmiddle #bootbtn {
-  background-color: silver;
+  background-color: rgb(192, 192, 192);
   border-top: 2px solid black;
-  border-right: 2px solid #e2dfdf;
-  border-bottom: 2px solid #e2dfdf;
+  border-right: 2px solid rgb(226, 223, 223);
+  border-bottom: 2px solid rgb(226, 223, 223);
   border-left: 2px solid black;
   font-weight: bold;
   padding: 8px;
 }
-
 #boot-container #bootdown {
   text-align: center;
   position: absolute;
@@ -70,16 +58,14 @@ body {
   width: 80%;
   margin: 0 auto;
 }
-
 #boot-container #bootdown p {
   letter-spacing: 2px;
-  color: #a2a1a2;
+  color: rgb(162, 161, 162);
 }
 
 #winsboot {
   display: none;
 }
-
 #winsboot img {
   width: 100vw;
   height: 100vh;
@@ -92,40 +78,30 @@ body {
   width: 100vw;
   opacity: 0.9;
   display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   border: 2px solid white;
 }
-
 #fixed-back img {
   opacity: 0.7;
   padding: 2px;
   border-radius: 50px;
-  background-color: #e2e2e2;
+  background-color: rgb(226, 226, 226);
   width: 100px;
 }
-
 #fixed-back p {
   margin-top: 6px;
-  background-color: silver;
-  border: 2px solid #717171;
+  background-color: rgb(192, 192, 192);
+  border: 2px solid rgb(113, 113, 113);
   border-radius: 5px;
   padding: 6px;
   font-size: x-large;
   color: black;
 }
-
 #fixed-back p:hover {
   cursor: pointer;
-  background-color: #919191;
+  background-color: rgb(145, 145, 145);
 }
 
 .main-container {
@@ -133,7 +109,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
 .main-container #winlogo {
   position: absolute;
   top: 20%;
@@ -141,160 +116,107 @@ body {
   opacity: 0.3;
   z-index: -100;
 }
-
 .main-container .main-screen {
   width: 100%;
   height: 96%;
   color: white;
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: column;
+  align-items: start;
+  flex-wrap: wrap;
 }
-
 .main-container .main-screen .icon {
   padding: 8px;
   margin: 20px;
   display: inline-block;
   text-align: center;
 }
-
 .main-container .main-screen .icon:hover {
   cursor: pointer;
-  background-color: #8f8f8f;
+  background-color: rgb(143, 143, 143);
   border-radius: 3px;
 }
-
 .main-container .main-screen #cv-icon img {
   width: 45px;
 }
-
 .main-container .main-screen #cv-icon p {
   color: white;
 }
-
 .main-container .main-screen #sf-icon img {
   opacity: 0.9;
   width: 80px;
 }
-
 .main-container .main-screen #about-icon img {
   width: 45px;
 }
-
 .main-container .main-screen #alien-icon a {
   text-decoration: none;
 }
-
 .main-container .main-screen #alien-icon a p {
   color: white;
 }
-
 .main-container .bottom-bar {
   position: fixed;
   bottom: 0;
   width: 100%;
   border-top: 2px solid white;
-  background-color: silver;
+  background-color: rgb(192, 192, 192);
   height: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .main-container .bottom-bar #start-btn {
   margin-left: 2px;
 }
-
 .main-container .bottom-bar #start-btn button {
   height: 100%;
-  background-color: silver;
+  background-color: rgb(192, 192, 192);
   border: 2px solid red;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border-top: 2px solid white;
   border-left: 2px solid white;
-  border-right: 2px solid #807f7f;
-  border-bottom: 2px solid #807f7f;
+  border-right: 2px solid rgb(128, 127, 127);
+  border-bottom: 2px solid rgb(128, 127, 127);
 }
-
 .main-container .bottom-bar #start-btn button p {
   margin: 0 4px;
   font-weight: bold;
 }
-
 .main-container .bottom-bar #start-btn button img {
   margin: 0 4px;
   height: 100%;
 }
-
 .main-container .bottom-bar #start-container {
   display: none;
   position: absolute;
   bottom: 34px;
 }
-
 .main-container .bottom-bar #start-container #first-box-start {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid black;
-  border-left: 1px solid #e2dfdf;
-  border-top: 1px solid #e2dfdf;
+  border-left: 1px solid rgb(226, 223, 223);
+  border-top: 1px solid rgb(226, 223, 223);
   border-right: 1px solid black;
 }
-
 .main-container .bottom-bar #start-container #first-box-start #left-start {
-  background-color: #717171;
+  background-color: rgb(113, 113, 113);
   padding-bottom: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: center;
+  align-items: flex-end;
 }
-
 .main-container .bottom-bar #start-container #first-box-start #right-start {
-  background-color: #adabab;
+  background-color: rgb(173, 171, 171);
 }
-
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 {
-  border: 1px solid #8c8b8b;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  border: 1px solid rgb(140, 139, 139);
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-clientproj, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-personalproj,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-about,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-game,
@@ -308,15 +230,10 @@ body {
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-internet, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-about,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-media, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-game,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-logout {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 10px;
 }
-
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-clientproj:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-personalproj:hover,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-about:hover,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-media:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-game:hover,
@@ -331,10 +248,9 @@ body {
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-media:hover, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-game:hover,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 .flex-item-right-logout:hover {
   cursor: pointer;
-  background-color: #0202a8;
+  background-color: rgb(2, 2, 168);
   color: white;
 }
-
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-clientproj .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-personalproj .svgcl,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-internet .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-about .svgcl,
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-media .svgcl, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 .flex-item-right-game .svgcl,
@@ -351,187 +267,121 @@ body {
   margin-right: 4px;
   width: 15px;
 }
-
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 p, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 p {
   font-size: large;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 p img, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 p img {
   margin-right: 6px;
   width: 30px;
 }
-
 .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec1 p svg, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec2 p svg, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec3 p svg, .main-container .bottom-bar #start-container #first-box-start #right-start #right-sec4 p svg {
   width: 10px;
 }
-
 .main-container .bottom-bar #start-container #right-clientproj {
   display: none;
-  background-color: #adabab;
+  background-color: rgb(173, 171, 171);
   height: 100%;
-  border-top: 2px solid #e2dfdf;
-  border-left: 2px solid #e2dfdf;
+  border-top: 2px solid rgb(226, 223, 223);
+  border-left: 2px solid rgb(226, 223, 223);
   border-right: 1px solid black;
   border-bottom: 1px solid black;
 }
-
 .main-container .bottom-bar #start-container #right-clientproj #right-sec1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-rightc1, .main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-rightc2, .main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-rightc3,
 .main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-rightc4 {
-  border-top: 2px solid #8c8b8b;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  border-top: 2px solid rgb(140, 139, 139);
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 10px;
 }
-
 .main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-rightc1:hover, .main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-rightc2:hover, .main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-rightc3:hover,
 .main-container .bottom-bar #start-container #right-clientproj #right-sec1 .flex-item-rightc4:hover {
   cursor: pointer;
-  background-color: #0202a8;
+  background-color: rgb(2, 2, 168);
   color: white;
 }
-
 .main-container .bottom-bar #start-container #right-clientproj #right-sec1 p {
   font-size: large;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .main-container .bottom-bar #start-container #right-clientproj #right-sec1 p img {
   margin-right: 6px;
   width: 30px;
 }
-
 .main-container .bottom-bar #start-container #right-personalproj {
   display: none;
   position: relative;
   top: 45px;
-  background-color: #adabab;
+  background-color: rgb(173, 171, 171);
   height: 100%;
-  border-top: 2px solid #e2dfdf;
-  border-left: 2px solid #e2dfdf;
+  border-top: 2px solid rgb(226, 223, 223);
+  border-left: 2px solid rgb(226, 223, 223);
   border-right: 1px solid black;
   border-bottom: 1px solid black;
 }
-
 .main-container .bottom-bar #start-container #right-personalproj #right-sec1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp1, .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp2, .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp3,
 .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp4, .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp5, .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp6 {
-  border-top: 2px solid #8c8b8b;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  border-top: 2px solid rgb(140, 139, 139);
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 10px;
 }
-
 .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp1:hover, .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp2:hover, .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp3:hover,
 .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp4:hover, .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp5:hover, .main-container .bottom-bar #start-container #right-personalproj #right-sec1 .flex-item-rightp6:hover {
   cursor: pointer;
-  background-color: #0202a8;
+  background-color: rgb(2, 2, 168);
   color: white;
 }
-
 .main-container .bottom-bar #start-container #right-personalproj #right-sec1 p {
   font-size: large;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .main-container .bottom-bar #start-container #right-personalproj #right-sec1 p img {
   margin-right: 6px;
   width: 30px;
 }
-
 .main-container .bottom-bar #start-container #right-personalproj #right-sec1 p svg {
   width: 10px;
 }
-
 .main-container .bottom-bar #start-container #right-game {
   display: none;
   position: relative;
   top: 255px;
-  background-color: #adabab;
+  background-color: rgb(173, 171, 171);
   height: 100%;
-  border-top: 2px solid #e2dfdf;
-  border-left: 2px solid #e2dfdf;
+  border-top: 2px solid rgb(226, 223, 223);
+  border-left: 2px solid rgb(226, 223, 223);
   border-right: 1px solid black;
   border-bottom: 1px solid black;
 }
-
 .main-container .bottom-bar #start-container #right-game #right-sec1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2 {
-  border-top: 2px solid #8c8b8b;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  border-top: 2px solid rgb(140, 139, 139);
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1:hover, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2:hover {
   cursor: pointer;
-  background-color: #0202a8;
+  background-color: rgb(2, 2, 168);
   color: white;
 }
-
 .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1 a, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2 a {
   text-decoration: none;
   color: black;
@@ -539,45 +389,31 @@ body {
   width: 100%;
   height: 100%;
 }
-
 .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1 a:hover, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2 a:hover {
   cursor: pointer;
-  background-color: #0202a8;
+  background-color: rgb(2, 2, 168);
   color: white;
 }
-
 .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1 a p, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2 a p {
   font-size: large;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg1 a p img, .main-container .bottom-bar #start-container #right-game #right-sec1 .flex-item-rightg2 a p img {
   margin-right: 6px;
   width: 30px;
 }
-
 .main-container .bottom-bar #right-con {
   margin-right: 2px;
   border-right: 2px solid white;
   border-bottom: 2px solid white;
-  border-top: 2px solid #807f7f;
-  border-left: 2px solid #807f7f;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  border-top: 2px solid rgb(128, 127, 127);
+  border-left: 2px solid rgb(128, 127, 127);
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 100%;
 }
-
 .main-container .bottom-bar #right-con img, .main-container .bottom-bar #right-con p {
   margin: 0 3px;
   font-weight: bold;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
